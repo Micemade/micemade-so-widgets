@@ -21,7 +21,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A collection of free widgets, premium quality, for use in any widgetized area or in SiteOrigin page builder. SiteOrigin Widgets Bundle is required.
 
-== Description ==
+**Description**
 
 Micemade SO widgets widgets features huge collection of premium, easy to use yet highly functional widgets that can be used in a page builder like [SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/) or in any widgetized area of your site. This is really a premium plugin that you can get for free.
 
@@ -36,31 +36,31 @@ See the all of widgets in action here - [LIVE DEMO](https://micemade.com/natura 
 The plugin comes with the following widgets. **Almost all of the widgets come with a dark version**.
 
 
-* Services that capture what you can offer for your clients/customers.
-* Responsive Tabsthat function seamlessly across all devices and resolutions.
-* Accordion/Toggle that capture collapsible content panels when space is limited.
-* Heading styles to capture effective headings for your page sections.
-* Team Profiles widgets to display all the team members.
-* Odometer to show impressive numbers pertaining to your work or company.
-* Bar charts widget to capture skills or any type of percentage stats.
-* Animated Pie charts for visual depiction of percentage stats.
-* Testimonials to tell everyone the good things you often hear from your clients/customers.
-* Testimonials slider is a responsive touch enabled slider that cycles through testimonials.
-* Post Carousel Widget that displays your posts or custom post types as a highly responsive carousel.
-* Generic Carousel Widget that displays lets you present a list of HTML content in a carousel.
-* Hero Header Widget that lets you display any type of header content with option to set Parallax, YouTube or HTML5 video background.
-* Grid widget that displays posts in a nice responsive grid. Masonry and packed options are supported.
-* Client List widget to showcase the clients that you have handled.
-* Pricing Plans to help get more sales.
-* Flat style buttons with rich set of customization options.
-* Icon list widget that lets you use either images or icon fonts to create custom social icons list, capture payment options etc.
+* Services -  capture what you can offer for your clients/customers.
+* Responsive Tabs -  function seamlessly across all devices and resolutions.
+* Accordion/Toggle - capture collapsible content panels when space is limited.
+* Heading - capture effective headings for your page sections.
+* Team Profiles - widgets to display all the team members.
+* Odometer - show impressive numbers pertaining to your work or company.
+* Bar charts - widget to capture skills or any type of percentage stats.
+* Animated Pie charts - for visual depiction of percentage stats.
+* Testimonials - to tell everyone the good things you often hear from your clients/customers.
+* Testimonials slider - a responsive touch enabled slider that cycles through testimonials.
+* Post Carousel Widget - displays your posts or custom post types as a highly responsive carousel.
+* Generic Carousel Widget - displays lets you present a list of HTML content in a carousel.
+* Hero Header Widget - lets you display any type of header content with option to set Parallax, YouTube or HTML5 video background.
+* Grid widget - displays posts in a nice responsive grid. Masonry and packed options are supported.
+* Client List widget - widget to showcase the clients that you have handled.
+* Pricing Plans - help get more sales.
+* Button - flat style buttons with rich set of customization options.
+* Icon list- widget that lets you use either images or icon fonts to create custom social icons list, capture payment options etc.
 
 
 **Important: You must activate widgets you need to use from Plugins &gt; SiteOrigin Widgets so that they can be available to use.**. 
 
 Do you have suggestions to make or want to be notified of important updates? Reach out to us on [Twitter](http://twitter.com/themicemade)
 
-**== Installation ==**
+**Installation**
 
 1. Install and activate the **required plugin** [SiteOrigin Widgets Bundle](https://wordpress.org/plugins/so-widgets-bundle/).
 2. Unzip the downloaded micemade-so-widgets.zip file and upload to the '/wp-content/plugins/' directory or install the Micemade SO widgets Widgets plugin from WordPress repository. Activate the plugin through the 'Plugins' menu in WordPress
@@ -68,7 +68,7 @@ Do you have suggestions to make or want to be notified of important updates? Rea
 4. If you need page builder functions, install and activate the **optional plugin** [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/).
 
 
-**== Frequently Asked Questions ==**
+**Frequently Asked Questions**
 
 * Does it work with the theme that I am using? =
 
@@ -86,15 +86,7 @@ If not using a page builder, you can wrap the widget with a div of class 'mm_sow
 
 Please make sure the SiteOrigin Widgets Bundle plugin is installed/activated and enable the widgets from Plugins &gt; SiteOrigin Widgets in WordPress admin.
 
-
-**== Screenshots ==**
-1. Enable widgets in Plugins > SiteOrigin Widgets > Disabled tab.
-2. Micemade SO widgets Widgets in action in SiteOrigin Page Builder tab of Page Edit window.
-3. Editing a widget in the SiteOrigin Page Builder.
-4. Editing a widget in the Appearance > Widgets page.
-5. Micemade SO widgets widgets in the Appearance > Widgets page.
-
-**== Changelog ==**
+**Changelog**
 
 = 1.0 =
 * Initial release.
