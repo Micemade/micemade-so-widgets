@@ -21,16 +21,14 @@ This plugin comes with widgets for just about everything you need to build a pro
 
 Although not required, <a href="https://wordpress.org/plugins/siteorigin-panels/" rel="nofollow">Page Builder by SiteOrigin</a> is recommended.
 
-See the all of widgets in action here -
+See the all of widgets in action here - <a href="https://micemade.com/natura" title="Micemade SO widgets Widgets Demo Site"><strong>LIVE DEMO</strong></a>
 
-<a href="http://portfoliotheme.org/siteorigin-widgets" title="Micemade SO widgets Widgets Demo Site"><strong>LIVE DEMO</strong></a> | <a href="http://portfoliotheme.org/products/livemesh-siteorigin-widgets-pro/" title="Micemade SO widgets Widgets Premium Version"><strong>PRO Version</strong></a>.
-
-The plugin comes with the following widgets. <strong>Almost all of the widgets come with a dark version.</strong> -
+The plugin comes with the following widgets. <strong>Almost all of the widgets come with a dark version.</strong>
 
 <ul>
 <li>Services that capture what you can offer for your clients/customers.</li>
-<li><a href="http://portfoliotheme.org/siteorigin-widgets/tabs-and-accordions/" title="Responsive Tabs and Accordion Widgets">Responsive Tabs</a> that function seamlessly across all devices and resolutions.</li>
-<li><a href="http://portfoliotheme.org/siteorigin-widgets/tabs-and-accordions/" title="Responsive Tabs and Accordion Widgets">Accordion/Toggle</a> that capture collapsible content panels when space is limited.</li>
+<li>Responsive Tabsthat function seamlessly across all devices and resolutions.</li>
+<li>Accordion/Toggle that capture collapsible content panels when space is limited.</li>
 <li>Heading styles to capture effective headings for your page sections.</li>
 <li>Team Profiles widgets to display all the team members.</li>
 <li>Odometer to show impressive numbers pertaining to your work or company.</li>
@@ -40,12 +38,12 @@ The plugin comes with the following widgets. <strong>Almost all of the widgets c
 <li>Testimonials slider is a responsive touch enabled slider that cycles through testimonials.</li>
 <li>Post Carousel Widget that displays your posts or custom post types as a highly responsive carousel.</li>
 <li>Generic Carousel Widget that displays lets you present a list of HTML content in a carousel.</li>
-<li><a href="http://portfoliotheme.org/siteorigin-widgets/hero-headers/" title="Hero Header Widget">Hero Header Widget</a> that lets you display any type of header content with option to set Parallax, YouTube or HTML5 video background.</li>
-<li><a href="http://portfoliotheme.org/siteorigin-widgets/livemesh-grid/" title="Micemade Grid">Grid widget</a> that displays portfolio or blog entries in a nice responsive grid. Masonry and packed options are supported.</li>
+<li>Hero Header Widget that lets you display any type of header content with option to set Parallax, YouTube or HTML5 video background.</li>
+<li>Grid widget that displays posts in a nice responsive grid. Masonry and packed options are supported.</li>
 <li>Client List widget to showcase the clients that you have handled.</li>
 <li>Pricing Plans to help get more sales.</li>
-<li><a href="http://portfoliotheme.org/siteorigin-widgets/icon-lists-buttons/" title="Icon Lists and Buttons">Flat style buttons</a> with rich set of customization options.</li>
-<li><a href="http://portfoliotheme.org/siteorigin-widgets/icon-lists-buttons/" title="Icon List widget">Icon list widget</a> that lets you use either images or icon fonts to create custom social icons list, capture payment options etc.</li>
+<li>Flat style buttons with rich set of customization options.</li>
+<li>Icon list widget that lets you use either images or icon fonts to create custom social icons list, capture payment options etc.</li>
 </ul>
 
 The <strong><a href="http://portfoliotheme.org/products/livemesh-siteorigin-widgets-pro/" title="Micemade SO widgets Widgets Pro" target="_blank">PRO version</a></strong> of the plugin comes with additional widgets and advanced features added to widgets above -
@@ -69,17 +67,15 @@ The <strong><a href="http://portfoliotheme.org/products/livemesh-siteorigin-widg
 <strong>Important: You must activate widgets you need to use from Plugins &gt; SiteOrigin Widgets so that they can be available to use.</strong>. 
 
 Do you have suggestions to make or want to be notified of important updates? Reach out to us on Twitter -
-http://twitter.com/live_mesh
+http://twitter.com/themicemade
 
 == Installation ==
 
 1. Install and activate the <strong>required plugin</strong> <a href="https://wordpress.org/plugins/so-widgets-bundle/" rel="nofollow">SiteOrigin Widgets Bundle</a>.
-2. Unzip the downloaded livemesh-so-widgets.zip file and upload to the `/wp-content/plugins/` directory or install the Micemade SO widgets Widgets plugin from WordPress repository. Activate the plugin through the 'Plugins' menu in WordPress
+2. Unzip the downloaded micemade-so-widgets.zip file and upload to the `/wp-content/plugins/` directory or install the Micemade SO widgets Widgets plugin from WordPress repository. Activate the plugin through the 'Plugins' menu in WordPress
 3. Enable all the widgets you need from Plugins &gt; SiteOrigin Widgets.
 4. If you need page builder functions, install and activate the <strong>optional plugin</strong> <a href="https://wordpress.org/plugins/siteorigin-panels/" rel="nofollow">Page Builder by SiteOrigin</a>.
-4. For Portfolio widget, install and activate the <strong>optional plugin</strong> <a href="https://wordpress.org/plugins/portfolio-post-type/" title="Portfolio Post Type">Portfolio Post Type plugin</a>. The Portfolio widget is built using custom post type registered by this plugin.
 
-Optionally, if you have <a href="http://portfoliotheme.org/products/livemesh-siteorigin-widgets-pro/" title="Micemade SO widgets Widgets Pro" target="_blank">premium version</a> installed, you can import the sample data that replicates the demo site for you by importing the file sample-data.xml file located in the plugin directory. The import option is available under Tools &gt; Import in WordPress admin.
 
 == Frequently Asked Questions ==
 
@@ -99,9 +95,6 @@ If not using a page builder, you can wrap the widget with a div of class 'mm_sow
 
 Please make sure the SiteOrigin Widgets Bundle plugin is installed/activated and enable the widgets from Plugins &gt; SiteOrigin Widgets in WordPress admin.
 
-= My portfolio does not show any items. =
-
-Pls install and activate the <a href="https://wordpress.org/plugins/portfolio-post-type/" title="Portfolio Post Type">Portfolio Post Type plugin</a> to enable custom post type Portfolio.
 
 == Screenshots ==
 1. Enable widgets in Plugins > SiteOrigin Widgets > Disabled tab.
