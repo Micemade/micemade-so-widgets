@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.mm_sow-icon-list {
+  font-size: 0;
+  /* Remove space between elements */
+  width: 100%; }
+  .mm_sow-icon-list.mm_sow-alignleft {
+    text-align: left; }
+  .mm_sow-icon-list.mm_sow-alignright {
+    text-align: right; }
+  .mm_sow-icon-list.mm_sow-aligncenter {
+    text-align: center; }
+  .mm_sow-icon-list .mm_sow-icon-list-item {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    outline: none;
+    margin: 0 0 0 15px; }
+    .mm_sow-icon-list .mm_sow-icon-list-item:first-child {
+      margin: 0; }
+    .mm_sow-icon-list .mm_sow-icon-list-item .mm_sow-icon-wrapper span {
+      display: block;
+      font-size: 32px;
+      line-height: 1;
+      color: #666;
+      -webkit-transition: color 0.3s ease-in-out 0s;
+      -moz-transition: color 0.3s ease-in-out 0s;
+      -ms-transition: color 0.3s ease-in-out 0s;
+      transition: color 0.3s ease-in-out 0s; }
+    .mm_sow-icon-list .mm_sow-icon-list-item .mm_sow-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      width: 32px;
+      height: auto;
+      margin: 0 auto;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      -ms-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s; }
+    .mm_sow-icon-list .mm_sow-icon-list-item:hover .mm_sow-image-wrapper img {
+      opacity: 0.8; }
+    .mm_sow-icon-list .mm_sow-icon-list-item:hover .mm_sow-icon-wrapper span {
+      color: #333; }
+
+.mm_sow-circular-icon-list .mm_sow-icon-list .mm_sow-icon-list-item {
+  margin: 0 0 0 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%; }
+  @media only screen and (max-width: 479px) {
+    .mm_sow-circular-icon-list .mm_sow-icon-list .mm_sow-icon-list-item {
+      margin: 0 0 20px 20px; } }
+  .mm_sow-circular-icon-list .mm_sow-icon-list .mm_sow-icon-list-item:first-child {
+    margin-left: 0; }
+  .mm_sow-dark-bg .mm_sow-circular-icon-list .mm_sow-icon-list .mm_sow-icon-list-item {
+    background: #48484a; }
+  .mm_sow-circular-icon-list .mm_sow-icon-list .mm_sow-icon-list-item .mm_sow-icon-wrapper span {
+    font-size: 22px;
+    /* Override user choice */
+    padding: 14px 0; }
+
+/*# sourceMappingURL=style.css.map */

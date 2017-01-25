@@ -1,0 +1,35 @@
+@import "../../../../../so-widgets-bundle/base/less/mixins";
+
+@gutter: 20px;
+@tablet_width: 800px;
+@tablet_gutter: 10px;
+@mobile_width: 480px;
+@mobile_gutter: 10px;
+
+.mm_sow-portfolio {
+	
+	margin-left: -(@gutter)/2;
+	margin-right: -(@gutter)/2;
+
+	@media screen and (max-width: @tablet_width) {
+		margin-left: -(@tablet_gutter)/2;
+		margin-right: -(@tablet_gutter)/2;
+	}
+
+	@media screen and (max-width: @mobile_width) {
+		margin-left: -(@mobile_gutter)/2;
+		margin-right: -(@mobile_gutter)/2;
+	}
+
+	.mm_sow-portfolio-item {
+		padding: 0 (@gutter)/2;
+
+		@media screen and (max-width: @tablet_width) {
+			padding: 0 (@tablet_gutter)/2;
+		}
+
+		@media screen and (max-width: @mobile_width) {
+			padding: 0 (@mobile_gutter)/2;
+		}
+	}
+}

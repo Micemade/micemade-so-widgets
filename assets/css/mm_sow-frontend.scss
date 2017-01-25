@@ -1,0 +1,989 @@
+@import "../../sass-libs/bourbon/bourbon";
+@import "../../sass-libs/neat/neat";
+//@import "flexbox";
+@import "grid-settings";
+@import "mm_sow-lib";
+@import "wp_default_widgets";
+@import "animate";
+
+
+/* --------------- Reset styles --------- */
+
+.panel-grid .widget {
+	overflow: initial;
+}
+
+.mm_sow-container {
+	ol, ul, ol > li, ul > li, ol:hover, ul:hover, ul > li:hover, ol > li:hover, ol > li > a, ul > li > a, ol > li > a:hover, ul > li > a:hover, img {
+		padding: 0;
+		margin: 0;
+		border: none;
+		box-shadow: none;
+		list-style: none;
+		background: none;
+		&:before, &:after {
+			display: none;
+		}
+	}
+	a {
+		text-decoration: initial;
+	}
+	img {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* ------- General styles ------------ */
+.panel-grid {
+	
+	.widget {
+		border: 0;
+	}
+
+}
+
+
+.mm_sow-container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mm_sow-center {
+	text-align: center;
+}
+
+.mm_sow-lastcol {
+	@include omega;
+}
+
+.mm_sow-container {
+	
+	.mm_sow-onecol, .mm_sow-twocol, .mm_sow-onefifthcol, .mm_sow-threecol, .mm_sow-fourcol, .mm_sow-fivecol, .mm_sow-sixcol, .mm_sow-sevencol, .mm_sow-eightcol, .mm_sow-ninecol, .mm_sow-tencol, .mm_sow-elevencol {
+		min-height: 1px; /* Prevents columns from collapsing when housing absolute elements or when lazy loading content */
+	}
+
+	@include respond-to-min(801) {
+
+		.mm_sow-onecol {
+			@include span-columns(1);
+			@include omega(12n);
+		}
+
+		.mm_sow-twocol {
+			@include span-columns(2);
+			@include omega(6n);
+		}
+
+		.mm_sow-threecol {
+			@include span-columns(3);
+			@include omega(4n);
+		}
+
+		.mm_sow-fourcol {
+			@include span-columns(4);
+			@include omega(3n);
+		}
+
+		.mm_sow-fivecol {
+			@include span-columns(5);
+		}
+
+		.mm_sow-sixcol {
+			@include span-columns(6);
+			@include omega(2n);
+		}
+
+		.mm_sow-sevencol {
+			@include span-columns(7);
+		}
+
+		.mm_sow-eightcol {
+			@include span-columns(8);
+		}
+
+		.mm_sow-ninecol {
+			@include span-columns(9);
+		}
+
+		.mm_sow-tencol {
+			@include span-columns(10);
+		}
+
+		.mm_sow-elevencol {
+			@include span-columns(11);
+		}
+	}
+
+	.mm_sow-twelvecol, .mm_sow-fullwidth {
+		float: left;
+		display: block;
+		width: 100%;
+	}
+
+}
+/*--------- Support for 5 column grid ----*/
+
+$grid-columns: 15;
+
+.mm_sow-container {
+	
+	@include respond-to-min(801) {
+
+		.mm_sow-onefifthcol {
+			@include span-columns(3);
+			@include omega(5n);
+		}
+
+	}
+}
+
+/* Tablet and Mobile responsiveness */
+
+$grid-columns: 12;
+
+.mm_sow-container {
+/* 
+	@include respond-between(480, 800) {
+
+		.mm_sow-onecol, .mm_sow-twocol, .mm_sow-onefifthcol, .mm_sow-threecol, .mm_sow-fourcol, .mm_sow-fivecol, .mm_sow-sixcol, .mm_sow-sevencol, .mm_sow-eightcol, .mm_sow-ninecol, .mm_sow-tencol, .mm_sow-elevencol {
+			@include span-columns(6);
+			@include omega(2n);
+		}
+
+	}
+ */
+	@include respond-to-max(768) {
+
+		.mm_sow-onecol, .mm_sow-twocol, .mm_sow-onefifthcol, .mm_sow-threecol, .mm_sow-fourcol, .mm_sow-fivecol, .mm_sow-sixcol, .mm_sow-sevencol, .mm_sow-eightcol, .mm_sow-ninecol, .mm_sow-tencol, .mm_sow-elevencol {
+			width: 100%;
+			clear: both;
+			@include omega;
+		}
+
+	}
+}
+
+/*-------- Remove margins on last column -----*/
+
+.mm_sow-container .mm_sow-lastcol {
+  @include omega;
+  }
+
+/*--------- No margin columns ----*/
+
+.mm_sow-container .mm_sow-zero-margin, #content .mm_sow-zero-margin {
+	@include omega;
+}
+
+.mm_sow-container {
+
+	.mm_sow-onecol.mm_sow-zero-margin, .mm_sow-twocol.mm_sow-zero-margin, .mm_sow-onefifthcol.mm_sow-zero-margin, .mm_sow-threecol.mm_sow-zero-margin, .mm_sow-fourcol.mm_sow-zero-margin, .mm_sow-fivecol.mm_sow-zero-margin, .mm_sow-sixcol.mm_sow-zero-margin, .mm_sow-sevencol.mm_sow-zero-margin, .mm_sow-eightcol.mm_sow-zero-margin, .mm_sow-ninecol.mm_sow-zero-margin, .mm_sow-tencol.mm_sow-zero-margin, .mm_sow-elevencol.mm_sow-zero-margin {
+		@include omega;
+	}
+
+	@include respond-to-min(768) {
+
+		.mm_sow-onecol.mm_sow-zero-margin {
+			width: percentage(1/12);
+		}
+
+		.mm_sow-twocol.mm_sow-zero-margin {
+			width: percentage(2/12);
+		}
+
+		.mm_sow-onefifthcol.mm_sow-zero-margin {
+			width: percentage(3/15);
+		}
+
+		.mm_sow-threecol.mm_sow-zero-margin {
+			width: percentage(3/12);
+		}
+
+		.mm_sow-fourcol.mm_sow-zero-margin {
+			width: percentage(4/12);
+		}
+
+		.mm_sow-fivecol.mm_sow-zero-margin {
+			width: percentage(5/12);
+		}
+
+		.mm_sow-sixcol.mm_sow-zero-margin {
+			width: percentage(6/12);
+		}
+
+		.mm_sow-sevencol.mm_sow-zero-margin {
+			width: percentage(7/12);
+		}
+
+		.mm_sow-eightcol.mm_sow-zero-margin {
+			width: percentage(8/12);
+		}
+
+		.mm_sow-ninecol.mm_sow-zero-margin {
+			width: percentage(9/12);
+		}
+
+		.mm_sow-tencol.mm_sow-zero-margin {
+			width: percentage(10/12);
+		}
+
+		.mm_sow-elevencol.mm_sow-zero-margin {
+			width: percentage(11/12);
+		}
+	}
+/* 
+	@include respond-between(480, 768) {
+		.mm_sow-onecol.mm_sow-zero-margin, .mm_sow-twocol.mm_sow-zero-margin, .mm_sow-onefifthcol.mm_sow-zero-margin, .mm_sow-threecol.mm_sow-zero-margin, .mm_sow-fourcol.mm_sow-zero-margin, .mm_sow-fivecol.mm_sow-zero-margin, .mm_sow-sixcol.mm_sow-zero-margin, .mm_sow-sevencol.mm_sow-zero-margin, .mm_sow-eightcol.mm_sow-zero-margin, .mm_sow-ninecol.mm_sow-zero-margin, .mm_sow-tencol.mm_sow-zero-margin, .mm_sow-elevencol.mm_sow-zero-margin {
+			width: percentage(6/12);
+		}
+	}
+ */
+	@include respond-to-max(768) {
+		.mm_sow-onecol.mm_sow-zero-margin, .mm_sow-twocol.mm_sow-zero-margin, .mm_sow-onefifthcol.mm_sow-zero-margin, .mm_sow-threecol.mm_sow-zero-margin, .mm_sow-fourcol.mm_sow-zero-margin, .mm_sow-fivecol.mm_sow-zero-margin, .mm_sow-sixcol.mm_sow-zero-margin, .mm_sow-sevencol.mm_sow-zero-margin, .mm_sow-eightcol.mm_sow-zero-margin, .mm_sow-ninecol.mm_sow-zero-margin, .mm_sow-tencol.mm_sow-zero-margin, .mm_sow-elevencol.mm_sow-zero-margin {
+			width: 100%;
+			clear: both;
+		}
+	}
+
+}
+
+// General styles for elements inside panels:
+
+.so-panel {
+	
+	.mm_sow-title {
+		span, font {
+			display: inline-block;
+			margin-right: 0.2em;
+		}
+	}
+	
+	.entry-summary  {
+		position: relative;
+	}
+
+}
+
+  
+/* --------------- Flexslider Styles -------------- */
+
+.mm_sow-container {
+  .mm_sow-thumbnailslider.mm_sow-flexslider {
+    margin: 0;
+    }
+  .mm_sow-thumbnailslider.mm_sow-flexslider .mm_sow-slide {
+    margin: 0 5px;
+    }
+  .mm_sow-flex-direction-nav {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .mm_sow-flex-direction-nav li {
+    position: initial;
+  }
+  .mm_sow-flex-direction-nav a, .mm_sow-flex-direction-nav a:hover {
+    opacity: 1;
+    text-shadow: none;
+    background: none;
+    color: #888;
+    @include mm_sow-icon-font();
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    margin: -14px 0 0;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    top: 50%;
+    text-indent: 0;
+    text-align: center;
+    color: #aaa;
+    @include vendorize(transition, all 0.3s ease-in-out 0s);
+    outline: none;
+    &:before {
+      margin: 2px;
+      vertical-align: middle;
+      display: inline;
+      font-family: inherit !important;
+      opacity: 1;
+    }
+    .mm_sow-dark-bg & {
+      color: #888;
+      &:hover {
+        color: #aaa;
+        }
+      }
+    @include respond-to-max(960) {
+      display: none; /* Let users navigate via touch */
+      }
+    }
+  .mm_sow-flex-direction-nav a.mm_sow-flex-prev {
+    left: -30px;
+    &:before {
+      content: "\e900";
+      }
+    }
+  .mm_sow-flex-direction-nav a.mm_sow-flex-next {
+    right: -30px;
+    &:before {
+      content: "\e901";
+      }
+    }
+  .mm_sow-flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    li, li:hover {
+      margin: 0 8px 0 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      }
+    li a, li a:hover {
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      @include vendorize(transition, all 0.2s ease-in 0s);
+      display: inline-block;
+      vertical-align: middle;
+      outline: none;
+      .mm_sow-dark-bg & {
+        background: #ccc;
+        border-color: #ccc;
+        }
+      }
+    li a.mm_sow-flex-active, li a:hover.mm_sow-flex-active, li a:hover {
+      background: none;
+      }
+    li a.mm_sow-flex-active, li a:hover.mm_sow-flex-active {
+      width: 14px;
+      height: 14px;
+      }
+    }
+  }
+
+/* Sleek Carousel Styles */
+
+.slick-loading .slick-list {
+  background: #fff url('./ajax-loader.gif') center center no-repeat;
+  }
+
+.mm_sow-container {
+
+	button.slick-prev, button.slick-next {
+		position: absolute;
+		opacity: 1;
+		text-shadow: none;
+		background: rgba(0,0,0,0.5);
+		border: none;
+		border-radius: 0;
+		padding: 0;
+		@include mm_sow-icon-font();
+		font-size: 0;
+		width: 1.5rem;
+		height: 3rem;
+		min-width: auto;
+		margin: -1.5rem 0 0;
+		bottom: initial;
+		left: initial;
+		right: initial;
+		top: 50%;
+		text-indent: 0;
+		text-align: center;
+		color: #aaa !important;
+		@include vendorize(transition, all 0.3s ease-in-out 0s);
+		overflow: hidden;
+		opacity: 0;
+		z-index: 10;
+
+		&:before, &:after {
+			font-size: 24px;
+		}
+
+		&:before {
+			margin: 2px;
+			vertical-align: middle;
+		}
+		
+		.mm_sow-dark-bg & {
+			color: #888 !important;
+			&:hover {
+				color: #aaa !important;
+				background: none !important;
+			}
+		}
+		@include respond-to-max(1024) {
+			display: none !important; /* Let users navigate via touch */
+		}
+		
+	} // button.slick-prev, button.slick-next
+	
+	&:hover {
+	
+		button.slick-prev, button.slick-next {
+			opacity: 0.3;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	
+	}
+	
+	button.slick-prev {
+		left: 0;
+		&:before {
+			content: "\f104";
+		}
+	}
+	button.slick-next {
+		right: 0;
+		&:before {
+			content: "\f105";
+		}
+	}
+	ul.slick-dots {
+		width: 100%;
+		position: absolute;
+		bottom: -30px;
+		text-align: center;
+		padding: 0 !important;
+		margin: 0 !important;
+		li {
+			margin: 0 8px 0 0 !important;
+			padding: 0 !important;
+			display: inline-block;
+			font-size: 0;
+		}
+		li button {
+			padding: 0;
+			background: #aaa;
+			border: 1px solid #aaa;
+			border-radius: 50%;
+			width: 12px;
+			height: 12px;
+			min-width: initial;
+			box-shadow: none;
+			transition: background 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s;
+			font-size: 0;
+			outline: none;
+			.mm_sow-dark-bg & {
+				background: #888 !important;
+				border-color: #888 !important;
+			}
+		}
+		li button:hover, li.slick-active button {
+			background: none !important;
+			border-color: #aaa !important;
+			transform: scale(1.2);
+		}
+		
+	
+	} // ul.slick-dots
+	
+} //.mm_sow-container 
+
+/* -------- Widget separator headline ------------ */
+
+.mm_sow-widget-heading {
+	@include mm_sow-heading-style();
+	font-size: 40px;
+	line-height: 52px;
+	text-align: center;
+	@include respond-to-max(767) {
+		font-size: 32px;
+		line-height: 44px;
+	}
+}
+
+/*------------- Powertip Tooltip ----------- */
+
+/* PowerTip Plugin */
+#powerTip {
+	cursor: default;
+	background-color: #333;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 6px;
+	color: #fff;
+	display: none;
+	padding: 10px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 2147483647;
+}
+#powerTip:before {
+	content: "";
+	position: absolute;
+}
+#powerTip.n:before, #powerTip.s:before {
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	left: 50%;
+	margin-left: -5px;
+}
+#powerTip.e:before, #powerTip.w:before {
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	margin-top: -5px;
+	top: 50%;
+}
+#powerTip.n:before {
+	border-top: 10px solid #333;
+	border-top: 10px solid rgba(0, 0, 0, 0.8);
+	bottom: -10px;
+}
+#powerTip.e:before {
+  border-right: 10px solid #333;
+  border-right: 10px solid rgba(0, 0, 0, 0.8);
+  left: -10px;
+  }
+#powerTip.s:before {
+  border-bottom: 10px solid #333;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+  top: -10px;
+  }
+#powerTip.w:before {
+  border-left: 10px solid #333;
+  border-left: 10px solid rgba(0, 0, 0, 0.8);
+  right: -10px;
+  }
+#powerTip.ne:before, #powerTip.se:before {
+  border-right: 10px solid transparent;
+  border-left: 0;
+  left: 10px;
+  }
+#powerTip.nw:before, #powerTip.sw:before {
+  border-left: 10px solid transparent;
+  border-right: 0;
+  right: 10px;
+  }
+#powerTip.ne:before, #powerTip.nw:before {
+  border-top: 10px solid #333;
+  border-top: 10px solid rgba(0, 0, 0, 0.8);
+  bottom: -10px;
+  }
+#powerTip.se:before, #powerTip.sw:before {
+  border-bottom: 10px solid #333;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+  top: -10px;
+  }
+#powerTip.nw-alt:before, #powerTip.ne-alt:before,
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+  border-top: 10px solid #333;
+  border-top: 10px solid rgba(0, 0, 0, 0.8);
+  bottom: -10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  left: 10px;
+  }
+#powerTip.ne-alt:before {
+  left: auto;
+  right: 10px;
+  }
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+  border-top: none;
+  border-bottom: 10px solid #333;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+  bottom: auto;
+  top: -10px;
+  }
+#powerTip.se-alt:before {
+  left: auto;
+  right: 10px;
+  }
+
+
+/* --------------- Button CSS -------------------- */
+
+input.mm_sow-button, button.mm_sow-button, a.mm_sow-button, .mm_sow-button:active, .mm_sow-button:visited {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 16px 40px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #f94213;
+  color: #fefefe;
+  outline: none;
+  @include vendorize(transition, all 0.4s ease-in-out 0s);
+  &.mm_sow-rounded {
+    border-radius: 999px;
+    }
+  &.mm_sow-large {
+    padding: 20px 60px;
+    }
+  &.mm_sow-small {
+    padding: 12px 25px;
+    font-size: 11px;
+    }
+  &:hover {
+    background-color: #f9633e;
+    color: #fefefe;
+    }
+  }
+$skin-names: ("black", "blue", "cyan", "green", "orange", "pink", "red", "teal");
+$color-collection: (#363636, #46a5d5, #57c0dc, #00a57d, #e87151, #dd5679, #da4f49, #28c2ba);
+
+@for $i from 0 to length($skin-names) {
+  $skin-name: nth($skin-names, $i+1);
+  $skin-color: nth($color-collection, $i+1);
+  .mm_sow-button.mm_sow-#{$skin-name} {
+    background-color: $skin-color;
+    }
+  .mm_sow-button.mm_sow-#{$skin-name}:hover {
+    background-color: lighten($skin-color, 5%);
+    }
+  }
+.mm_sow-button.mm_sow-trans {
+  color: #333;
+  background-color: transparent; /* IE */
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #a5a5a5;
+  &:hover {
+    background-color: #fff;
+    color: #333 !important;
+    border-color: #fff;
+    }
+  }
+.mm_sow-button.mm_sow-semitrans {
+  color: #fff;
+  background-color: transparent; /* IE */
+  background-color: rgba(125, 125, 125, 0.5);
+  &:hover {
+    background-color: #fff;
+    color: #333 !important;
+    }
+  }
+  
+/* --------------- WooCommerce CSS -------------------- */
+ 
+.mm_sow-widget-area {
+	@extend %clear;
+}
+
+ 
+/* --------------- WooCommerce CSS -------------------- */
+span.price {
+    font-size: 1.2em;
+    font-style: italic;
+    opacity: 0.8;
+    line-height: 1;
+	
+	.product_list_widget & {
+		font-size: 1.1em;
+	}
+	
+}
+
+
+.so-panel {
+	
+	.product_list_widget {
+		
+		li {
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+		
+		.product-image {
+			float: left;
+			width: 30%;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		
+		}
+		
+		.product-info {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 25%;
+			padding: 15px;
+			background: rgba(255,255,255,0.85);
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+			right: 0;
+			border-radius: 3px;
+			
+			h5 {
+				margin-top: 0px;
+				margin-bottom: 5px;
+			}
+			
+			
+		}
+	
+	} //.product_list_widget
+	
+}
+
+
+// WC, YITH Wishlist buttons:
+.mm_sow-buttons-holder {
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	align-content: stretch;
+	justify-content: space-around;
+	overflow: hidden;
+	
+	.button-cell {
+		flex-grow: 0;
+		flex: 1 0 0;
+		height: 100%;
+		
+		&:last-child {
+			a:after { display: none; }
+		}
+	}
+	
+	.button-cell  * {
+		padding: 0;
+		position: relative;
+		height: 100%;
+		margin-top: 0;
+	}
+	a {
+		
+		display: block;
+		margin-bottom: 0;
+		background: #fff;
+		border-radius: 0 !important;
+		
+		.fa {
+			top: 50%;
+			position: absolute;
+			margin-left: -10px;
+			margin-top: -10px;
+			opacity: 0.8;
+			font-size: 1.25rem !important;
+			height: auto;
+			color: #525252;
+		}
+		&.loading {
+			
+			.fa {
+				animation: fa-spin 2s infinite linear;
+				&:before {
+					content: "\f110";
+				}
+			}
+		
+		}
+		
+		&:after {
+			content: "";
+			position: absolute;
+			height: 20px;
+			display: block;
+			width: 1px;
+			right: 0;
+			border-right-width: 1px;
+			border-right-style: dotted;
+			top: 50%;
+			transform: translateY(-50%);
+			opacity: 0.6;
+			z-index: 2;
+		}
+		
+		&.added_to_cart {
+			position: absolute;
+			font-size: 11px;
+			text-transform: uppercase;
+			font-weight: bold;
+			bottom: 0;
+			height: auto;
+			left: 0;
+			right: 0;
+			background: transparent !important;
+			&:after { display: none; } // <-- no deco border
+		}
+		
+	}
+
+	
+	.yith-wcwl-add-to-wishlist {
+		
+		position: relative;
+		
+		.ajax-loading {
+			position: absolute;
+			width: 20px !important;
+			height: 20px !important;
+			top: 50%;
+			left: 50%;
+			margin:{
+				left: -10px !important;
+				top: -10px !important;
+			}
+			font-size: 1.25rem !important;
+			z-index: 2;
+			animation: fa-spin 2s infinite linear;
+			
+		} // ajax-loading
+		
+	} // add-to-wihlist
+	
+
+} //.item-buttons-holder
+
+.mm_sow-qv-overlay {
+	background-color: rgba( #000, 0.5 );
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1003;
+	overflow: auto;
+	
+	.mm_sow-qv-holder {
+		position: absolute;
+		top:50%;
+		left: 15%;
+		right: 15%;
+		background-color: #fff;
+		overflow:hidden;
+		box-shadow: 0 0 20px rgba(0,0,0,0.3);
+		
+		
+		@include respond-to-max(768) {
+			left: 10% !important;
+			right: 10% !important;			
+		}
+		
+		@include respond-to-max(480)  {
+			left: 30px !important;
+			right: 30px !important;			
+		}
+		
+		.mm_sow-qv-wrapper {
+			position: relative;
+			padding: 50px;
+			opacity: 0;
+			margin-top:0;
+		
+			.images, 
+			.summary {
+				width:50%;
+				height: auto;
+				float: left;
+				margin-bottom: 0;
+				@include respond-to-max(768) {
+					clear: both;
+					width:100% !important;
+					.inner-wrap {
+						padding-top: 30px;
+						padding-left: 0;
+					}
+					
+				} // media
+				
+			} // .image, .summary
+			
+			h4 {
+				margin: 0 0 1.5rem;
+				span { font-size: 200%; }
+			}
+			
+			.inner-wrap {
+				padding-left: 30px;
+				margin: 0;
+			}
+			
+			@include clearfix;
+		} 
+		
+		.mm_sow-remove {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			transform: scale(1.5);
+			opacity: 0.5;
+			
+			&:hover {
+				cursor: pointer;
+				opacity: 0.75;
+			}
+		}
+
+	} // mm_sow-qv-holder
+	
+} // .mm_sow-qv-overlay
+.mm_sow-loading {
+	
+	padding: 15px ;
+	text-align: center;
+	font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+
+	 > * { vertical-align: middle; }
+	
+	span {
+		margin-left: 10px ; 
+	}
+	.fa {
+		font-size: 16px;
+		width: 16px;
+		height: 16px;
+	}
+}
+/* --------------- end WooCommerce CSS -------------------- */
+
+/* --------------- SO Widgets additional CSS -------------------- */
+
+.sow-social-media-button {
+    transition: all 0.5s;
+	transform: scale(1,1);
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+
+/* --------------- end SO Widgets additional CSS -------------------- */
+
+/* --------------- Third party (plugins) CSS -------------------- */
+.wpcf7-form {
+	
+	label {
+		font-size: 12px;
+		line-height: 2;
+	}
+	input, textarea {
+		font-size: 14px;
+	}
+	.mm_sow-dark-bg & {
+		label, input, textarea {
+			color: #e7e7e7;
+		}
+	}
+}

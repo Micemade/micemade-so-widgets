@@ -1,0 +1,78 @@
+  @import "../../../../../so-widgets-bundle/base/less/mixins";
+
+@height: 100vh;
+@tablet_width: 768px;
+@tablet_height: 100vh;
+@mobile_width: 480px;
+@mobile_height: 100vh;
+
+@img_size: contain;
+@overlay_color: #000000;
+@text_color: #ffffff;
+.cont {
+
+	height: @height;
+
+	@media screen and (max-width: @tablet_width) {
+		height: @tablet_height
+	}
+
+	@media screen and (max-width: @mobile_width) {
+		height: @mobile_height
+	}
+	
+}
+.slide__img-wrapper {
+	background-size: @img_size;
+}
+.slide__bg-dark {
+	@result: fade( @overlay_color, 80%);
+	background-color: @result;
+}
+
+.slide__title,
+.slide__title h2,
+.slide__title .price,
+.slide__postcontent-wrap,
+.slide__title .mm_sow-entry-meta span,
+.slide__title .mm_sow-entry-meta a {
+	color: @text_color !important;
+}
+.slide__close:after, .slide__close:before {
+	background-color: @text_color !important;
+}
+.slide__title .price {
+	@btc: fade( @text_color, 50%);
+	border-top-color: @btc;
+}
+
+@numslides: 3;
+@imgspeed: 1500ms;
+@bgspeed: 750ms;
+
+.loopingClass (@index) when (@index > 0) {
+	
+	.slide--@{index} {
+		
+		transform: translate3d((-100% / @numslides) * (@numslides - (@index - 1)), 0, 0);
+		transition: transform @bgspeed (@bgspeed * ((@index - 1) * 1.3));
+		 
+		.slide__bg {
+			transform: scale(0, 1);
+			transition: (@bgspeed * 2) (@bgspeed * ((@index - 1) * 1.3 )) ;
+		}
+		
+		.slide__img-wrapper {
+			transform: translate3d( -(50% - ((100% / @numslides)/2)), 0, 0 );
+			transition: @imgspeed (@bgspeed * ((@index - 1) * 1.3));
+		}
+		
+		
+	}
+	
+	.loopingClass(@index - 1);
+}
+.active {
+	.loopingClass( @numslides );
+}
+

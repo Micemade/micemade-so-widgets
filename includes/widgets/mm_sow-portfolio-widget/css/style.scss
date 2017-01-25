@@ -1,0 +1,355 @@
+@import "../../../../assets/css/mm_sow-lib";
+
+.mm_sow-portfolio-wrap {
+	
+	@extend %clear;
+	
+	.mm_sow-portfolio-header {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mm_sow-heading {
+		@include mm_sow-heading-style();
+		text-align: left;
+		display: inline-block;
+		font-size: 32px;
+		margin-bottom: 30px;
+		.mm_sow-dark-bg & {
+			color: #e5e5e5;
+		}
+	}
+	
+	.mm_sow-taxonomy-filter {
+		display: inline-block;
+		position: relative;
+		margin: 0;
+		padding: 20px 0;
+		
+		.mm_sow-dark-bg & {
+			border-color: #666;
+		}
+		@include respond-to-max(800) {
+			display: block;
+			float: none;
+			margin-bottom: 30px;
+		}
+		
+		.mm_sow-filter-item {
+			display: inline-block;
+			padding: 0;
+			font-style: italic;
+			font-size: 0.84em;
+			text-transform: uppercase;
+			
+			@include respond-to-max(479) {
+				margin-right: 8px;
+			}
+			
+			a {
+				padding: 8px 15px ;
+				display: block;
+				@include mm_sow-transition();
+				
+				@include respond-to-max(479) {
+					padding: 0 10px 8px;
+				}
+			}
+			&.mm_sow-active {
+				background: rgba(150,150,150,.2);
+				border-radius: 3px;
+				.mm_sow-dark-bg & {
+					background: rgba(255,255,255,.3);
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			
+		} //.mm_sow-filter-item
+		
+	} // .mm_sow-taxonomy-filter
+	
+	.mm_sow-portfolio-header {
+		
+		&.align_left, &.align_right {
+			display: table;
+			table-layout: auto;
+			
+			.mm_sow-heading, .mm_sow-taxonomy-filter {
+				display: table-cell;
+				vertical-align: middle;
+				float: none;
+			}
+		}
+		&.center {
+			.mm_sow-heading, .mm_sow-taxonomy-filter {
+				display: block;
+				text-align: center;
+			}
+		}
+		&.align_left {
+			.mm_sow-heading  {
+				text-align: left;
+			}
+			.mm_sow-taxonomy-filter {
+				text-align: right;
+			}
+		}
+		&.align_right {
+			.mm_sow-heading  {
+				text-align: right;
+			}
+			.mm_sow-taxonomy-filter {
+				text-align: left;
+			}
+		}
+	}
+
+	
+	.mm_sow-portfolio {
+		
+		@extend %clear;
+		
+		.mm_sow-portfolio-item {
+			margin-bottom: 30px;
+			@include respond-to-max(1024) {
+				margin-bottom: 20px;
+			}
+			&.mm_sow-zero-margin {
+				margin: 0;
+			}
+			article {
+				margin: 0 0 20px!important;
+				padding: 0;
+				border: none;
+				background: none;
+				box-shadow: none;
+				
+				.mm_sow-buttons-holder {
+					opacity: 0;
+					transform: scale(1.02);
+					transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+				}
+				
+				&:hover {
+					box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+					.mm_sow-buttons-holder {
+						opacity: 1;
+						transform: scale(1)
+					}
+				}
+				
+			}
+			.mm_sow-item-image {
+				position: relative;
+				overflow: hidden;
+				
+				img {
+					display: block;
+					@include mm_sow-transition();
+					
+					
+					@extend %clear;
+				}
+				
+				> a {
+					@extend %clear;
+				}
+				
+				.mm_sow-image-overlay {
+					position: absolute;
+					left: 0;
+					top: 0;
+					overflow: hidden;
+					width: 100%;
+					height: 100%;
+					background: #000;
+					filter: alpha(opacity=0);
+					-moz-opacity: 0;
+					opacity: 0;
+					@include mm_sow-transition(opacity);
+					
+				} // .mm_sow-image-overlay
+				
+				.mm_sow-image-info {
+					display: block;
+					z-index: 120;
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					text-align: center;
+					opacity: 0;
+					filter: alpha(opacity=0);
+					@include mm_sow-transition(opacity);
+					
+					.mm_sow-entry-info {
+						text-align: center;
+						display: block;
+						position: absolute;
+						height: 82px;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						width: 100%;
+					} // .mm_sow-entry-info
+					
+					small {
+						color: #ccc;
+						font-style: italic;
+						display: block;
+						margin-bottom: -1em;
+					}
+					
+					.mm_sow-post-title {
+						padding: 10px;
+						margin: 0;
+						color: #fff;
+					  
+						@include respond-to-max(1024) {
+						font-size: 18px;
+						line-height: 26px;
+						}
+						a {
+							display: inline;
+							color: #fff;
+							@include mm_sow-transition(all, 0.3s);
+							border-bottom: 1px solid transparent;
+							&:hover {
+								border-bottom: 2px solid #ccc;
+							}
+						}
+					}
+					
+					.mm_sow-terms {
+						
+						@include term-meta-style();
+						
+					}// .mm_sow-terms
+					
+				} //.mm_sow-image-info
+				
+				&:hover {
+					
+					background: rgba(0, 0, 0, 0.3);
+
+					.mm_sow-image-info {
+					opacity: 1;
+					}
+					.mm_sow-image-overlay {
+					opacity: 0.5;
+					}
+					
+					img {
+					
+						@include special-hover-effect();
+					}
+				}
+				
+			} // .mm_sow-item-image
+			
+			.mm_sow-entry-text-wrap {
+				position: relative;
+				text-align: center;
+				max-width: 650px;
+				margin: 0 auto;
+				padding: 20px;
+				
+				.mm_sow-post-title {
+				
+					@include mm_sow-heading-style();
+					margin-bottom: 10px;
+					
+					&:after, &:before {
+						display: none;
+					}
+					a {
+						color: #333333;
+						@include mm_sow-transition();
+						&:hover {
+							color: #888;
+						}
+					}
+				} // .entry-title
+				
+				.entry-summary {
+					p {
+						font-size: 13px;
+						line-height: 1.8;
+					}
+				}
+				
+			} //.mm_sow-entry-text-wrap
+			
+			.entry-title {
+				font-size: 22px;
+				line-height: 26px;
+				font-weight: normal;
+				margin-bottom: 10px;
+				
+				&:after, &:before {
+					display: none;
+				}
+				
+				a {
+					@include mm_sow-transition();
+					color: #333;
+					
+					&:hover {
+						color: #888;
+					}
+				}
+				.mm_sow-dark-bg & {
+					a {
+						color: #e0e0e0;
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			} // .entry-title
+			
+			.mm_sow-entry-meta {
+				
+				@include entry-meta-style();
+				
+			} //.mm_sow-entry-meta
+			
+			.entry-summary {
+				margin: 15px auto 0;
+				padding: 0;
+				&:before {
+					width: 35px;
+					height: 1px;
+					background: #aaa;
+					display: block;
+					content: "";
+					text-align: center;
+					margin: 0 auto 15px;
+				}
+				
+				.readmore {
+					margin-top: 2em;
+				}
+				
+				.mm_sow-dark-bg & {
+					color: #bbb;
+					&:before {
+						background: #505050;
+					}
+					
+				}
+				
+			} //.entry-summary
+			
+			
+			
+		} // .mm_sow-portfolio-item
+		
+	} // .mm_sow-portfolio
+	
+} // .mm_sow-portfolio-wrap 

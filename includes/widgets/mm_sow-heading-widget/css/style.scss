@@ -1,0 +1,147 @@
+
+@import "../../../../assets/css/mm_sow-lib";
+
+.mm_sow-heading {
+	
+	text-align: center;
+	margin: 0 auto;
+	max-width: 640px;
+	
+	.mm_sow-text {
+		font-size: 16px;
+		font-style: italic;
+		letter-spacing: -0.03em;
+		margin: 0 auto;
+		@include respond-to-max(767) {
+			font-size: 15px;
+		}
+	}
+	&.mm_sow-alignleft, &.mm_sow-alignright {
+		margin: 0;
+		.mm_sow-text {
+			margin: 0;
+		}
+	}
+}
+
+.mm_sow-heading {
+	
+	.mm_sow-title {
+
+		margin: 0 auto 20px;
+		color: #333;
+		
+		@include respond-to-max(767) {
+			font-size: 24px;
+			line-height: 1.2;
+		}
+	}
+	
+	.mm_sow-subtitle {
+		margin: 0 auto 5px;
+		color: #888;
+		font-size: 20px;
+		line-height: 20px;
+		position: relative;
+		display: inline-block;
+		padding: 0 10px;
+		
+		@include respond-to-max(767) {
+			font-size: 12px;
+			line-height: 1.2;
+		}
+	}
+	
+	.mm_sow-heading-image {
+		width: 100%;
+		height: 50px;
+		display: block;
+		background-size: initial;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-top: -20px;
+	} 
+	
+	
+	.mm_sow-dark-bg  & {
+		.mm_sow-title {
+			color: #e5e5e5 !important;
+		}
+		.mm_sow-subtitle {
+			color: #B0B0B0;
+		}
+		.mm_sow-text {
+			color: #d6d6d6;
+		}
+	}
+
+	&.mm_sow-alignleft, &.mm_sow-alignright {
+		.mm_sow-title {
+			padding: 0 0 20px;
+			margin-bottom: 0;
+		}
+		.mm_sow-subtitle {
+			padding: 0 0 5px;
+			margin-bottom: 0;
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+	&.mm_sow-alignleft {
+		text-align: left;
+		
+		.mm_sow-heading-image {
+			background-position: left;
+		}
+	}
+	&.mm_sow-alignright {
+		text-align: right;
+		
+		.mm_sow-heading-image {
+			background-position: right;
+		}
+	}
+}
+
+
+.mm_sow-heading.mm_sow-style3 {
+	margin: 0 auto 30px;
+	
+	.mm_sow-title {
+
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include bottom-line(35, 1, #aaa);
+		
+		&:after {
+			margin: 10px auto 20px;
+			.mm_sow-dark-bg & {
+				background: #909090;
+			}
+		}
+		@include respond-to-max(767) {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	&.mm_sow-alignleft, &.mm_sow-alignright {
+		margin: 0 0 30px;
+		.mm_sow-title:after {
+			transform: none;
+		}
+	}
+	&.mm_sow-alignleft {
+		.mm_sow-title:after {
+			left: 0;
+			right: auto;
+		}
+	}
+	&.mm_sow-alignright {
+		.mm_sow-title:after {
+			right: 0;
+			left: auto;
+		}
+	}
+}

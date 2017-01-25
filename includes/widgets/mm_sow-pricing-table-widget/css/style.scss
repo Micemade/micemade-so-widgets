@@ -1,0 +1,181 @@
+@import "../../../../assets/css/mm_sow-lib";
+
+
+/* ---------- Pricing table --------- */
+
+.mm_sow-pricing-table .mm_sow-pricing-plan {
+  float: left;
+  padding: 10px;
+  }
+
+.mm_sow-center {
+  text-align: center;
+  }
+
+.mm_sow-pricing-table {
+  padding: 0;
+  margin: 0;
+  .mm_sow-top-header {
+    padding: 15px 0;
+    background-color: #494949;
+    border-bottom: 1px solid #2c2b2b;
+    h3 {
+      @include mm_sow-heading-style();
+      font-size: 20px;
+      line-height: 32px;
+      color: #fefefe;
+      margin: 0;
+      }
+    img {
+      margin-top: 15px;
+      }
+    .mm_sow-tagline {
+      display: block;
+      font-size: 15px;
+      line-height: 24px;
+      color: #EDEDED;
+      text-transform: none;
+      text-align: center;
+      margin-bottom: 5px;
+      }
+    }
+  .mm_sow-pricing-plan {
+    background: #fff;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    -moz-transition: all 0.1s ease-in-out 0s;
+    -ms-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+    margin-bottom: 30px;
+    &:hover {
+      .mm_sow-purchase {
+        background: #e5e5e5;
+        }
+      }
+    .mm_sow-plan-price {
+      color: #fff;
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 700;
+      margin: 0;
+      span {
+        font-size: 22px;
+        line-height: 32px;
+        }
+      }
+    }
+  .mm_sow-plan-header {
+    padding: 30px 0 30px;
+    background-color: #494949;
+    }
+  .mm_sow-plan-price {
+    .mm_sow-text {
+      display: inline-block;
+      padding: 6px 25px;
+      border-radius: 25px;
+      background: #2C2B2B;
+      }
+    sup {
+      font-size: 18px;
+      line-height: 32px;
+      vertical-align: top;
+      margin-right: 2px;
+      position: static;
+      }
+    }
+  .mm_sow-plan-details {
+    padding: 15px 0;
+    margin: 0;
+    border: 1px solid #eee;
+    .mm_sow-pricing-item {
+      list-style: none;
+      display: block;
+      padding: 6px;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      text-align: center;
+      i {
+        color: #777;
+        font-size: 18px;
+        display: inline;
+        margin-right: 8px;
+        }
+      .mm_sow-title {
+        color: #838383;
+        margin-bottom: 10px;
+        }
+      .mm_sow-value-wrap {
+        display: block;
+        &:after {
+          position: relative;
+          content: "";
+          background: #ddd;
+          width: 120px;
+          height: 1px;
+          display: block;
+          margin: 12px auto 0;
+          }
+        }
+      .mm_sow-value {
+        color: #444;
+        font-size: 24px;
+        line-height: 32px;
+        display: inline;
+        }
+      s {
+        color: #b4c9d3;
+        }
+      &:last-child .mm_sow-value-wrap:after {
+        display: none;
+        }
+      }
+    }
+  .mm_sow-purchase {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 0 auto;
+    background: #f1f1f1;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    -moz-transition: all 0.1s ease-in-out 0s;
+    -ms-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    a {
+      padding: 12px 25px;
+      border-radius: 5px;
+      letter-spacing: 0;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 6px;
+      font-weight: bold;
+      }
+    }
+  .mm_sow-pricing-plan.mm_sow-highlight {
+    background: #f5f5f5;
+    margin-top: -10px;
+    .mm_sow-plan-details {
+      border-color: #e5e5e5;
+    }
+    .mm_sow-top-header {
+      padding: 20px 0;
+      }
+    .mm_sow-pricing-table .mm_sow-top-header h3 {
+      color: #28c2ba !important;
+      }
+    .mm_sow-purchase {
+      padding: 20px 0;
+      background-color: #e5e5e5;
+      border-color: #ddd;
+      }
+    }
+  }

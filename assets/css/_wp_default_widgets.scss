@@ -1,0 +1,293 @@
+/**
+ *	SECONDARY CONTENT - styles for widgets, sidebars
+ *
+ *	Table of contents (with elements hierarchy):
+ *  
+ *	- WIDGET AREA GENERAL
+ *	---- aside, section
+ *	---- Widget titles
+ *	---- img, p, ul, ol elements for layout alignment (alignleft, alignight)
+ *	---- General widget ul, ol styling
+ *	---- Custom menu icons
+ *	---- Footer widgets
+ *	-------- aside
+ *	-------- widget titles
+ *	-------- ul, .textwidget elements
+ *	---- Bottom area widgets
+ *	-------- aside, h4, vertical-layout
+ *	Individual widgets
+ *	---- .widget_latest_custom_posts
+ *	---- Calendar widget
+ *	---- Custom menu widget
+ *	---- Categories widget
+ *	---- Widget recent posts
+ *	---- Social widget
+ *	---- Tagcloud widget
+ *	---- Text widget
+ *	---- Empty sidebar notice
+ */
+// WIDGET AREA GENERAL
+.so-panel
+{
+
+	// General alignment
+	&.float_right { text-align: right }
+	&.float_left { text-align: left }
+
+
+	
+	img, p, ul, ol {
+
+		
+		&.alignleft {
+			float: left;
+			text-align:left;
+		}
+		&.alignright {
+			float: right;
+			text-align: right;
+		}
+		&.aligncenter {
+			float: none;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		
+	}
+	// General widget ul, ol styling
+	ul, ol {
+
+		li {
+			position: relative;
+			padding: 8px 0;
+			display: block;
+			border-bottom: 1px solid rgba(#999, 0.2);
+			
+			&:last-child {
+				border: none;
+			}
+			
+			a {
+				display: inline-block;
+			}
+			
+			// TWEAKS ONLY FOR FOOTER WIDGETS:
+			#footerwidgets & {
+				padding: (8px) 0 !important;
+				
+				h4 {
+					margin-bottom: 8px;
+				}
+				
+				
+				.star-rating {
+					opacity: 0.6;
+					position: relative;
+					margin: 2px 0;
+				}
+			}
+			
+		} // li
+	} // ul, ol
+	
+	// #################################
+	
+	//
+	// INDIVIDUAL WIDGETS
+	//
+	&.widget_search {
+	
+		input[type="search"] {
+			border-radius: 0 0 22px 0;
+		}
+	
+	}
+	&.widget_recent-posts {
+		
+		.post-date {
+			display: block;
+			font-size: 11px;
+			opacity: 0.7;
+			font-style: italic;
+		}
+	}
+	// #################################
+	
+	// Calendar widget
+	&.float_right {
+		.widget_calendar {
+			#calendar_wrap {
+				float: right;
+				caption {
+					text-align: right;
+				}
+			}
+		}	
+	}
+
+	&.float_left {
+		#calendar_wrap {
+			float: left;
+			caption {
+				text-align: left;
+			}
+		}
+	}
+	// END Caledar widget
+	// #################################
+	
+	// Custom menu widget
+	&.float_right {
+		.widget_nav_menu {
+			.menu-item-has-children {
+				> .sub-menu {
+					margin-top: 16px;
+					a { margin-right: 16px }
+					.sub-menu {
+						a { margin-right: 32px }
+					}
+				}
+				
+			}
+		}	
+	}
+
+	&.float_left {
+		.widget_nav_menu {
+			.menu-item-has-children {
+				> .sub-menu {;
+					a { margin-left: 16px }
+					.sub-menu {
+						a { margin-left: 32px }
+					}
+				}
+				
+			}
+		}	
+	}
+	// END Custom menu widget
+	// #################################
+	
+	
+	// Categories widget
+	.widget_categories, .widget_pages {
+		.screen-reader-text { display: none; }
+	}
+	
+	&.float_right {
+		.widget_categories, .widget_pages, .widget_product_categories {
+			.children {
+				display: none;
+				margin:0;
+				margin-top: 8px;
+				margin-bottom: -(8px);
+				padding-right: 1.25rem;
+				border-right: 1px solid rgba(#999, 0.3);
+				a { 
+					
+					&:before {
+						content:"--";
+						display: block;
+						position: absolute;
+						right: 0;
+					}
+				}
+				
+				li {
+					padding-right: 16px;
+					&:last-child {
+						border: 0;
+					}
+				}
+				
+				.children {
+					a { 
+						padding-right: 32px;
+						&:before {
+							content:"----";
+							display: block;
+							
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&.float_left {
+		.widget_categories, .widget_pages, .widget_product_categories  {
+			.children {
+				display: none;
+				margin: 0;
+				margin-top: 8px;
+				margin-bottom: -(8px);
+				padding-left: 16px;
+				border-bottom: 1px solid rgba(#999, 0.2);
+				a { 
+					
+					&:before {
+						content:"--";
+						display: block;
+						position: absolute;
+						left: 0;
+					}
+				}
+				li {
+					padding-left: 16px;
+					&:last-child {
+						border: 0;
+					}
+				}
+				.children {
+					a { 
+						padding-left: 32px;
+						&:before {
+							content:"----";
+							display: block;
+							
+						}
+					}
+				}
+			}
+		}	
+	}
+	// END Categories and pages widget
+	// #################################
+	
+	// Widget recent posts
+	.widget_recent_entries {
+		.post-date {
+			display: block;
+			opacity: 0.5;
+			font-style: italic;
+			font-size: 0.86rem;
+		}
+	}
+	// END Widget recent posts
+	// #################################
+	
+	
+	
+	
+	// Tagcloud widget
+	.tagcloud {
+		.button {
+			font-size: 0.7rem !important;
+			margin-bottom: 3px;
+		}
+	} 
+	// END Tagcloud widget
+	// #################################
+	
+	
+	// Text widget
+	.textwidget {
+		
+	}
+	// END Text widget
+	// #################################
+	
+		
+}// .widget-area

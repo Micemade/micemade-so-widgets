@@ -1,0 +1,2400 @@
+# Copyright Micemade (c) {2017}
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/index\n"
+"POT-Creation-Date: 2017-01-24 14:40:57+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: admin/admin-ajax.php:56
+msgid "Sorry, an error occurred. Please refresh the page."
+msgstr ""
+
+#: admin/admin-ajax.php:82
+msgid "Sorry, an unknown error occurred..."
+msgstr ""
+
+#: admin/admin-ajax.php:123
+msgid "Saving plugin settings"
+msgstr ""
+
+#: admin/admin-ajax.php:124
+msgid "Plugin settings Saved"
+msgstr ""
+
+#: admin/admin-ajax.php:125
+msgid "Sorry, an error occurs while saving settings..."
+msgstr ""
+
+#: admin/admin-ajax.php:128
+msgid "Resetting plugin settings"
+msgstr ""
+
+#: admin/admin-ajax.php:129
+msgid "Plugin settings resetted"
+msgstr ""
+
+#: admin/admin-ajax.php:130
+msgid "Sorry, an error occurred while resetting settings"
+msgstr ""
+
+#: admin/admin-init.php:67
+msgid "MM SO Widgets"
+msgstr ""
+
+#: admin/admin-init.php:79
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:84
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:59
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:266
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:89
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:104
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:54
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:74
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:115
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:103
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:145
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:64
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:64
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:117
+msgid "Settings"
+msgstr ""
+
+#: admin/admin-init.php:89
+msgid "Documentation"
+msgstr ""
+
+#: admin/views/admin-banner1.php:13 admin/views/admin-banner2.php:13
+#: includes/class-mm_sow-setup.php:403
+msgid "Micemade SO Widgets"
+msgstr ""
+
+#: admin/views/admin-banner1.php:13
+msgid "Plugin Documentation"
+msgstr ""
+
+#: admin/views/admin-banner2.php:13
+msgid "Plugin Settings"
+msgstr ""
+
+#: admin/views/admin-banner2.php:16
+msgid "Save Settings"
+msgstr ""
+
+#: admin/views/admin-banner2.php:18
+msgid "Reset"
+msgstr ""
+
+#: admin/views/documentation.php:36
+msgid "Welcome to"
+msgstr ""
+
+#: admin/views/documentation.php:38
+msgid ""
+"Thanks for installing %1$s! We truly appreciate the support and the "
+"opportunity to share our work with you. Please visit the tabs below to get "
+"started on using our plugin to build your site!"
+msgstr ""
+
+#: admin/views/documentation.php:47
+msgid "Help &amp; Guide"
+msgstr ""
+
+#: admin/views/documentation.php:52
+msgid "Required Plugins"
+msgstr ""
+
+#: admin/views/documentation.php:56
+msgid "FAQ &amp; Support"
+msgstr ""
+
+#: admin/views/documentation.php:111 admin/views/documentation.php:118
+#: admin/views/documentation.php:190 admin/views/documentation.php:198
+msgid "Plugins → SiteOrigin Widgets"
+msgstr ""
+
+#: admin/views/documentation.php:114 admin/views/documentation.php:188
+#: admin/views/documentation.php:200
+msgid "Micemade Widgets→Settings"
+msgstr ""
+
+#: admin/views/documentation.php:184
+msgid "Micemade Widgets"
+msgstr ""
+
+#: admin/views/documentation.php:208
+msgid "Appearance→Widgets"
+msgstr ""
+
+#: admin/views/documentation.php:833
+msgid "SiteOrigin Widgets Bundle"
+msgstr ""
+
+#: admin/views/documentation.php:836
+msgid "Install SiteOrigin Widgets Bundle"
+msgstr ""
+
+#: admin/views/documentation.php:837 admin/views/documentation.php:859
+msgid "Install Now"
+msgstr ""
+
+#: admin/views/documentation.php:841 admin/views/documentation.php:863
+msgid "Installed"
+msgstr ""
+
+#: admin/views/documentation.php:855
+msgid "SiteOrigin Page Builder"
+msgstr ""
+
+#: admin/views/documentation.php:858
+msgid "Install SiteOrigin Page Builder"
+msgstr ""
+
+#: admin/views/settings.php:34
+msgid "General"
+msgstr ""
+
+#: admin/views/settings.php:37 admin/views/settings.php:109
+#: admin/views/settings.php:114
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/views/settings.php:40
+msgid "Debugging"
+msgstr ""
+
+#: admin/views/settings.php:51
+msgid "Auto load"
+msgstr ""
+
+#: admin/views/settings.php:56
+msgid "Activate all plugin widgets"
+msgstr ""
+
+#: admin/views/settings.php:58
+msgid "You can selectively activate plugin widgets in"
+msgstr ""
+
+#: admin/views/settings.php:59
+msgid "Plugins->SiteOrigin Widgets."
+msgstr ""
+
+#: admin/views/settings.php:60
+msgid ""
+"Or you can choose to auto activate all the widgets part of this plugin by "
+"checking below."
+msgstr ""
+
+#: admin/views/settings.php:75
+msgid "Maximum wigets width"
+msgstr ""
+
+#: admin/views/settings.php:80
+msgid "Maximum widget width"
+msgstr ""
+
+#: admin/views/settings.php:85
+msgid ""
+"Enter maximum widget width. Each widget has option to discard this setting, "
+"to render full width widget (if no row padding / margin is set)"
+msgstr ""
+
+#: admin/views/settings.php:87
+msgid ""
+"Also, each row can be set to have same maximum width in Edit Row > Row "
+"Styles > Layout"
+msgstr ""
+
+#: admin/views/settings.php:116
+msgid "Please enter custom CSS for custom styling of widgets"
+msgstr ""
+
+#: admin/views/settings.php:135
+msgid "Debug Mode"
+msgstr ""
+
+#: admin/views/settings.php:140
+msgid "Enable Script Debug Mode"
+msgstr ""
+
+#: admin/views/settings.php:142
+msgid ""
+"Use unminified Javascript files instead of minified ones to help developers "
+"debug an issue"
+msgstr ""
+
+#: admin/views/settings.php:155
+msgid "System Info"
+msgstr ""
+
+#: admin/views/settings.php:161
+msgid "System Information"
+msgstr ""
+
+#: admin/views/settings.php:162
+msgid "Server setup information useful for debugging purposes."
+msgstr ""
+
+#: includes/animations.php:7
+msgid "Cheatin' huh ?."
+msgstr ""
+
+#: includes/animations.php:26
+msgid "Animation"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:40
+msgid "Row unique identifier"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:43
+msgid ""
+"Enter unique identifier, which will be used for anchor links (e.g. in "
+"\"Micemade Hero\")"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:48 includes/class-mm_sow-setup.php:188
+msgid "Limit to maximum width"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:52
+msgid "Enable max. width limit "
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:53
+msgid ""
+"Applies only to standard row layout. Row maximum width is set in plugin "
+"settings"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:58 includes/class-mm_sow-setup.php:205
+msgid "Padding for tablet"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:61 includes/class-mm_sow-setup.php:69
+msgid "Padding around the entire row."
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:66 includes/class-mm_sow-setup.php:213
+msgid "Padding for mobiles"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:76
+msgid "Margin for mobiles"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:79
+msgid "Margin around the entire row on mobile devices"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:84
+msgid "Margin for tablet"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:87
+msgid "Margin around the entire row on tablet devices"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:92
+msgid "Row margin"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:95
+msgid "Margin around the entire row."
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:104
+msgid "Dark Background?"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:107
+msgid ""
+"Indicate if this row has a dark background color. Dark color scheme will be "
+"applied for all widgets in this row."
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:113 includes/class-mm_sow-setup.php:222
+msgid "Background image position"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:119 includes/class-mm_sow-setup.php:228
+msgid "Left top"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:120 includes/class-mm_sow-setup.php:229
+msgid "Left middle"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:121 includes/class-mm_sow-setup.php:230
+msgid "Left bottom"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:122 includes/class-mm_sow-setup.php:231
+msgid "Right top"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:123 includes/class-mm_sow-setup.php:232
+msgid "Right Middle"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:124 includes/class-mm_sow-setup.php:233
+msgid "Right Bottom"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:125 includes/class-mm_sow-setup.php:234
+msgid "Center top"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:126 includes/class-mm_sow-setup.php:235
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:164
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:64
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:134
+msgid "Center"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:127 includes/class-mm_sow-setup.php:236
+msgid "Center Bottom"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:129
+msgid ""
+"This setting will only apply if \"Background Image Display\" is set to "
+"\"Fixed\" or \"Cover\"."
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:180
+msgid "Background color opacity"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:183
+msgid "Set opacity value, between 0 - 100 (only number, no units)"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:192
+msgid "Enable max. width limit"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:193
+msgid "Widget maximum width is set in plugin settings"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:197
+msgid "No bottom margin"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:201
+msgid "Set default bottom margin to zero"
+msgstr ""
+
+#: includes/class-mm_sow-setup.php:208 includes/class-mm_sow-setup.php:216
+msgid "Padding around the entire widget."
+msgstr ""
+
+#: includes/helper-functions.php:144
+msgid "Y-m-d"
+msgstr ""
+
+#: includes/helper-functions.php:151
+msgid "By "
+msgstr ""
+
+#: includes/helper-functions.php:170
+msgid "All"
+msgstr ""
+
+#: includes/helper-functions.php:175
+msgid "View all items from "
+msgstr ""
+
+#: includes/helper-functions.php:655
+msgid "Select widget area"
+msgstr ""
+
+#: includes/helper-functions.php:678
+#: includes/woocommerce-templates/content-widget-product.php:33
+msgid "No image"
+msgstr ""
+
+#: includes/helper-functions.php:688
+#: includes/widgets/mm_sow-stretcher-widget/tpl/default.php:43
+msgid "View details about"
+msgstr ""
+
+#: includes/helper-functions.php:697
+msgid "Posted in"
+msgstr ""
+
+#: includes/wc-functions.php:36
+msgid "Quick view"
+msgstr ""
+
+#: includes/wc-functions.php:189
+msgid "%s product"
+msgid_plural "%s products"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:15
+msgid "Micemade Accordion"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:17
+msgid ""
+"Displays collapsible content panels to help display information when space "
+"is limited."
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:25
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:32
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:27
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:25
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:25
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:25
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:55
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:25
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:25
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:35
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:36
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:25
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:96
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:25
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:56
+#: includes/widgets/mm_sow-sidebars-widget/mm_sow-sidebars-widget.php:38
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:25
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:36
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:25
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:25
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:25
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:25
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:25
+msgid "Title"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:30
+msgid "Choose Accordion Style"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:37
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:54
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:37
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:44
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:37
+msgid "Style 1"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:38
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:55
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:38
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:45
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:38
+msgid "Style 2"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:39
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:56
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:39
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:46
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:39
+msgid "Style 3"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:45
+msgid "Allow to function like toggle?"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:46
+msgid "Check if multiple elements can be open at the same time."
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:51
+msgid "Accordion"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:52
+msgid "Panel"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:61
+msgid "Panel Title"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:62
+msgid "The title for the panel."
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:67
+msgid "Panel Content"
+msgstr ""
+
+#: includes/widgets/mm_sow-accordion-widget/mm_sow-accordion-widget.php:68
+msgid "The collapsible content of the panel in the accordion."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:21
+msgid "Micemade Button"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:23
+msgid "Flat style buttons with rich set of customization options."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:37
+msgid "The URL to which button should point to."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:38
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:80
+msgid "Target URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:39
+msgid "http://targeturl.com"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:43
+msgid "The button title or text. "
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:44
+msgid "Button Text"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:45
+msgid "Buy Now"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:50
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:30
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:58
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:62
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:70
+msgid "Choose Icon Type"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:57
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:163
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:82
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:74
+msgid "None"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:58
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:37
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:45
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:65
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:104
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:69
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:83
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:73
+msgid "Icon"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:59
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:38
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:66
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:70
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:84
+msgid "Icon Image"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:65
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:76
+msgid "Service Image."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:74
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:85
+msgid "Service Icon."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:89
+msgid "The CSS class name for the button element."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:90
+msgid "Class"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:96
+msgid "Inline CSS styling for the button element."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:97
+msgid "Style"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:102
+msgid "The color of the button."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:103
+msgid "Color"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:105
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:174
+msgid "Default"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:106
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:38
+msgid "Custom"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:107
+msgid "Black"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:108
+msgid "Blue"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:109
+msgid "Cyan"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:110
+msgid "Green"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:111
+msgid "Orange"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:112
+msgid "Pink"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:113
+msgid "Red"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:114
+msgid "Teal"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:115
+msgid "Transparent"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:116
+msgid "Semi Transparent"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:125
+msgid "Custom color of the button."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:126
+msgid "Custom button color"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:134
+msgid "Hover color of the button."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:135
+msgid "Custom button hover color"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:140
+msgid "Button Size"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:142
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:176
+msgid "Medium"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:143
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:177
+msgid "Large"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:144
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:175
+msgid "Small"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:150
+msgid "Display rounded button?"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:155
+msgid "Open the link in new window"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:160
+msgid "Alignment of the button displayed."
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:161
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:62
+msgid "Align"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:165
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:65
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:132
+msgid "Left"
+msgstr ""
+
+#: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:166
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:66
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:133
+msgid "Right"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:17
+msgid "Micemade Carousel"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:19
+msgid "Display a collection of html elements as a carousel."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:32
+msgid "HTML Elements"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:33
+msgid "HTML Element"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:42
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:62
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:39
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:39
+msgid "Name"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:43
+msgid "The title to identify the HTML element"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:47
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:227
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:232
+msgid "Background Image"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:48
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:233
+msgid ""
+"This background image will be used as a placeholder image if YouTube or "
+"HTML5 video background option is chosen."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:54
+msgid "HTML element"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:55
+msgid "The HTML content for the carousel item."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:63
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:53
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:56
+msgid "General Settings"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:68
+msgid ""
+"Custom CSS for presentation of the HTML elements. Will be embedded inline "
+"with the page."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:76
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:135
+msgid "Carousel Settings"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:81
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:140
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:69
+msgid "Prev/Next Arrows?"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:87
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:146
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:75
+msgid "Show dot indicators for navigation?"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:92
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:151
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:80
+msgid "Autoplay?"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:93
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:152
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:81
+msgid "Should the carousel autoplay as in a slideshow."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:100
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:159
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:88
+msgid "Autoplay speed in ms"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:107
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:166
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:95
+msgid "Autoplay animation speed in ms"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:113
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:172
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:101
+msgid "Pause on mouse hover?"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:119
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:159
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:199
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:64
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:152
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:178
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:212
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:247
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:108
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:151
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:107
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:141
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:176
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:69
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:122
+msgid "Columns per row"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:128
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:167
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:207
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:187
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:220
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:255
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:116
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:149
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:184
+msgid "Columns to scroll"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:137
+msgid "Carousel height"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:138
+msgid "Height applied in desktop view."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:143
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:175
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:220
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:161
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:178
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:199
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:196
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:228
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:263
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:125
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:157
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:192
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:142
+msgid "Gutter"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:144
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:176
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:221
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:179
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:200
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:197
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:229
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:264
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:205
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:126
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:158
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:193
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:144
+msgid "Space between columns."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:150
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:284
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:168
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:203
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:175
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:132
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:164
+msgid "Responsive"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:155
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:289
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:173
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:208
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:180
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:137
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:169
+msgid "Tablet"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:181
+msgid "Carousel height on tablets"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:186
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:226
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:305
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:330
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:185
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:206
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:234
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:269
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:190
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:210
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:163
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:198
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:179
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:198
+msgid "Resolution"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:187
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:306
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:186
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:235
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:191
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:164
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:180
+msgid "The resolution to treat as a tablet resolution."
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:195
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:314
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:194
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:243
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:199
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:172
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:188
+msgid "Mobile Phone"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:215
+msgid "Carousel height on mobiles"
+msgstr ""
+
+#: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:227
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:331
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:207
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:270
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:211
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:199
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:199
+msgid "The resolution to treat as a mobile resolution."
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:15
+msgid "Micemade Clients"
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:17
+msgid "Display one or more clients in a multi-column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:30
+msgid "Clients"
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:31
+msgid "Client"
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:40
+msgid "Client Name"
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:41
+msgid "The name of the client/customer."
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:45
+msgid "Client URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:46
+msgid "The website of the client/customer."
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:50
+msgid "Client Logo"
+msgstr ""
+
+#: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:52
+msgid "The logo image for the client/customer."
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:16
+msgid "Micemade Heading"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:18
+msgid "Create heading for display on the top of a section."
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:27
+msgid "Heading title"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:28
+msgid "Title for the heading."
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:33
+msgid "Heading tag"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:36
+msgid "H1"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:37
+msgid "H2"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:38
+msgid "H3"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:39
+msgid "H4"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:40
+msgid "H5"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:41
+msgid "H6"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:47
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:30
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:37
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:30
+msgid "Choose Style"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:61
+msgid "Alignment of the heading."
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:74
+msgid "Heading title custom text size"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:78
+msgid "Add or subtract from default percentage of 100% for title size"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:83
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:87
+msgid "Header custom font color"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:89
+msgid "Heading custom font"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:95
+msgid "Divider image for title"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:96
+msgid ""
+"Upload / choose image as divider. Since it's divider, image should be "
+"horizontally narrow"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:97
+msgid "Choose image"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:98
+msgid "Set image"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:105
+msgid "Subheading"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:106
+msgid "A subtitle displayed above the title heading."
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:114
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:97
+msgid "Sub-heading custom text size"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:122
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:105
+msgid "Sub-heading custom font color"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:127
+msgid "Subheading Font"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:136
+msgid "Short Text"
+msgstr ""
+
+#: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:137
+msgid "Short text generally displayed below the heading title."
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:15
+msgid "Micemade Hero Header"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:17
+msgid "Display a hero background with video or image background."
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:30
+msgid "Header Type"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:37
+msgid "Standard"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:44
+msgid "Custom Header"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:52
+msgid "Custom text"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:57
+msgid ""
+"Custom CSS for presentation of the Custom header elements. Will be embedded "
+"inline with the page."
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:66
+msgid "Standard Header"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:74
+msgid "Header text"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:79
+msgid "Header custom text size"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:92
+msgid "Sub-heading text"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:110
+msgid "Button text"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:115
+msgid "Button URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:120
+msgid "Open URL in a new window"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:127
+msgid "Scroll to row"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:128
+msgid ""
+"Enter unique row idendifier ( set identifier in Row settings > Attributes > "
+"\"Row unique identifier\") to smooth scroll the page to that identified row."
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:133
+msgid "Background"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:138
+msgid "Background Type"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:145
+msgid "Cover Image"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:146
+msgid "Parallax Image"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:147
+msgid "YouTube Video"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:148
+msgid "HTML5 Video"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:154
+msgid "YouTube Background Video"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:164
+msgid "YouTube URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:165
+msgid ""
+"An URL of the YouTube video that will act as background video for this "
+"section."
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:170
+msgid "Choose the YouTube video quality"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:173
+msgid "High Resolution"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:178
+msgid "HD 720p"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:179
+msgid "HD 1080p"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:185
+msgid "Aspect ratio of the YouTube video"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:188
+msgid "16/9"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:189
+msgid "Auto"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:190
+msgid "4/3"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:199
+msgid "HTML5 Background videos"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:209
+msgid "MP4 Video file"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:214
+msgid "WebM Video file"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:219
+msgid "Ogg Video file"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:242
+msgid "Background Overlay"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:247
+msgid "Overlay color"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:252
+msgid "Overlay opacity"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:271
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:293
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:318
+msgid "Top padding"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:277
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:299
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:324
+msgid "Bottom padding"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:15
+msgid "Micemade Icon List"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:17
+msgid ""
+"Use images or icon fonts to create social icons list, show payment options "
+"etc."
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:44
+msgid "Icon List"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:56
+msgid "Title for the Icon."
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:61
+msgid "Icon Image."
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:70
+msgid "Icon."
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:81
+msgid "The URL to which icon/image should point to. (optional)"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:94
+msgid "Icon/Image size in pixels"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:103
+msgid "Icon color"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:113
+msgid "Icon hover color"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:123
+msgid "Open the links in new window"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:129
+msgid "Alignment"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:15
+msgid "Micemade Odometers"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:17
+msgid "Display statistics as animated odometers in a multi-column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:30
+msgid "Odometers"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:31
+msgid "Odometer"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:40
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:40
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:39
+msgid "Stats Title"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:41
+msgid "The title for the odometer stats"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:46
+msgid "Start Value"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:47
+msgid "The start value for the odometer stats."
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:52
+msgid "Stop Value"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:53
+msgid "The stop value for the odometer stats."
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:72
+msgid "Stats Image."
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:81
+msgid "Stats Icon."
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:90
+msgid "Prefix"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:91
+msgid ""
+"The prefix string for the odometer stats. Examples include currency symbols "
+"like $ to indicate a monetary value."
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:96
+msgid "Suffix"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:97
+msgid ""
+"The suffix string for the odometer stats. Examples include strings like hr "
+"for hours or m for million."
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:109
+msgid "Odometers per row"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:117
+msgid "Numbers size"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:119
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:131
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:140
+msgid "Normal"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:120
+msgid "Smaller"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:121
+msgid "Even smaller"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:122
+msgid "Bigger"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:123
+msgid "Even bigger"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:129
+msgid "Numbers weight"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:132
+msgid "Bold"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:138
+msgid "Numbers style"
+msgstr ""
+
+#: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:141
+msgid "Italic"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:15
+msgid "Micemade Piecharts"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:17
+msgid "Display statistics or skills as a percentage piechart."
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:30
+msgid "Piecharts"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:31
+msgid "Piechart"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:41
+msgid "The title for the piechart"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:46
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:45
+msgid "Percentage Value"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:47
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:46
+msgid "The percentage value for the stats."
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:59
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:51
+msgid "Bar color"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:65
+msgid "Track color"
+msgstr ""
+
+#: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:71
+msgid "Piecharts per row"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:15
+msgid "Micemade Grid"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:17
+msgid "Display posts or custom post types in a multi-column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:40
+msgid "Heading for the grid"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:45
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:48
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:47
+msgid "Posts query"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:46
+msgid ""
+"After you build the query, make sure you choose the right taxonomy below to "
+"display for your posts and filter on, based on the post type selected "
+"during build query."
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:51
+msgid "Choose the taxonomy to display and filter on."
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:52
+msgid ""
+"Choose the taxonomy information to display for posts/portfolio and the "
+"taxonomy that is used to filter the portfolio/post. Takes effect only if no "
+"taxonomy filters are specified when building query."
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:59
+msgid "Heading / taxonomy filter align"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:66
+msgid "Align left"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:67
+msgid "Centered"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:68
+msgid "Align right"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:79
+msgid "Filterable?"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:85
+msgid "Choose a layout for the grid"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:92
+msgid "Fit Rows"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:93
+msgid "Masonry"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:99
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:77
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:164
+msgid "Choose post image format"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:106
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:84
+msgid "Display post title on hover"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:112
+msgid "Display taxonomy info below the post image?"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:118
+msgid "Display post title below the post image?"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:124
+msgid "Display post excerpt/summary below the post image?"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:130
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:111
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:120
+msgid "Post Meta"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:135
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:116
+msgid "Display post author info below the post item?"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:141
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:122
+msgid "Display post date info below the post item?"
+msgstr ""
+
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:162
+msgid "Space between columns in masonry grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:15
+msgid "Micemade Posts Carousel"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:17
+msgid "Display blog posts or custom post types as a carousel"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:41
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:40
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:30
+msgid "Hide title"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:43
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:42
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:32
+msgid "Hide title on frontend (display it only in page page builder admin)"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:58
+msgid "Posts display style."
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:59
+msgid "Pick one of preredefined styles"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:69
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:62
+msgid "Choose the taxonomy to display info."
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:70
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:63
+msgid ""
+"Choose the taxonomy to use for display of taxonomy information for "
+"posts/custom post types."
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:85
+msgid "applicable only to Style 1"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:91
+msgid "Display taxonomy on hover?"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:97
+msgid "Display posts title below the post item?"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:98
+msgid "must be enabled for Style 2"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:104
+msgid "Display post excerpt/summary below the post item?"
+msgstr ""
+
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:105
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:76
+msgid ""
+"In case of WooCommerce products, excerpt is replaced with price and shop "
+"buttons"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:15
+msgid "Micemade Pricing Table"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:17
+msgid "Display pricing table in a multi-column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:30
+msgid "Pricing Table"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:31
+msgid "Pricing Plan"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:40
+msgid "Pricing Plan Title"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:41
+msgid "The title for the pricing plan"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:46
+msgid "Tagline Text"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:47
+msgid ""
+"Provide any subtitle or taglines like \"Most Popular\", \"Best Value\", "
+"\"Best Selling\", \"Most Flexible\" etc. that you would like to use for "
+"this pricing plan."
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:52
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:51
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:51
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:72
+msgid "Image"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:57
+msgid "Price Tag"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:58
+msgid "Enter the price tag for the pricing plan. HTML is accepted."
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:63
+msgid "Text for Pricing Link/Button"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:64
+msgid "Provide the text for the link or the button shown for this pricing plan."
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:69
+msgid "URL for the Pricing link/button"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:70
+msgid ""
+"Provide the target URL for the link or the button shown for this pricing "
+"plan."
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:75
+msgid "Open Button URL in a new window"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:80
+msgid "Highlight Pricing Plan"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:81
+msgid "Specify if you want to highlight the pricing plan."
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:86
+msgid "Pricing Plan Details"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:87
+msgid "Pricing Item"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:100
+msgid "Value"
+msgstr ""
+
+#: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:120
+msgid "Pricing Columns per row"
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:15
+msgid "Micemade Services"
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:17
+msgid "Create services to display in a column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:45
+msgid "Services"
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:46
+msgid "Service"
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:57
+msgid "Title of the service. (select text to use basic formatting)"
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:94
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:101
+msgid "Short description"
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:95
+msgid "Provide a short description for the service"
+msgstr ""
+
+#: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:117
+msgid "Icons color."
+msgstr ""
+
+#: includes/widgets/mm_sow-sidebars-widget/mm_sow-sidebars-widget.php:21
+msgid "Micemade Sidebars"
+msgstr ""
+
+#: includes/widgets/mm_sow-sidebars-widget/mm_sow-sidebars-widget.php:23
+msgid "Choose one of registered sidebars to display."
+msgstr ""
+
+#: includes/widgets/mm_sow-sidebars-widget/mm_sow-sidebars-widget.php:43
+msgid "Choose a sidebar (widget area)"
+msgstr ""
+
+#: includes/widgets/mm_sow-sidebars-widget/mm_sow-sidebars-widget.php:56
+msgid "Choose theme sidebar (widget area)"
+msgstr ""
+
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:15
+msgid "Micemade Stats Bars"
+msgstr ""
+
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:17
+msgid "Display statistics or skills as a percentage stats bar."
+msgstr ""
+
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:29
+msgid "Stats Bars"
+msgstr ""
+
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:30
+msgid "Stats Bar"
+msgstr ""
+
+#: includes/widgets/mm_sow-stats-bar-widget/mm_sow-stats-bar-widget.php:40
+msgid "The title for the stats bar"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:16
+msgid "Micemade Stretcher"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:18
+msgid " Display posts/product in fancy stretching panes."
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:48
+msgid ""
+"Choose post types, taxonomies, number of posts and other posts query "
+"arguments."
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:70
+msgid "Display taxonomies ?"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:75
+msgid "Display post excerpt/summary ?"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:82
+msgid "Post image format"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:89
+msgid "Post image size"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:90
+msgid ""
+"Post image is displayed as element background image - choose the background "
+"image size"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:100
+msgid "Post title size"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:101
+msgid "increase or decrease title in percentage"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:110
+msgid "Items overlay color"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:115
+msgid "Items text color"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:125
+msgid "Display post author info ?"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:131
+msgid "Display post date info ?"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:147
+msgid "Stretcher Settings"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:152
+msgid "Image animation speed"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:153
+msgid "How fast the image will slide in."
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:160
+msgid "Background animation speed"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:161
+msgid "How fast the background will appear."
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:168
+msgid "Stretcher height"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:169
+msgid "Height of whole block with stretching slides."
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:185
+msgid "Stretcher height on tablets"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:204
+msgid "Stretcher height on mobiles"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/tpl/default.php:110
+msgid "View product details &raquo;"
+msgstr ""
+
+#: includes/widgets/mm_sow-stretcher-widget/tpl/default.php:110
+msgid "Read more &raquo;"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:15
+msgid "Micemade Tabs"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:17
+msgid "Display tabbed content in variety of styles."
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:30
+msgid "Choose Tab Style"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:37
+msgid "Tab Style 1"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:38
+msgid "Tab Style 2"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:39
+msgid "Tab Style 3"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:40
+msgid "Tab Style 4"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:41
+msgid "Tab Style 5"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:42
+msgid "Tab Style 6"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:43
+msgid "Vertical Tab Style 1"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:44
+msgid "Vertical Tab Style 2"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:45
+msgid "Vertical Tab Style 3"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:46
+msgid "Vertical Tab Style 4"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:52
+msgid "Tab highlight color"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:62
+msgid "Mobile Resolution"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:63
+msgid "The resolution to treat as a mobile resolution for invoking responsive tabs."
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:71
+msgid "Some styles may ignore icons chosen."
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:90
+msgid "Tabs"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:91
+msgid "Single Tab"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:100
+msgid "Tab Title"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:101
+msgid "The title for the tab shown as name for tab navigation."
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:106
+msgid "Tab Image."
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:116
+msgid "Tab Icon."
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:126
+msgid "Tab Content"
+msgstr ""
+
+#: includes/widgets/mm_sow-tabs-widget/mm_sow-tabs-widget.php:127
+msgid "The content of the tab."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:15
+msgid "Micemade Team Members"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:17
+msgid "Create team members to display in a column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:52
+msgid "Team Members"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:53
+msgid "Team Member"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:63
+msgid "Name of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:68
+msgid "Team member image."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:74
+msgid "Position"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:75
+msgid "Specify the position/title of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:80
+msgid "Short details"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:81
+msgid "Provide a short writeup for the team member"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:87
+msgid "Social profile"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:91
+msgid "Email Address"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:92
+msgid "Enter the email address of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:97
+msgid "Facebook Page URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:98
+msgid "URL of the Facebook page of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:103
+msgid "Twitter Profile URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:104
+msgid "URL of the Twitter page of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:109
+msgid "LinkedIn Page URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:110
+msgid "URL of the LinkedIn profile of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:115
+msgid "Pinterest Page URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:116
+msgid "URL of the Pinterest page for the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:121
+msgid "Dribbble Profile URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:122
+msgid "URL of the Dribbble profile of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:127
+msgid "GooglePlus Page URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:128
+msgid "URL of the Google Plus page of the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:133
+msgid "Instagram Page URL"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:134
+msgid "URL of the Instagram feed for the team member."
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:24
+msgid "Send an email"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:26
+msgid "Follow on Facebook"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:28
+msgid "Subscribe to Twitter Feed"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:30
+msgid "View LinkedIn Profile"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:32
+msgid "Follow on Google Plus"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:34
+msgid "View Instagram Feed"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:36
+msgid "Subscribe to Pinterest Feed"
+msgstr ""
+
+#: includes/widgets/mm_sow-team-members-widget/tpl/social-profile.php:38
+msgid "View Dribbble Portfolio"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:15
+msgid "Micemade Testimonials Slider"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:17
+msgid "Share your product/service testimonials in a responsive slider."
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:29
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:29
+msgid "Testimonials"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:30
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:30
+msgid "Testimonial"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:40
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:40
+msgid "The author of the testimonial"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:45
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:45
+msgid "Author Details"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:46
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:46
+msgid ""
+"The details of the author like company name, position held, company URL "
+"etc. HTML accepted."
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:56
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:56
+msgid "Text"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:57
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:57
+msgid "What your customer had to say"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:15
+msgid "Micemade Testimonials"
+msgstr ""
+
+#: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:17
+msgid "Display testimonials in a responsive multi-column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:15
+msgid "Micemade WooCommerce Categories"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:17
+msgid "WooCommerce categories to display in a column grid."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:45
+msgid "WooCommerce Categories"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:46
+msgid "WC Category"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:56
+msgid "Choose Category"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:58
+msgid "pick single woocommerce products category"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:64
+msgid "Choose Category Image Type"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:66
+msgid "WC product category images are set in Products > Categories."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:80
+msgid "Custom Image."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:81
+msgid "(*optional) override WC product category image (if set) with custom image ."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:91
+msgid "Custom Icon."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:102
+msgid ""
+"*( optional ) Provide a short description. Note: In case of bad readability "
+"(dark background), use Edit Row > Row Styles : Design > \"Dark "
+"Background?\" setting."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:131
+msgid "Overlay color."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:137
+msgid "Category title color."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:149
+msgid "Margin bottom"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:151
+msgid "Margin bellow the each category."
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:158
+msgid "Categories height"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:173
+msgid "Tablet categories height"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:192
+msgid "Mobile categories height"
+msgstr ""
+
+#: includes/woocommerce-templates/add-to-wishlist-button.php:14
+msgid "Add to wishlist"
+msgstr ""
+
+#: includes/woocommerce-templates/add-to-wishlist.php:14
+msgid "Product added! Browse Wishlist"
+msgstr ""
+
+#: includes/woocommerce-templates/add-to-wishlist.php:15
+msgid "The product is already in the wishlist! Browse Wishlist"
+msgstr ""
+
+#: micemade-so-widgets.php:138 micemade-so-widgets.php:147
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: micemade-so-widgets.php:325
+msgid "Loading quick view"
+msgstr ""

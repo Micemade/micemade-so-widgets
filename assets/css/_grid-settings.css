@@ -1,0 +1,9 @@
+@import "../../sass-libs/neat/neat-helpers";
+
+$column: 60px;
+$gutter: 40px;
+$grid-columns: 12;
+$max-width: 1140px;
+
+$tablet: new-breakpoint(max-width 767px 8);
+$mobile: new-breakpoint(max-width 479px 4);

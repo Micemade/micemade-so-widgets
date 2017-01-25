@@ -1,0 +1,16 @@
+@import "../../../../../so-widgets-bundle/base/less/mixins";
+
+.widget-function('import_google_font');
+
+@headline_font: default;
+@headline_font_weight: 400;
+@sub_headline_font: default;
+@sub_headline_font_weight: 400;
+
+.mm_sow-title {
+	.font(@headline_font, @headline_font_weight);
+}
+
+.mm_sow-subtitle {
+	.font(@sub_headline_font, @sub_headline_font_weight);
+}

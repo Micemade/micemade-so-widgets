@@ -1,0 +1,247 @@
+@import "../../../../assets/css/mm_sow-lib";
+
+
+.mm_sow-posts-carousel {
+	
+	.mm_sow-posts-carousel-item {
+		
+		article {
+			background: #fff;
+			border: none;
+			padding: 0;
+			margin: 0 !important;
+			transition: box-shadow 0.25s ease;
+			box-shadow: none;
+			overflow: hidden;
+			.mm_sow-buttons-holder {
+				opacity: 0;
+				transform: scale(1.02);
+				transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+			}
+			
+			&:hover {
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+				.mm_sow-buttons-holder {
+					opacity: 1;
+					transform: scale(1)
+				}
+			}
+		}
+		.mm_sow-item-image {
+			position: relative;
+			overflow: hidden;
+			z-index: 0;
+			
+			img {
+				display: block;
+				@include mm_sow-transition();
+				max-width: 100%;
+				@extend %clear;
+			}
+
+			.mm_sow-image-overlay {
+				position: absolute;
+				left: 0;
+				top: 0;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				filter: alpha(opacity = 0);
+				-moz-opacity: 0;
+				opacity: 0;
+				@include mm_sow-transition(opacity);
+			}
+			.mm_sow-image-info {
+				display: block;
+				z-index: 120;
+				position: absolute;
+				top:0;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				opacity: 0;
+				filter: alpha(opacity = 0);
+				@include mm_sow-transition(opacity);
+			
+					.mm_sow-entry-info {
+						text-align: center;
+						display:block;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left:0;
+						right: 0;
+						margin: auto;
+						width: 100%;
+						padding: 0 20px;
+					}
+					
+					small {
+						color: #ccc;
+						font-style: italic;
+						display: block;
+						margin-bottom: -1em;
+					}
+					
+					.mm_sow-post-title {
+						padding: 10px;
+						margin: 0;
+						color: #fff;
+					  
+						@include respond-to-max(1024) {
+						font-size: 18px;
+						line-height: 26px;
+						}
+						a {
+							display: inline;
+							color: #fff;
+							@include mm_sow-transition(all, 0.3s);
+							border-bottom: 1px solid transparent;
+							&:hover {
+								border-bottom: 2px solid #ccc;
+							}
+						}
+					}
+					
+					.mm_sow-terms {
+						
+						@include term-meta-style();
+						
+					} // .mm_sow-terms
+			}
+			&:hover {
+				background: rgba(0,0,0,0.3);
+
+				.mm_sow-image-info {
+					opacity: 1;
+				}
+				.mm_sow-image-overlay {
+					opacity: 0.5;
+				}
+				img {
+					
+					@include special-hover-effect();
+				}
+
+			}
+			
+		} // .mm_sow-item-image
+		
+		.mm_sow-entry-text-wrap {
+			
+			position: relative;
+			text-align: center;
+			max-width: 650px;
+			margin: 0 auto;
+			padding: 25px;
+		  
+			.mm_sow-post-title {
+				
+				@include mm_sow-heading-style();
+				margin-bottom: 10px;
+				
+				&:after, &:before {
+					display: none;
+				}
+				a {
+					color: #333333;
+					@include mm_sow-transition();
+					&:hover {
+						color: #888;
+					}
+				}
+			} // .entry-title
+			
+			.mm_sow-entry-meta {
+				
+				@include entry-meta-style();
+				
+			} // .mm_sow-entry-meta
+			
+			.entry-summary {
+				padding: 0;
+				margin: 10px auto 0;
+				min-height: 2.5rem;
+				
+				p {
+					font-size: 13px;
+					line-height: 1.8;
+				}
+				
+				&:before {
+					width: 35px;
+					height: 1px;
+					background: #aaa;
+					display: block;
+					content: "";
+					text-align: center;
+					margin: 0 auto 15px;
+				}
+			}
+			
+			.mm_sow-category-list {
+
+				@include bottom-line(35, 1, #aaa);
+				@include mm_sow-transition();
+				
+				&:after {
+					text-align: center;
+					margin: 10px auto 10px;
+				}
+			}
+			.mm_sow-category-list a {
+				font-style: italic;
+				@include mm_sow-transition();
+			}
+			
+		} // .mm_sow-entry-text-wrap
+	
+		.type-post .mm_sow-entry-text-wrap .entry-summary:before {
+			display: none;
+		} //.type-post ...
+		
+    } // .mm_sow-posts-carousel-item
+	
+	
+	&.style2 {
+		
+		.mm_sow-item-image {
+			.mm_sow-image-info {
+				.mm_sow-entry-info {
+
+					top: 2em;
+					transform: none;
+					
+					small { margin-bottom: 0; }
+				
+				}
+			}
+		}
+	
+		
+		.mm_sow-entry-text-wrap {
+			
+			.mm_sow-post-title {
+				position: absolute;
+				bottom: calc(100% - 20px);
+				background: rgba(51,51,51,0.87);
+				left: 25px;
+				right: 25px;
+				display: block;
+				margin: 0 ;
+				padding: 15px;
+				z-index: 5;
+				
+				a {
+					color: #e5e5e5;
+				}
+				
+			}		
+		
+		}
+
+	
+	}
+	
+}

@@ -1,0 +1,31 @@
+.mm_sow-carousel {
+
+	&.mm_sow-container {
+		max-width: none;
+    }
+	
+	.mm_sow-carousel-item {
+		
+		position: relative;
+		
+		.back_image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
+			background:{
+				size: cover;
+				position: center;
+				repeat: no-repeat;
+			}
+		}
+		
+		.editor-content {
+			position: relative;
+			z-index: 1;
+		}
+		
+	}
+}

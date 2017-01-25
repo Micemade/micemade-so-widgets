@@ -1,0 +1,145 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.mm_sow-hero-header {
+  position: relative; }
+
+.mm_sow-hero-header {
+  padding: 200px 0;
+  margin: 0;
+  overflow: hidden;
+  /* Hide the image background when ytp video is playing */ }
+  @media only screen and (max-width: 1100px) {
+    .mm_sow-hero-header {
+      background-attachment: scroll !important;
+      background-position: center center !important; } }
+  @media only screen and (max-width: 767px) {
+    .mm_sow-hero-header {
+      padding: 60px 0; } }
+  .mm_sow-hero-header .mm_sow-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+  .mm_sow-hero-header .mm_sow-parallax-bg, .mm_sow-hero-header .mm_sow-image-bg, .mm_sow-hero-header .mm_sow-html5-video-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto; }
+  .mm_sow-hero-header .mm_sow-html5-video-bg video {
+    width: 100%;
+    height: auto; }
+    @media only screen and (max-width: 767px) {
+      .mm_sow-hero-header .mm_sow-html5-video-bg video {
+        width: auto;
+        height: 100%; } }
+  .mm_sow-hero-header .mm_sow-parallax-bg, .mm_sow-hero-header .mm_sow-image-bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .mm_sow-hero-header.ytp-bg .mm_sow-hero-header-content, .mm_sow-hero-header.mm_sow-section-bg-parallax .mm_sow-hero-header-content, .mm_sow-hero-header.image-banner .mm_sow-hero-header-content {
+    position: relative; }
+  .mm_sow-hero-header.mb_YTPlayer .mm_sow-image-bg {
+    display: none; }
+  .mm_sow-hero-header.mm_sow-section-bg-parallax {
+    overflow: hidden; }
+    .mm_sow-hero-header.mm_sow-section-bg-parallax .mm_sow-parallax-bg {
+      height: 200%;
+      -webkit-transform: translate3d(0, -50%, 0);
+      -moz-transform: translate3d(0, -50%, 0);
+      -ms-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0); }
+      .mm_sow-mobile-device .mm_sow-hero-header.mm_sow-section-bg-parallax .mm_sow-parallax-bg {
+        height: 100%;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
+
+.mm_sow-hero-header .mm_sow-header-content {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px; }
+  .mm_sow-hero-header .mm_sow-header-content .mm_sow-subheading {
+    color: #aaa;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    font-weight: 400; }
+  .mm_sow-hero-header .mm_sow-header-content .mm_sow-heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 28px;
+    line-height: 180%;
+    margin: 0;
+    color: #ebebeb; 
+	max-width: initial;
+	}
+  .mm_sow-hero-header .mm_sow-header-content .mm_sow-button {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 1px solid #bbb;
+    padding: 10px 35px;
+    color: #eeeeee;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    margin-top: 30px; }
+    .mm_sow-hero-header .mm_sow-header-content .mm_sow-button:hover {
+      color: #fff;
+      border-color: #ffffff; }
+  @media only screen and (max-width: 600px) {
+    .mm_sow-hero-header .mm_sow-header-content .mm_sow-subheading {
+      font-size: 16px;
+      line-height: 24px; }
+    .mm_sow-hero-header .mm_sow-header-content .mm_sow-heading {
+      font-size: 20px;
+      line-height: 30px; } }
+
+.mm_sow-hero-header iframe,
+.mm_sow-hero-header object,
+.mm_sow-hero-header embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  /* important */ }
+
+/* ------ Pointer down button ------ */
+.mm_sow-hero-header .mm_sow-pointer-down {
+  display: block;
+  left: 50%;
+  bottom: 10px;
+  margin-left: -26px;
+  position: absolute;
+  font-size: 32px;
+  z-index: 3;
+  padding: 10px 20px;
+  border-radius: 2px;
+  -webkit-transition: all ease-in-out 0.3s 0s;
+  -moz-transition: all ease-in-out 0.3s 0s;
+  -ms-transition: all ease-in-out 0.3s 0s;
+  transition: all ease-in-out 0.3s 0s;
+  color: #fff; }
+  @media only screen and (max-width: 767px) {
+    .mm_sow-hero-header .mm_sow-pointer-down {
+      display: none; } }
+  .mm_sow-hero-header .mm_sow-pointer-down:hover {
+    background: rgba(255, 255, 255, 0.2); }
+
+/*# sourceMappingURL=style.css.map */

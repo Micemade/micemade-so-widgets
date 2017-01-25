@@ -1,0 +1,225 @@
+@import "../../sass-libs/bourbon/bourbon";
+@import "../../sass-libs/neat/neat";
+//@import "flexbox";
+
+// Custom Mixins for Micemade framework - utilizes libs  Bourbon and Neat
+$tablet_size: 767;
+$mobile_size: 479;
+
+@mixin border-radius($radius) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin background-clip($padding-box) {
+	-moz-background-clip: $padding-box;
+	-webkit-background-clip: $padding-box;
+	border-background-clip: $padding-box;
+}
+@mixin center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+	background: $color; /* The Fallback */
+	background: rgba($color, $opacity);
+}
+
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	#{$property}: $value;
+}
+
+%clear {
+	&:before, &:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin linkTextOffscreen() {
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	display: block;
+	font-size: 0;
+	text-align: start;
+}
+
+@mixin hoverActiveFocus($property, $value) {
+	&:hover, &:active, &:focus {
+		#{$property}: $value;
+	}
+}
+
+@mixin respond-to-max($point) {
+	@media only screen and (max-width: $point+px) { @content; }
+}
+
+@mixin respond-between($point1, $point2) {
+	@media only screen and (min-width: $point1+px) and (max-width: $point2+px) { @content; }
+}
+
+@mixin respond-to-min($point) {
+	@media only screen and (min-width: $point+px) { @content; }
+}
+@mixin respond-to-retina() {
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) { @content; }
+}
+
+@mixin bottom-line($width: 35, $height: 2, $color: $theme_color) {
+	position: relative;
+	&:after {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 100%;
+		width: $width + px;
+		height: $height + px;
+		background: $color;
+		display: block;
+		content: "";
+		@content;
+	}
+}
+
+@mixin mm_sow-icon-font() {
+	font-family: 'FontAwesome' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin mm_sow-transition($property: all, $time: 0.4s) {
+
+	@include vendorize(transition, $property $time ease-in-out 0s);
+
+}
+
+@mixin mm_sow-heading-style() {
+
+	color: #333;
+	clear: none;
+	margin-top: 0;
+	margin-bottom: 10px;
+	
+	a {
+		transition: all .3s ease-in-out 0s;
+		border-bottom: 1px solid transparent;
+		&:hover {
+			border-bottom: 2px solid #ccc;
+		}
+	}
+	
+}
+
+@mixin mm_sow-body-font() {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+@mixin entry-meta-style() {
+	
+	span, a { font-size: 12px; }
+	
+	span {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		font-style: italic;
+		color: #999;
+		&:after {
+			font-family: "FontAwesome";
+			content: "\f10c";
+			font-size: 8px;
+			padding: 2px 2px 2px 5px;
+			font-style: normal;
+			line-height: 2;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&:first-child {
+			border: none;
+			padding-left: 0;
+		}
+		&:last-child:after {
+			display: none;
+		}
+		a {
+			transition:all 0.3s ease-in-out 0s;
+			font-style: normal;
+			color: inherit;
+			font-weight: bold;
+		}
+		.mm_sow-dark-bg & {
+			color: #707070;
+		}
+	}
+
+}
+
+@mixin term-meta-style() {
+	
+	display: block;
+	color: #f9f9f9;
+	a {
+		color: #ddd;
+		position: relative;
+		display: inline-block;
+		zoom: 1;
+		font-size: 12px;
+		line-height: 1.4;
+		font-style: italic;
+		padding: 0.2em 0.6em;
+		@include mm_sow-transition(color, 0.3s);
+		
+		&:hover {
+			color: #fff;
+		}
+	} // a
+	
+	.separator {
+		display: inline-block;
+		width: 0.5rem;
+		&:after {
+			display: none;
+		}
+		
+	}
+}
+
+@mixin special-hover-effect() {
+	transform: scale(1.05, 1.05);
+	filter: blur(2px) grayscale(100%);
+}
+
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}

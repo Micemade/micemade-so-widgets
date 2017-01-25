@@ -1,0 +1,285 @@
+@import "../../../../assets/css/mm_sow-lib";
+
+.mm_sow-accordion {
+
+	.mm_sow-panel-title {
+		display: block;
+		cursor: pointer;
+	}
+	.mm_sow-panel-content {
+		display: none;
+		overflow: hidden;
+	}
+}
+
+.mm_sow-accordion.style1, .mm_sow-accordion.style3 {
+	.mm_sow-panel {
+		.mm_sow-panel-title {
+			@include vendorize(transition, all .3s ease-in-out 0s);
+			&:after {
+				@include mm_sow-icon-font();
+				position: absolute;
+				content: "\f107";
+				right: 30px;
+				top: 26px;
+				font-size: 14px;
+				line-height: 1;
+				color: #666;
+				font-weight: 700;
+				@include vendorize(transition, all .3s ease-in-out 0s);
+			}
+		}
+		&.mm_sow-active {
+			.mm_sow-panel-title:after {
+				@include vendorize(transform, rotate(45deg));
+			}
+		}
+	}
+}
+
+.mm_sow-accordion.style2 {
+  .mm_sow-panel {
+    .mm_sow-panel-title {
+      @include vendorize(transition, all .3s ease-in-out 0s);
+      &:after {
+        @include mm_sow-icon-font();
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        content: "\f078";
+        color: #999;
+        font-size: 18px;
+        line-height: 1;
+        -webkit-transition: color .3s ease-in 0s, transform .3s ease-in-out 0s;
+        transition: color .3s ease-in 0s, transform .3s ease-in-out 0s;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+      }
+    &.mm_sow-active {
+      .mm_sow-panel-title:after {
+        @include vendorize(transform, rotate(90deg));
+        }
+      }
+    }
+  }
+/* ----- Style 1 ------ */
+
+.mm_sow-accordion.style1 {
+  .mm_sow-panel {
+    margin: 20px 0 0;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+    .mm_sow-panel-title {
+      position: relative;
+      display: block;
+      padding: 20px 50px 20px 30px;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0;
+      font-weight: bold;
+      color: #666;
+      margin: 0;
+      }
+    .mm_sow-panel-content {
+      background: #f8f8f8;
+      padding: 30px 30px;
+      }
+    &:hover {
+      .mm_sow-panel-title {
+        background: #e2e2e2;
+        }
+      }
+    &.mm_sow-active {
+      .mm_sow-panel-title {
+        color: #333;
+        background: #e2e2e2;
+        }
+      .mm_sow-panel-title:after {
+        color: #333;
+        }
+      }
+    }
+  }
+/* ----- Style 2 ------ */
+
+.mm_sow-accordion.style2 {
+  .mm_sow-panel {
+    margin: 20px 0 0;
+    color: #333;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    position: relative;
+    .mm_sow-panel-title {
+      position: relative;
+      display: block;
+      border-radius: 3px;
+      border: 1px solid #dcdcdc;
+      overflow: hidden;
+      padding: 20px 50px 20px 30px;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0;
+      font-weight: bold;
+      color: #666;
+      margin: 0;
+      @include vendorize(transition, all .3s ease-in-out);
+      z-index: 1;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background: #4c5053;
+        -webkit-transition: height .3s cubic-bezier(.77, 0, .175, 1);
+        transition: height .3s cubic-bezier(.77, 0, .175, 1);
+        z-index: -1;
+        }
+      }
+    .mm_sow-panel-content {
+      padding: 20px 30px;
+      border-color: #dcdcdc;
+      border-style: solid;
+      border-width: 0 1px 1px 1px;
+      border-radius: 0 0 3px 3px;
+      }
+    &:hover {
+      .mm_sow-panel-title, .mm_sow-panel-title:after {
+        color: #fff;
+        border-color: #333;
+        }
+      .mm_sow-panel-title:before {
+        height: 100%;
+        }
+      }
+    &.mm_sow-active {
+      .mm_sow-panel-title {
+        background: #4c5053;
+        color: #fff;
+        border-radius: 3px 3px 0 0;
+        border-color: #333;
+        }
+      .mm_sow-panel-title:after {
+        color: #fff;
+        }
+      }
+    }
+  }
+
+.mm_sow-dark-bg .mm_sow-accordion.style2 {
+  .mm_sow-panel {
+    .mm_sow-panel-title {
+      color: #888;
+      border-color: #404040;
+      &:before {
+        background: #e5e5e5;
+      }
+    }
+    &:hover {
+      .mm_sow-panel-title {
+        color: #333;
+        }
+      .mm_sow-panel-title:after {
+        color: #666;
+        }
+      }
+    &.mm_sow-active {
+      .mm_sow-panel-title {
+        background: #e5e5e5;
+        color: #333;
+        border-color: #e5e5e5;
+        }
+      .mm_sow-panel-title:after {
+        color: #666;
+        }
+      }
+
+    .mm_sow-panel-content {
+      border-color: #404040;
+      color: #909090;
+      h1, h2, h3, h4, h5, h6 {
+        color: #e5e5e5;
+        }
+      }
+  }
+}
+/* ----- Style 3 ------ */
+
+.mm_sow-accordion.style3 {
+  .mm_sow-panel {
+    margin: 0;
+    border-bottom: 1px solid #dcdcdc;
+    &:first-child {
+      border-top: 1px solid #dcdcdc;
+      }
+    .mm_sow-panel-title {
+      position: relative;
+      display: block;
+      padding: 20px 50px 20px 5px;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #666;
+      margin: 0;
+      &:after {
+        top: 24px;
+        }
+      }
+    .mm_sow-panel-content {
+      padding: 10px 50px 30px 5px;
+      }
+    &:hover {
+      .mm_sow-panel-title {
+        color: #333;
+        }
+      }
+    &.mm_sow-active {
+      .mm_sow-panel-title {
+        color: #333;
+        }
+      .mm_sow-panel-title:after {
+        color: #333;
+        }
+      }
+    }
+  }
+
+.mm_sow-dark-bg .mm_sow-accordion.style3 {
+  .mm_sow-panel {
+      border-color: #404040;
+    .mm_sow-panel-title {
+      color: #b0b0b0;
+      &:after {
+        color: #888;
+      }
+    }
+    &:hover {
+      .mm_sow-panel-title {
+        color: #eaeaea;
+        }
+      .mm_sow-panel-title:after {
+        color: #aaa;
+        }
+      }
+    &.mm_sow-active {
+      .mm_sow-panel-title {
+        color: #eaeaea;
+        }
+      .mm_sow-panel-title:after {
+        color: #aaa;
+        }
+      }
+
+    .mm_sow-panel-content {
+      color: #909090;
+      h1, h2, h3, h4, h5, h6 {
+        color: #e5e5e5;
+        }
+      }
+  }
+}
