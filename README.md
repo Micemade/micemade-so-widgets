@@ -1,13 +1,23 @@
 === Micemade SO widgets Widgets ===
+
 Author URI: http://micemade.com
+
 Plugin URI: http://micemade.com/micemade-so-widgets
+
 Contributors: SiteOrigin, Micemade, Livemesh
+
 Tags: widget, siteorigin, siteorigin widgets bundle, siteorigin page builder, siteorigin addons, grid, gallery, carousel, shortcode, tabs, admin, plugin, page
+
 Requires at least: 4.3
+
 Tested up to: 4.7
+
 Stable Tag: 1.0.0.
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 
 A collection of free widgets, premium quality, for use in any widgetized area or in SiteOrigin page builder. SiteOrigin Widgets Bundle is required.
 
