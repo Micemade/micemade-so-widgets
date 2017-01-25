@@ -1688,7 +1688,7 @@ msgstr ""
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:43
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:42
 #: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:32
-msgid "Hide title on frontend (display it only in page page builder admin)"
+msgid "Hide title on frontend (make visible only in PB admin - easier to identify widgets)"
 msgstr ""
 
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:58

@@ -34,6 +34,13 @@ class MM_SOW_Portfolio_Widget extends SiteOrigin_Widget {
                     'type' => 'text',
                     'label' => __('Title', 'mm_sow'),
                 ),
+				
+				'hide_title' => array(
+                    'type'			=> 'checkbox',
+                    'label'			=> __('Hide title', 'mm_sow'),
+					'default'		=> 1,
+					'description'	=> __('Hide title on frontend (make visible only in PB admin - easier to identify widgets)','mm_sow')
+                ),
 
                 'heading' => array(
                     'type' => 'text',

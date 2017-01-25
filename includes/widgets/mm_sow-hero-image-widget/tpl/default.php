@@ -15,7 +15,7 @@ if ($background['bg_type'] == 'youtube') {
 
 ?>
 
-<?php if( !empty( $instance['title'] ) ) echo $args['before_title'] . esc_html($instance['title']) . $args['after_title'] ?>
+<?php if( !empty( $instance['title'] ) && !$instance['hide_title'] ) echo $args['before_title'] . esc_html($instance['title']) . $args['after_title']; ?>
 
 <div class="mm_sow-hero-header mm_sow-section-bg-<?php echo $background['bg_type']; ?>" <?php echo $youtube_markup; ?>>
 

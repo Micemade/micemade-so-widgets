@@ -6,7 +6,17 @@
  * @var $posts
  */
 
-if( !empty( $instance['title'] ) ) echo $args['before_title'] . esc_html($instance['title']) . $args['after_title'];
+if( !empty( $instance['title'] ) && !$instance['hide_title'] ) echo $args['before_title'] . esc_html($instance['title']) . $args['after_title'];
+
+// Vars for item image display ( do_action('mm_sow_item_image') ) :
+$img_format		= $settings['img_format'];
+$title_hover	= $settings['title_on_hover'];
+$display_tax	= $settings['display_taxonomy'];
+// Vars for item text & info display ( do_action('mm_sow_item_text') ) :
+$display_title	= $settings['display_title'];
+$display_summary= $settings['display_summary'];
+$meta_date		= $settings['post_meta']['display_post_date'];
+$meta_author 	= $settings['post_meta']['display_author'];
 
 $current_page = get_queried_object_id();
 
@@ -48,10 +58,7 @@ if ($loop->have_posts()) : ?>
             if ( $settings['filterable'] && $tax_heading_align != "align_right") {
                 echo mm_sow_get_taxonomy_terms_filter( $taxonomy, $chosen_terms );
 			}
-			// Vars for item image display ( do_action('mm_sow_item_image') ) 
-			$img_format		= $settings['img_format'];
-			$title_hover	= $settings['title_on_hover'];
-			$display_tax	= $settings['display_taxonomy'];
+			
 			?>
 
         </div>
@@ -82,62 +89,9 @@ if ($loop->have_posts()) : ?>
 
                     <article <?php post_class(); ?>>
 
-						<?php do_action( 'mm_sow_item_image', $img_format, $title_hover, $display_tax, $taxonomy );?>
+						<?php do_action( 'mm_sow_item_image', $img_format, $title_hover, $display_tax, $taxonomy ); ?>
 
-                        <?php if ($settings['display_title'] || $settings['display_summary']) { ?>
-
-                            <div class="mm_sow-entry-text-wrap <?php echo($thumbnail_exists ? '' : ' nothumbnail'); ?>">
-
-                                <?php if ( $settings['display_title'] ) { ?>
-
-                                    <?php the_title('<h3 class="entry-title"><a href="' . get_permalink() . '" title="' .  the_title_attribute( "echo=0" ) . '" rel="bookmark">', '</a></h3>'); ?>
-
-								<?php } ?>
-
-                                <?php if( $settings['post_meta']['display_author'] || $settings['post_meta']['display_post_date'] )  { ?>
-
-                                    <div class="mm_sow-entry-meta">
-
-                                        <?php if( $settings['post_meta']['display_author'] ) { ?>
-
-                                            <?php echo mm_sow_entry_author(); ?>
-
-                                        <?php } ?>
-
-                                        <?php if ($settings['post_meta']['display_post_date']) { ?>
-
-                                            <?php echo mm_sow_entry_published(); ?>
-
-                                        <?php } ?>
-                                        
-
-                                    </div>
-
-                                <?php } ?>
-
-                                <?php 
-								if( $post_type == "product" ) {
-											
-									woocommerce_template_loop_price();
-									
-									do_action( 'mm_sow_product_buttons' );
-									
-								}
-								?>
-
-								<?php if ( $settings['display_summary'] && $post_type != "product") { ?>
-
-									<div class="entry-summary">
-
-										<p><?php echo get_the_excerpt(); ?></p>
-
-									</div>
-
-								<?php } ?>
-
-                            </div>
-
-                        <?php } ?>
+                        <?php do_action( 'mm_sow_item_text',  $display_title, $display_summary, $meta_author, $meta_date ); ?>
 
                     </article>
                     <!-- .hentry -->

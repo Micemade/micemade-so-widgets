@@ -29,7 +29,7 @@ class MM_SOW_Team_Widget extends SiteOrigin_Widget {
                     'type'			=> 'checkbox',
                     'label'			=> __('Hide title', 'mm_sow'),
 					'default'		=> 0,
-					'description'	=> __('Hide title on frontend (display it only in page page builder admin)','mm_sow')
+					'description'	=> __('Hide title on frontend (make visible only in PB admin - easier to identify widgets)','mm_sow')
                 ),
 				
                 'style' => array(

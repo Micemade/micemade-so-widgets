@@ -711,3 +711,59 @@ function mm_sow_item_image_func ( $img_format, $title_hover, $display_tax, $taxo
 	<?php
 }
 add_action( 'mm_sow_item_image', 'mm_sow_item_image_func', 10, 4 );
+/**
+ * POST ITEMS TEXT
+ * 
+ * @return <html>
+ */
+function mm_sow_item_text_func ( $display_title, $display_summary, $meta_author, $meta_date ) {
+	 
+	 $thumbnail_exists	= has_post_thumbnail();
+	 $post_type			= get_post_type();
+	 
+	 if ( $display_title || $display_summary ) { ?>
+
+		<div class="mm_sow-entry-text-wrap <?php echo( $thumbnail_exists ? '' : ' nothumbnail' ); ?>">
+
+			<?php if ( $display_title ) { ?>
+				<?php the_title('<h3 class="entry-title"><a href="' . get_permalink() . '" title="' .  the_title_attribute( "echo=0" ) . '" rel="bookmark">', '</a></h3>'); ?>
+			<?php } ?>
+
+			<?php if( $meta_author || $meta_date )  { ?>
+				<div class="mm_sow-entry-meta">
+
+					<?php 
+					if( $meta_author ) { 
+						echo mm_sow_entry_author(); 
+					} 
+					if ( $meta_date ) {
+						echo mm_sow_entry_published();
+					} 
+					?>
+
+				</div>
+			<?php } ?>
+
+			<?php 
+			if( $post_type == "product" ) {
+						
+				woocommerce_template_loop_price();
+				
+				do_action( 'mm_sow_product_buttons' );
+				
+			}
+			?>
+
+			<?php if ( $display_summary && $post_type != "product") { ?>
+				<div class="entry-summary">
+
+					<p><?php echo get_the_excerpt(); ?></p>
+
+				</div>
+			<?php } ?>
+
+		</div>
+
+	<?php }
+}
+add_action( 'mm_sow_item_text', 'mm_sow_item_text_func', 10, 4 );

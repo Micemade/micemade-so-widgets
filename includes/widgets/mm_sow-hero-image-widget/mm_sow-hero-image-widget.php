@@ -25,6 +25,13 @@ class MM_SOW_Hero_Image_Widget extends SiteOrigin_Widget {
                     'label' => __('Title', 'mm_sow'),
                 ),
 
+				'hide_title' => array(
+                    'type'			=> 'checkbox',
+                    'label'			=> __('Hide title', 'mm_sow'),
+					'default'		=> 1,
+					'description'	=> __('Hide title on frontend (make visible only in PB admin - easier to identify widgets)','mm_sow')
+                ),
+				
                 'header_type' => array(
                     'type' => 'radio',
                     'label' => __('Header Type', 'mm_sow'),
