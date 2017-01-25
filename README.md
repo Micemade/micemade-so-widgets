@@ -50,7 +50,7 @@ The plugin comes with the following widgets. **Almost all of the widgets come wi
 
 Do you have suggestions to make or want to be notified of important updates? Reach out to us on [Twitter](http://twitter.com/themicemade)
 
-== Installation ==
+**== Installation ==**
 
 1. Install and activate the **required plugin** [SiteOrigin Widgets Bundle](https://wordpress.org/plugins/so-widgets-bundle/).
 2. Unzip the downloaded micemade-so-widgets.zip file and upload to the '/wp-content/plugins/' directory or install the Micemade SO widgets Widgets plugin from WordPress repository. Activate the plugin through the 'Plugins' menu in WordPress
@@ -58,33 +58,33 @@ Do you have suggestions to make or want to be notified of important updates? Rea
 4. If you need page builder functions, install and activate the **optional plugin** [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/).
 
 
-== Frequently Asked Questions ==
+**== Frequently Asked Questions ==**
 
-= Does it work with the theme that I am using? =
+* Does it work with the theme that I am using? =
 
 Our tests indicate that the widgets work well with most themes that are well coded. You may need some minor custom CSS with themes that hijack the styling for heading tags by using !important keyword.
 
 The demo site is best recreated with a theme that supports a full width page template without sidebars. The widgets can still be used in the widgetized sidebars of pages of default template.
 
-= How to enable the dark version for any widget? =
+* How to enable the dark version for any widget? =
 
 In SiteOrigin page builder, add a row wrapper for the widget, edit row and check the option 'Dark Background?' under 'Row Styles' &gt; Design.
 
 If not using a page builder, you can wrap the widget with a div of class 'mm_sow-dark-bg' to invoke dark version. Make sure you set the appropriate dark background for the wrapper div.
 
-= Seeing 'Missing Widget' error upon import. =
+* Seeing 'Missing Widget' error upon import. =
 
 Please make sure the SiteOrigin Widgets Bundle plugin is installed/activated and enable the widgets from Plugins &gt; SiteOrigin Widgets in WordPress admin.
 
 
-== Screenshots ==
+**== Screenshots ==**
 1. Enable widgets in Plugins > SiteOrigin Widgets > Disabled tab.
 2. Micemade SO widgets Widgets in action in SiteOrigin Page Builder tab of Page Edit window.
 3. Editing a widget in the SiteOrigin Page Builder.
 4. Editing a widget in the Appearance > Widgets page.
 5. Micemade SO widgets widgets in the Appearance > Widgets page.
 
-== Changelog ==
+**== Changelog ==**
 
 = 1.0 =
 * Initial release.
