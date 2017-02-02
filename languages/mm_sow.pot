@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/index\n"
-"POT-Creation-Date: 2017-01-24 14:40:57+00:00\n"
+"POT-Creation-Date: 2017-02-02 11:52:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -62,11 +62,11 @@ msgstr ""
 #: admin/admin-init.php:79
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:84
 #: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:59
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:266
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:273
 #: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:89
 #: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:104
 #: includes/widgets/mm_sow-piecharts-widget/mm_sow-piecharts-widget.php:54
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:74
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:81
 #: includes/widgets/mm_sow-pricing-table-widget/mm_sow-pricing-table-widget.php:115
 #: includes/widgets/mm_sow-services-widget/mm_sow-services-widget.php:103
 #: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:145
@@ -648,12 +648,12 @@ msgid "Color"
 msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:105
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:174
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:181
 msgid "Default"
 msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:106
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:38
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:45
 msgid "Custom"
 msgstr ""
 
@@ -718,17 +718,17 @@ msgid "Button Size"
 msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:142
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:176
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:183
 msgid "Medium"
 msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:143
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:177
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:184
 msgid "Large"
 msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:144
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:175
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:182
 msgid "Small"
 msgstr ""
 
@@ -789,13 +789,13 @@ msgid "The title to identify the HTML element"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:47
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:227
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:232
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:234
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:239
 msgid "Background Image"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:48
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:233
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:240
 msgid ""
 "This background image will be used as a placeholder image if YouTube or "
 "HTML5 video background option is chosen."
@@ -872,7 +872,7 @@ msgstr ""
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:159
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:199
 #: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:64
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:152
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:159
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:178
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:212
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:247
@@ -909,9 +909,9 @@ msgstr ""
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:143
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:175
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:220
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:161
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:178
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:199
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:168
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:185
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:206
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:196
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:228
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:263
@@ -925,8 +925,8 @@ msgstr ""
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:144
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:176
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:221
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:179
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:200
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:186
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:207
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:197
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:229
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:264
@@ -939,8 +939,8 @@ msgid "Space between columns."
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:150
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:284
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:168
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:291
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:175
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:203
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:175
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:132
@@ -949,8 +949,8 @@ msgid "Responsive"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:155
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:289
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:173
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:296
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:180
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:208
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:180
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:137
@@ -964,10 +964,10 @@ msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:186
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:226
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:305
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:330
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:185
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:206
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:312
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:337
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:192
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:213
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:234
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:269
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:190
@@ -980,8 +980,8 @@ msgid "Resolution"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:187
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:306
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:186
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:313
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:193
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:235
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:191
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:164
@@ -990,8 +990,8 @@ msgid "The resolution to treat as a tablet resolution."
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:195
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:314
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:194
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:321
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:201
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:243
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:199
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:172
@@ -1004,8 +1004,8 @@ msgid "Carousel height on mobiles"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:227
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:331
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:207
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:338
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:214
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:270
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:211
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:199
@@ -1117,7 +1117,7 @@ msgid "Add or subtract from default percentage of 100% for title size"
 msgstr ""
 
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:83
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:87
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:94
 msgid "Header custom font color"
 msgstr ""
 
@@ -1152,12 +1152,12 @@ msgid "A subtitle displayed above the title heading."
 msgstr ""
 
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:114
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:97
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:104
 msgid "Sub-heading custom text size"
 msgstr ""
 
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:122
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:105
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:112
 msgid "Sub-heading custom font color"
 msgstr ""
 
@@ -1182,172 +1182,190 @@ msgid "Display a hero background with video or image background."
 msgstr ""
 
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:30
-msgid "Header Type"
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:40
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:41
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:40
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:30
+msgid "Hide title"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:32
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:42
+#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:43
+#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:42
+#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:32
+msgid ""
+"Hide title on frontend (make visible only in PB admin - easier to identify "
+"widgets)"
 msgstr ""
 
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:37
-msgid "Standard"
+msgid "Header Type"
 msgstr ""
 
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:44
+msgid "Standard"
+msgstr ""
+
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:51
 msgid "Custom Header"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:52
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:59
 msgid "Custom text"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:57
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:64
 msgid ""
 "Custom CSS for presentation of the Custom header elements. Will be embedded "
 "inline with the page."
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:66
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:73
 msgid "Standard Header"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:74
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:81
 msgid "Header text"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:79
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:86
 msgid "Header custom text size"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:92
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:99
 msgid "Sub-heading text"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:110
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:117
 msgid "Button text"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:115
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:122
 msgid "Button URL"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:120
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:127
 msgid "Open URL in a new window"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:127
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:134
 msgid "Scroll to row"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:128
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:135
 msgid ""
 "Enter unique row idendifier ( set identifier in Row settings > Attributes > "
 "\"Row unique identifier\") to smooth scroll the page to that identified row."
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:133
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:140
 msgid "Background"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:138
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:145
 msgid "Background Type"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:145
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:152
 msgid "Cover Image"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:146
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:153
 msgid "Parallax Image"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:147
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:154
 msgid "YouTube Video"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:148
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:155
 msgid "HTML5 Video"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:154
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:161
 msgid "YouTube Background Video"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:164
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:171
 msgid "YouTube URL"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:165
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:172
 msgid ""
 "An URL of the YouTube video that will act as background video for this "
 "section."
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:170
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:177
 msgid "Choose the YouTube video quality"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:173
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:180
 msgid "High Resolution"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:178
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:185
 msgid "HD 720p"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:179
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:186
 msgid "HD 1080p"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:185
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:192
 msgid "Aspect ratio of the YouTube video"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:188
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:195
 msgid "16/9"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:189
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:196
 msgid "Auto"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:190
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:197
 msgid "4/3"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:199
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:206
 msgid "HTML5 Background videos"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:209
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:216
 msgid "MP4 Video file"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:214
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:221
 msgid "WebM Video file"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:219
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:226
 msgid "Ogg Video file"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:242
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:249
 msgid "Background Overlay"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:247
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:254
 msgid "Overlay color"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:252
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:259
 msgid "Overlay opacity"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:271
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:293
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:318
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:278
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:300
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:325
 msgid "Top padding"
 msgstr ""
 
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:277
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:299
-#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:324
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:284
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:306
+#: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:331
 msgid "Bottom padding"
 msgstr ""
 
@@ -1568,106 +1586,106 @@ msgstr ""
 msgid "Display posts or custom post types in a multi-column grid."
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:40
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:47
 msgid "Heading for the grid"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:45
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:52
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:48
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:47
 msgid "Posts query"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:46
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:53
 msgid ""
 "After you build the query, make sure you choose the right taxonomy below to "
 "display for your posts and filter on, based on the post type selected "
 "during build query."
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:51
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:58
 msgid "Choose the taxonomy to display and filter on."
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:52
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:59
 msgid ""
 "Choose the taxonomy information to display for posts/portfolio and the "
 "taxonomy that is used to filter the portfolio/post. Takes effect only if no "
 "taxonomy filters are specified when building query."
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:59
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:66
 msgid "Heading / taxonomy filter align"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:66
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:73
 msgid "Align left"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:67
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:74
 msgid "Centered"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:68
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:75
 msgid "Align right"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:79
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:86
 msgid "Filterable?"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:85
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:92
 msgid "Choose a layout for the grid"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:92
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:99
 msgid "Fit Rows"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:93
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:100
 msgid "Masonry"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:99
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:106
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:77
 #: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:164
 msgid "Choose post image format"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:106
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:113
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:84
 msgid "Display post title on hover"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:112
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:119
 msgid "Display taxonomy info below the post image?"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:118
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:125
 msgid "Display post title below the post image?"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:124
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:131
 msgid "Display post excerpt/summary below the post image?"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:130
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:137
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:111
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:120
 msgid "Post Meta"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:135
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:142
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:116
 msgid "Display post author info below the post item?"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:141
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:148
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:122
 msgid "Display post date info below the post item?"
 msgstr ""
 
-#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:162
+#: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:169
 msgid "Space between columns in masonry grid."
 msgstr ""
 
@@ -1677,18 +1695,6 @@ msgstr ""
 
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:17
 msgid "Display blog posts or custom post types as a carousel"
-msgstr ""
-
-#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:41
-#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:40
-#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:30
-msgid "Hide title"
-msgstr ""
-
-#: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:43
-#: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:42
-#: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:32
-msgid "Hide title on frontend (make visible only in PB admin - easier to identify widgets)"
 msgstr ""
 
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:58

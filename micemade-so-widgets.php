@@ -7,7 +7,7 @@
  * Author URI: http://micemade.com/
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 0.9.0
+ * Version: 0.9.1
  * Text Domain: mm_sow
  * Domain Path: languages
  *

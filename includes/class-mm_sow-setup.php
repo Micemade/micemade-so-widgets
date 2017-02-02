@@ -343,7 +343,7 @@ if (!class_exists('MM_SOW_Setup')):
 
 			/**
 			 *  Custom attributes for particular widgets
-			 *   -paddings on different screens
+			 *   - paddings on different screens
 			 *   - maximum width for widgets
 			 *   - remove default widget bottom-margin
 			 */
