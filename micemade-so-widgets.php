@@ -2,12 +2,12 @@
 /**
  * Plugin Name: Micemade SO Widgets
  * Plugin URI: http://micemade.com/micemade-so-widgets
- * Description: A collection of quality widgets for use SiteOrigin page builder or in any widgetized area. SiteOrigin Widgets Bundle is required. Forked from LiveMesh SiteOrigin Widgets - https://wordpress.org/plugins/livemesh-siteorigin-widgets/ .
+ * Description: A collection of high quality widgets for use SiteOrigin page builder or in any widgetized area. SiteOrigin Widgets Bundle is required. Forked from LiveMesh SiteOrigin Widgets.
  * Author: Micemade
  * Author URI: http://micemade.com/
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 0.9.1
+ * Version: 0.9.2
  * Text Domain: mm_sow
  * Domain Path: languages
  *
@@ -27,10 +27,10 @@
  */
 
 // Exit if accessed directly
-if (!defined('ABSPATH'))
+if ( !defined('ABSPATH') )
     exit;
 
-if (!class_exists('Micemade_SO_widgets')) :
+if ( !class_exists('Micemade_SO_widgets') ) :
 
     /**
      * Main Micemade_SO_widgets Class
@@ -61,6 +61,8 @@ if (!class_exists('Micemade_SO_widgets')) :
                 self::$instance->includes();
 
                 self::$instance->hooks();
+				
+				self::$instance->updater();
 				
 				// Ajax script URL (wp admin ajax), for frontend
 				add_action('wp_head', array( self::$instance, 'ajax_url_var') );
@@ -358,6 +360,14 @@ if (!class_exists('Micemade_SO_widgets')) :
 			echo '<script type="text/javascript">var mm_sow_ajaxurl = "'. admin_url("admin-ajax.php") .'"</script>';
 		}
 		
+		function updater() {
+			
+			require_once( 'github_updater.php' );
+			if ( is_admin() ) {
+				new Micemade_GitHubPluginUpdater( __FILE__, 'Micemade', "micemade-so-widgets" );
+			}
+		}
+		
 		
     } // end ClASS
 	
@@ -380,14 +390,3 @@ function MM_SOW() {
 
 // Get MM_SOW Running
 MM_SOW();
-
-if( ! class_exists( 'Micemade_Updater' ) ){
-	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
-}
-
-$updater = new Micemade_Updater( __FILE__ );
-$updater->set_username( 'Micemade' );
-$updater->set_repository( 'micemade-so-widgets' );
-//$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
-
-$updater->initialize();
