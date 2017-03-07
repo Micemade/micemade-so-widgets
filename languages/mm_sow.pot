@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/index\n"
-"POT-Creation-Date: 2017-02-02 11:52:02+00:00\n"
+"POT-Creation-Date: 2017-02-03 11:57:27+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2397,10 +2397,10 @@ msgstr ""
 msgid "The product is already in the wishlist! Browse Wishlist"
 msgstr ""
 
-#: micemade-so-widgets.php:138 micemade-so-widgets.php:147
+#: micemade-so-widgets.php:140 micemade-so-widgets.php:149
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: micemade-so-widgets.php:325
+#: micemade-so-widgets.php:327
 msgid "Loading quick view"
 msgstr ""

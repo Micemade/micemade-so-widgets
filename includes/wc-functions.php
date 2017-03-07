@@ -1,5 +1,23 @@
 <?php
 /**
+ *  WC VERSION CONTROL
+ *  
+ *  @param [string] $vers_to_check - WC version to check
+ *  @return $version_is_higher
+ *  
+ */
+function mm_sow_wc_version_f( $vers_to_check ) {
+	
+	if( ! MM_SOW_WOO_ACTIVE ) return;
+	
+	$version_is_higher = false;
+	if ( version_compare( WOOCOMMERCE_VERSION, $vers_to_check ) >= 0 ) {
+		$version_is_higher = true;
+	}
+	return $version_is_higher;
+}
+add_filter( 'mm_sow_wc_version','mm_sow_wc_version_f', 10, 1 );
+/**
  * MM_SOW_PRODUCT_BUTTONS
  *
  * echo shop action buttons - quick view, add to cart, wishlist

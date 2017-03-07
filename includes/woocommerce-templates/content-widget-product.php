@@ -15,10 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $product; ?>
+global $product;
+// WooCommerce 2.7.0 < Fallback conditional :
+$product_id = apply_filters( 'mm_sow_wc_version', '2.7.0'  ) ? $product->get_id() : $product->id;
+?>
 
 <li>
-	<a href="<?php echo esc_url( get_permalink( $product->id ) ); ?>" title="<?php echo esc_attr( $product->get_title() ); ?>">
+	<a href="<?php echo esc_url( get_permalink( $product_id ) ); ?>" title="<?php echo esc_attr( $product->get_title() ); ?>">
 		
 		<!--<span class="product-image"><?php //echo $product->get_image('thumbnail'); ?></span> -->
 		<div class="product-image">
@@ -41,7 +44,14 @@ global $product; ?>
 			<h5 class="product-title"><?php echo $product->get_title(); ?></h5>
 		
 			<?php if ( ! empty( $show_rating ) ) { ?>
-				<?php echo $product->get_rating_html(); ?>
+				<?php
+				// WooCommerce 2.7.0 < Fallback conditional :
+				if( apply_filters( 'mm_sow_wc_version', '2.7.0'  ) ) {
+					echo wc_get_rating_html( $product->get_average_rating() ); 
+				}else{
+					echo $product->get_rating_html(); 
+				}
+				?>
 			<?php } ?>
 			
 			<span class="price">

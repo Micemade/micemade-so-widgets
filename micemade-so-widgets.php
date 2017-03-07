@@ -7,7 +7,7 @@
  * Author URI: http://micemade.com/
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 0.9.2
+ * Version: 0.9.3
  * Text Domain: mm_sow
  * Domain Path: languages
  *
@@ -362,7 +362,7 @@ if ( !class_exists('Micemade_SO_widgets') ) :
 		
 		function updater() {
 			
-			require_once( 'github_updater.php' );
+			require_once( plugin_dir_path( __FILE__ ) . 'github_updater.php' );
 			if ( is_admin() ) {
 				new Micemade_GitHubPluginUpdater( __FILE__, 'Micemade', "micemade-so-widgets" );
 			}

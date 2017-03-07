@@ -34,13 +34,26 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                     ),
                     'default' => 'style1',
                     'options' => array(
-                        'style1' => __('Style 1', 'mm_sow'),
-                        'style2' => __('Style 2', 'mm_sow'),
-                        'style3' => __('Style 3', 'mm_sow'),
+                        'style1' => __('Style 1 - Image background', 'mm_sow'),
+                        'style2' => __('Style 2 - Image right', 'mm_sow'),
+                        'style3' => __('Style 3 - Image left', 'mm_sow'),
+                        'style4' => __('Style 4 - Simple list', 'mm_sow'),
                     )
+                ),
+                'thumb_size' => array(
+                    'type' => 'measurement',
+                    'label' => __('Thumb size', 'mm_sow'),
+                    'default' => '50px',
+                    'state_handler' => array(
+                        'style[style1]' => array('hide'),
+                        'style[style2]' => array('hide'),
+                        'style[style3]' => array('hide'),
+                        'style[style4]' => array('show'),
+                    ),
                 ),
 
                 'wc_cats' => array(
+
                     'type' => 'repeater',
                     'label' => __('WooCommerce Categories', 'mm_sow'),
                     'item_name' => __('WC Category', 'mm_sow'),
@@ -49,31 +62,32 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                         'update_event' => 'change',
                         'value_method' => 'text'
                     ),
+
                     'fields' => array(
-					
+
                         'term' => array(
                             'type' => 'select',
                             'label' => __('Choose Category', 'mm_sow'),
                             'default' => '',
-							'description' => __('pick single woocommerce products category', 'mm_sow'),
+		                        'description' => __('pick single woocommerce products category', 'mm_sow'),
                             'options' => mm_sow_get_terms( 'product_cat' )
                         ),
-						
-						'image_type' => array(
+
+			                  'image_type' => array(
                             'type' => 'select',
                             'label' => __('Choose Category Image Type', 'mm_sow'),
                             'default' => 'image',
-							'description' => __('WC product category images are set in Products > Categories.', 'mm_sow'),
+				                    'description' => __('WC product category images are set in Products > Categories.', 'mm_sow'),
                             'state_emitter' => array(
                                 'callback' => 'select',
                                 'args' => array('image_type_{$repeater}')
                             ),
                             'options' => array(
                                 'image' => __('Image', 'mm_sow'),
-								'icon' => __('Icon', 'mm_sow'),
+				                        'icon' => __('Icon', 'mm_sow'),
                                 'none' => __('None', 'mm_sow'),
                             )
-                        ),
+                        ), // image_type field
 
                         'custom_image' => array(
                             'type' => 'media',
@@ -94,27 +108,34 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                                 'image_type_{$repeater}[image]' => array('hide'),
                                 'image_type_{$repeater}[none]' => array('hide'),
                             ),
-                        ),
+                        ), // icon field
 
                         'excerpt' => array(
                             'type' => 'textarea',
                             'label' => __('Short description', 'mm_sow'),
                             'description' => __('*( optional ) Provide a short description. Note: In case of bad readability (dark background), use Edit Row > Row Styles : Design > "Dark Background?" setting.', 'mm_sow'),
-							/* 
-							'state_handler' => array(
-                                'style[style1]' => array('hide'),
+                            'state_handler' => array(
+                                'style[style1]' => array('show'),
                                 'style[style2]' => array('show'),
                                 'style[style3]' => array('show'),
+                                'style[style4]' => array('hide'),
                             ),
-							 */
-                        ),
+                        ), // excerpt field
 
-                    )
-                ),
+                    ) // fields
+
+                ), // wc_cats repeater field
 
                 'settings' => array(
+
                     'type' => 'section',
                     'label' => __('Settings', 'mm_sow'),
+                    'state_handler' => array(
+                        'style[style1]' => array('show'),
+                        'style[style2]' => array('show'),
+                        'style[style3]' => array('show'),
+                        'style[style4]' => array('hide'),
+                    ),
                     'fields' => array(
 
                         'per_line' => array(
@@ -125,41 +146,39 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                             'integer' => true,
                             'default' => 3
                         ),
-						
-						'overlay_color' => array(
+
+						            'overlay_color' => array(
                             'type' => 'color',
                             'label' => __('Overlay color.', 'mm_sow'),
-							
+
                         ),
-						
-						'title_color' => array(
+
+						            'title_color' => array(
                             'type' => 'color',
                             'label' => __('Category title color.', 'mm_sow'),
                         ),
-						
-						'gutter' => array(
-							'type' => 'number',
-							'label' => __('Gutter', 'mm_sow'),
-							'default' => 20,
-							'description' => __('Space between columns.', 'mm_sow'),
-						),
-						
-						'margin_bottom' => array(
-							'type' => 'number',
-							'label' => __('Margin bottom', 'mm_sow'),
-							'default' => 20,
-							'description' => __('Margin bellow the each category.', 'mm_sow'),
-						),
-						
-						
-						
-						'height' => array(
-							'type' => 'number',
-							'label' => __('Categories height', 'mm_sow'),
-							'default' => 300,
-						),
-						
-						'responsive' => array(
+
+            						'gutter' => array(
+            							'type' => 'number',
+            							'label' => __('Gutter', 'mm_sow'),
+            							'default' => 20,
+            							'description' => __('Space between columns.', 'mm_sow'),
+            						),
+
+            						'margin_bottom' => array(
+            							'type' => 'number',
+            							'label' => __('Margin bottom', 'mm_sow'),
+            							'default' => 20,
+            							'description' => __('Margin bellow the each category.', 'mm_sow'),
+            						),
+
+            						'height' => array(
+            							'type' => 'number',
+            							'label' => __('Categories height', 'mm_sow'),
+            							'default' => 300,
+            						),
+
+						            'responsive' => array(
                             'type' => 'section',
                             'label' => __('Responsive', 'mm_sow'),
                             'hide' => true,
@@ -201,14 +220,14 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                                             'sanitize' => 'intval',
                                         )
                                     )
-                                )
+                                ) // mobile section
 
-                            )
-                        ),
-						
-						
+                            ) // fields
+
+                        ),// responsive section
+
                     ) // settings fields
-					
+
                 ), // settings section
             )
         );
@@ -225,28 +244,30 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
 
     function get_template_variables($instance, $args) {
         return array(
-            'style' => $instance['style'],
-            'wc_cats' => !empty($instance['wc_cats']) ? $instance['wc_cats'] : array(),
-            'settings' => $instance['settings']
+            'style'         => $instance['style'],
+            'wc_cats'       => !empty($instance['wc_cats']) ? $instance['wc_cats'] : array(),
+            'settings'      => $instance['settings']
         );
     }
-	
+
 	function get_less_variables($instance) {
-		
+
 		return array(
-            'overlay_color'	=> $instance['settings']['overlay_color'] ,
-            'title_color'	=> $instance['settings']['title_color'] ,
-			
-			'gutter'		=> intval($instance['settings']['gutter']) . 'px',
-			'margin_bottom'	=> intval($instance['settings']['margin_bottom']) . 'px',
-			'height'		=> intval($instance['settings']['height']) . 'px',
+        'overlay_color'	=> $instance['settings']['overlay_color'] ,
+        'title_color'	=> $instance['settings']['title_color'] ,
 
-            'tablet_width'	=> intval($instance['settings']['responsive']['tablet']['width']) . 'px',
-            'mobile_width'	=> intval($instance['settings']['responsive']['mobile']['width']) . 'px',
+        'thumb_size'	=> isset( $instance['thumb_size']) ? $instance['thumb_size'] : '50px',
 
-            'tablet_height'	=> intval($instance['settings']['responsive']['tablet']['height']) . 'px',
-            'mobile_height'	=> intval($instance['settings']['responsive']['mobile']['height']) . 'px',
-        );
+		'gutter'		=> intval($instance['settings']['gutter']) . 'px',
+		'margin_bottom'	=> intval($instance['settings']['margin_bottom']) . 'px',
+		'height'		=> intval($instance['settings']['height']) . 'px',
+
+        'tablet_width'	=> intval($instance['settings']['responsive']['tablet']['width']) . 'px',
+        'mobile_width'	=> intval($instance['settings']['responsive']['mobile']['width']) . 'px',
+
+        'tablet_height'	=> intval($instance['settings']['responsive']['tablet']['height']) . 'px',
+        'mobile_height'	=> intval($instance['settings']['responsive']['mobile']['height']) . 'px',
+      );
     }
 
 }

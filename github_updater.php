@@ -1,4 +1,9 @@
 <?php
+/**
+ *  MICEMADE GITHUB PLUGIN UPDATER
+ *  - class for automatic plugin updates via Github
+ *  - used code from https://code.tutsplus.com/tutorials/distributing-your-plugins-in-github-with-automatic-updates--wp-34817
+ */
 class Micemade_GitHubPluginUpdater {
  
     private $slug;
@@ -26,7 +31,7 @@ class Micemade_GitHubPluginUpdater {
      * @param  string $accessToken
      * @return null
      */
-    function __construct( $pluginFile, $gitHubUsername, $gitHubProjectName, $accessToken = '' )
+   function __construct( $pluginFile, $gitHubUsername, $gitHubProjectName, $accessToken = '' )
     {
         add_filter( "pre_set_site_transient_update_plugins", array( $this, "setTransitent" ) );
         add_filter( "plugins_api", array( $this, "setPluginInfo" ), 10, 3 );
@@ -103,7 +108,7 @@ class Micemade_GitHubPluginUpdater {
 		$this->initPluginData();
 		$this->getRepoReleaseInfo();
 
-		$doUpdate = version_compare( $this->githubAPIResult->tag_name, $transient->checked[$this->slug] );
+		$doUpdate = version_compare( $this->githubAPIResult->tag_name, $transient->checked[$this->slug], '>' );
 
 		if ( $doUpdate )
 		{
