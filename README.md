@@ -36,27 +36,29 @@ See the all of widgets in action here - [LIVE DEMO](https://micemade.com/natura 
 The plugin comes with the following widgets. **Almost all of the widgets come with a dark version**.
 
 
+* Accordion/Toggle - capture collapsible content panels when space is limited.
+* Button - flat style buttons with rich set of customization options.
+* Generic Carousel Widget - displays lets you present a list of HTML content in a carousel.
+* Client List widget - widget to showcase the clients that you have handled.
+* Divider widget - widget that creates gap or line divider between elements
+* Heading - capture effective headings for your page sections.
+* Hero Image Widget - lets you display any type of header content with option to set Parallax, YouTube or HTML5 video background.
+* Icon list- widget that lets you use either images or icon fonts to create custom social icons list, capture payment options etc.
+* Odometers - show impressive numbers pertaining to your work or company.
+* Pie charts - animated charts for visual presentation of percentage stats.
+* Animated Pie charts - for visual depiction of percentage stats.
+* Post Carousel Widget - displays your posts or custom post types as a highly responsive carousel.
 * Services -  capture what you can offer for your clients/customers.
 * Responsive Tabs -  function seamlessly across all devices and resolutions.
-* Accordion/Toggle - capture collapsible content panels when space is limited.
-* Heading - capture effective headings for your page sections.
 * Team Profiles - widgets to display all the team members.
-* Odometer - show impressive numbers pertaining to your work or company.
 * Bar charts - widget to capture skills or any type of percentage stats.
-* Animated Pie charts - for visual depiction of percentage stats.
 * Testimonials - to tell everyone the good things you often hear from your clients/customers.
 * Testimonials slider - a responsive touch enabled slider that cycles through testimonials.
-* Post Carousel Widget - displays your posts or custom post types as a highly responsive carousel.
-* Generic Carousel Widget - displays lets you present a list of HTML content in a carousel.
-* Hero Header Widget - lets you display any type of header content with option to set Parallax, YouTube or HTML5 video background.
 * Grid widget - displays posts in a nice responsive grid. Masonry and packed options are supported.
-* Client List widget - widget to showcase the clients that you have handled.
 * Pricing Plans - help get more sales.
-* Button - flat style buttons with rich set of customization options.
-* Icon list- widget that lets you use either images or icon fonts to create custom social icons list, capture payment options etc.
 
-
-**Important: You must activate widgets you need to use from Plugins &gt; SiteOrigin Widgets so that they can be available to use.**. 
+**Important: You must activate widgets you need to use from Plugins &gt; SiteOrigin Widgets so that they can be available to use.**
+(During the Micemade themes installation process all the widget are being activated automatically.)
 
 Do you have suggestions to make or want to be notified of important updates? Reach out to us on [Twitter](http://twitter.com/themicemade)
 
