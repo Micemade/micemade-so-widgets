@@ -443,6 +443,7 @@ if (!class_exists('MM_SOW_Setup')):
                 "mm_sow-button-widget"			=> true,
                 "mm_sow-carousel-widget"		=> true,
                 "mm_sow-clients-widget"			=> true,
+				"mm_sow-divider-widget"			=> true,
                 "mm_sow-heading-widget"			=> true,
                 "mm_sow-hero-image-widget"		=> true,
                 "mm_sow-icon-list-widget"		=> true,

@@ -73,18 +73,18 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                             'options' => mm_sow_get_terms( 'product_cat' )
                         ),
 
-			                  'image_type' => array(
+						'image_type' => array(
                             'type' => 'select',
                             'label' => __('Choose Category Image Type', 'mm_sow'),
                             'default' => 'image',
-				                    'description' => __('WC product category images are set in Products > Categories.', 'mm_sow'),
+				            'description' => __('WC product category images are set in Products > Categories.', 'mm_sow'),
                             'state_emitter' => array(
                                 'callback' => 'select',
                                 'args' => array('image_type_{$repeater}')
                             ),
                             'options' => array(
                                 'image' => __('Image', 'mm_sow'),
-				                        'icon' => __('Icon', 'mm_sow'),
+				                'icon' => __('Icon', 'mm_sow'),
                                 'none' => __('None', 'mm_sow'),
                             )
                         ), // image_type field
@@ -122,6 +122,19 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                             ),
                         ), // excerpt field
 
+                        'featured' => array(
+                            'type' => 'checkbox',
+                            'label' => __('Display category as featured', 'mm_sow'),
+                            'description' => __('Make category text bold and slightly shadowed.', 'mm_sow')
+                        ),
+						
+						'additional_args' => array(
+							'type' => 'text',
+							'label' => __('Additional URL args', 'mm_sow'),
+							'description' => __('add additional query arguments', 'mm_sow'),
+							'default' => '',
+						)
+
                     ) // fields
 
                 ), // wc_cats repeater field
@@ -153,32 +166,32 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
 
                         ),
 
-						            'title_color' => array(
+						'title_color' => array(
                             'type' => 'color',
                             'label' => __('Category title color.', 'mm_sow'),
                         ),
 
-            						'gutter' => array(
-            							'type' => 'number',
-            							'label' => __('Gutter', 'mm_sow'),
-            							'default' => 20,
-            							'description' => __('Space between columns.', 'mm_sow'),
-            						),
+						'gutter' => array(
+							'type' => 'number',
+							'label' => __('Gutter', 'mm_sow'),
+							'default' => 20,
+							'description' => __('Space between columns.', 'mm_sow'),
+						),
 
-            						'margin_bottom' => array(
-            							'type' => 'number',
-            							'label' => __('Margin bottom', 'mm_sow'),
-            							'default' => 20,
-            							'description' => __('Margin bellow the each category.', 'mm_sow'),
-            						),
+						'margin_bottom' => array(
+							'type' => 'number',
+							'label' => __('Margin bottom', 'mm_sow'),
+							'default' => 20,
+							'description' => __('Margin bellow the each category.', 'mm_sow'),
+						),
 
-            						'height' => array(
-            							'type' => 'number',
-            							'label' => __('Categories height', 'mm_sow'),
-            							'default' => 300,
-            						),
+						'height' => array(
+							'type' => 'number',
+							'label' => __('Categories height', 'mm_sow'),
+							'default' => 300,
+						),
 
-						            'responsive' => array(
+						'responsive' => array(
                             'type' => 'section',
                             'label' => __('Responsive', 'mm_sow'),
                             'hide' => true,
@@ -244,30 +257,34 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
 
     function get_template_variables($instance, $args) {
         return array(
-            'style'         => $instance['style'],
-            'wc_cats'       => !empty($instance['wc_cats']) ? $instance['wc_cats'] : array(),
-            'settings'      => $instance['settings']
+            'style'         	=> $instance['style'],
+            'wc_cats'       	=> !empty($instance['wc_cats']) ? $instance['wc_cats'] : array(),
+            'settings'      	=> $instance['settings'],
         );
     }
 
 	function get_less_variables($instance) {
 
-		return array(
-        'overlay_color'	=> $instance['settings']['overlay_color'] ,
-        'title_color'	=> $instance['settings']['title_color'] ,
+        $less_vars = array();
 
-        'thumb_size'	=> isset( $instance['thumb_size']) ? $instance['thumb_size'] : '50px',
+        if( isset($instance['settings'] ) ) {
 
-		'gutter'		=> intval($instance['settings']['gutter']) . 'px',
-		'margin_bottom'	=> intval($instance['settings']['margin_bottom']) . 'px',
-		'height'		=> intval($instance['settings']['height']) . 'px',
+            $less_vars['overlay_color'] = $instance['settings']['overlay_color'] ;
+            $less_vars['title_color']   = $instance['settings']['title_color'] ;
+            $less_vars['gutter']        = intval($instance['settings']['gutter']) . 'px' ;
+            $less_vars['margin_bottom'] = intval($instance['settings']['margin_bottom']) . 'px' ;
+            $less_vars['height']        = intval($instance['settings']['height']) . 'px' ;
+            $less_vars['tablet_width']  = intval($instance['settings']['responsive']['tablet']['width']) . 'px' ;
+            $less_vars['mobile_width']  = intval($instance['settings']['responsive']['mobile']['width']) . 'px' ;
+            $less_vars['tablet_height'] = intval($instance['settings']['responsive']['tablet']['height']) . 'px' ;
+            $less_vars['mobile_height'] = intval($instance['settings']['responsive']['mobile']['height']) . 'px' ;
 
-        'tablet_width'	=> intval($instance['settings']['responsive']['tablet']['width']) . 'px',
-        'mobile_width'	=> intval($instance['settings']['responsive']['mobile']['width']) . 'px',
+        }
 
-        'tablet_height'	=> intval($instance['settings']['responsive']['tablet']['height']) . 'px',
-        'mobile_height'	=> intval($instance['settings']['responsive']['mobile']['height']) . 'px',
-      );
+        $less_vars['thumb_size'] = isset( $instance['thumb_size']) ? $instance['thumb_size'] : '50px';
+
+        return $less_vars;
+
     }
 
 }

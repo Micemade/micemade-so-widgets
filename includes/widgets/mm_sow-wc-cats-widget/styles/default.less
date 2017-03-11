@@ -11,7 +11,7 @@
 @tablet_height: 200px;
 @mobile_height: 150px;
 
-@tablet_width: 800px;
+@tablet_width: 768px;
 @mobile_width: 480px;
 
 
@@ -62,7 +62,13 @@
 
 		} // .mm_sow-image-wrapper
 
-		.titleColor(@title_color) when not ( @title_color="" ) {
+        .mm_sow-title a {
+            strong {
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+            }
+        }
+
+        .titleColor(@title_color) when not ( @title_color="" ) {
 			.mm_sow-wc-cat-text {
 
 				.mm_sow-title a {
@@ -77,6 +83,7 @@
 	}
 
 }
+// Style 4
 .mm_sow-style4 {
 
 	.product_cat-list {

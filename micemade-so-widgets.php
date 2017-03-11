@@ -71,6 +71,44 @@ if ( !class_exists('Micemade_SO_widgets') ) :
             return self::$instance;
         }
 		
+		/**
+         * Setup plugin constants
+         *
+         */
+        private function setup_constants() {
+
+            // Plugin version
+            if (!defined('MM_SOW_VERSION')) {
+                define('MM_SOW_VERSION', '0.9.3');
+            }
+
+            // Plugin Folder Path
+            if (!defined('MM_SOW_PLUGIN_DIR')) {
+                define('MM_SOW_PLUGIN_DIR', plugin_dir_path(__FILE__));
+            }
+
+            // Plugin Folder URL
+            if (!defined('MM_SOW_PLUGIN_URL')) {
+                define('MM_SOW_PLUGIN_URL', plugin_dir_url(__FILE__));
+            }
+
+            // Plugin Root File
+            if (!defined('MM_SOW_PLUGIN_FILE')) {
+                define('MM_SOW_PLUGIN_FILE', __FILE__);
+            }
+
+            // Plugin Help Page URL
+            if (!defined('MM_SOW_PLUGIN_HELP_URL')) {
+                define('MM_SOW_PLUGIN_HELP_URL', admin_url() . 'admin.php?page=micemade_so_widgets_documentation');
+            }
+
+
+            $this->activation_checks();
+			
+            $this->setup_debug_constants();
+        }
+		
+		
 		public function mm_sow_inline_css() {
 			
 			remove_action('wp_footer', 'siteorigin_panels_print_inline_css');
@@ -147,44 +185,7 @@ if ( !class_exists('Micemade_SO_widgets') ) :
         public function __wakeup() {
             // Unserializing instances of the class is forbidden
             _doing_it_wrong(__FUNCTION__, __('Cheatin&#8217; huh?', 'mm_sow'), '1.6');
-        }
-
-        /**
-         * Setup plugin constants
-         *
-         */
-        private function setup_constants() {
-
-            // Plugin version
-            if (!defined('MM_SOW_VERSION')) {
-                define('MM_SOW_VERSION', '1.0.0');
-            }
-
-            // Plugin Folder Path
-            if (!defined('MM_SOW_PLUGIN_DIR')) {
-                define('MM_SOW_PLUGIN_DIR', plugin_dir_path(__FILE__));
-            }
-
-            // Plugin Folder URL
-            if (!defined('MM_SOW_PLUGIN_URL')) {
-                define('MM_SOW_PLUGIN_URL', plugin_dir_url(__FILE__));
-            }
-
-            // Plugin Root File
-            if (!defined('MM_SOW_PLUGIN_FILE')) {
-                define('MM_SOW_PLUGIN_FILE', __FILE__);
-            }
-
-            // Plugin Help Page URL
-            if (!defined('MM_SOW_PLUGIN_HELP_URL')) {
-                define('MM_SOW_PLUGIN_HELP_URL', admin_url() . 'admin.php?page=micemade_so_widgets_documentation');
-            }
-
-
-            $this->activation_checks();
-			
-            $this->setup_debug_constants();
-        }
+        }        
 
         private function setup_debug_constants() {
 
@@ -364,7 +365,7 @@ if ( !class_exists('Micemade_SO_widgets') ) :
 			
 			require_once( plugin_dir_path( __FILE__ ) . 'github_updater.php' );
 			if ( is_admin() ) {
-				new Micemade_GitHubPluginUpdater( __FILE__, 'Micemade', "micemade-so-widgets" );
+				new Micemade_GitHub_Plugin_Updater( __FILE__, 'Micemade', "micemade-so-widgets" );
 			}
 		}
 		
