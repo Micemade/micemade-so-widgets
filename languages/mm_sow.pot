@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/index\n"
-"POT-Creation-Date: 2017-03-08 18:57:31+00:00\n"
+"POT-Creation-Date: 2017-03-15 19:46:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,7 +72,7 @@ msgstr ""
 #: includes/widgets/mm_sow-team-members-widget/mm_sow-team-members-widget.php:145
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:64
 #: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:64
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:138
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:145
 msgid "Settings"
 msgstr ""
 
@@ -641,6 +641,7 @@ msgid "The color of the button."
 msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:103
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:53
 msgid "Color"
 msgstr ""
 
@@ -879,7 +880,7 @@ msgstr ""
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:141
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:176
 #: includes/widgets/mm_sow-testimonials-widget/mm_sow-testimonials-widget.php:69
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:149
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:156
 msgid "Columns per row"
 msgstr ""
 
@@ -915,7 +916,7 @@ msgstr ""
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:125
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:157
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:192
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:169
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:176
 msgid "Gutter"
 msgstr ""
 
@@ -931,7 +932,7 @@ msgstr ""
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:126
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:158
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:193
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:171
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:178
 msgid "Space between columns."
 msgstr ""
 
@@ -941,17 +942,18 @@ msgstr ""
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:203
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:175
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:132
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:189
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:196
 msgid "Responsive"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:155
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:112
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:296
 #: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:180
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:208
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:180
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:137
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:194
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:201
 msgid "Tablet"
 msgstr ""
 
@@ -961,6 +963,8 @@ msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:186
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:226
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:123
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:145
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:312
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:337
 #: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:192
@@ -971,28 +975,30 @@ msgstr ""
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:210
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:163
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:198
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:204
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:223
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:211
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:230
 msgid "Resolution"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:187
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:124
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:313
 #: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:193
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:235
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:191
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:164
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:205
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:212
 msgid "The resolution to treat as a tablet resolution."
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:195
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:133
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:321
 #: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:201
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:243
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:199
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:172
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:213
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:220
 msgid "Mobile Phone"
 msgstr ""
 
@@ -1001,12 +1007,13 @@ msgid "Carousel height on mobiles"
 msgstr ""
 
 #: includes/widgets/mm_sow-carousel-widget/mm_sow-carousel-widget.php:227
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:146
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:338
 #: includes/widgets/mm_sow-portfolio-widget/mm_sow-portfolio-widget.php:214
 #: includes/widgets/mm_sow-posts-carousel-widget/mm_sow-posts-carousel-widget.php:270
 #: includes/widgets/mm_sow-stretcher-widget/mm_sow-stretcher-widget.php:211
 #: includes/widgets/mm_sow-testimonials-slider-widget/mm_sow-testimonials-slider-widget.php:199
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:224
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:231
 msgid "The resolution to treat as a mobile resolution."
 msgstr ""
 
@@ -1048,6 +1055,86 @@ msgstr ""
 
 #: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:52
 msgid "The logo image for the client/customer."
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:16
+msgid "Micemade Divider / Spacer"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:18
+msgid "Create divider or create empty space."
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:34
+msgid "Type"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:37
+msgid "Gap"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:38
+msgid "Single Line"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:39
+msgid "Double Line"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:40
+msgid "Dotted Line"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:41
+msgid "Dashed Line"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:47
+msgid "Styling"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:54
+msgid "Select the color of your divider."
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:60
+msgid "Thickness"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:66
+msgid "Width"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:72
+msgid "Margin Top"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:78
+msgid "Margin Bottom"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:87
+msgid "Attributes"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:93
+msgid "Divider Class"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:100
+msgid "Visibility"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:106
+msgid "Hide in desktop view?"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:117
+msgid "Hide in tablet view?"
+msgstr ""
+
+#: includes/widgets/mm_sow-divider-widget/mm_sow-divider-widget.php:138
+msgid "Hide in mobile view?"
 msgstr ""
 
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:16
@@ -2382,31 +2469,39 @@ msgstr ""
 msgid "Make category text bold and slightly shadowed."
 msgstr ""
 
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:158
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:133
+msgid "Additional URL args"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:134
+msgid "add additional query arguments"
+msgstr ""
+
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:165
 msgid "Overlay color."
 msgstr ""
 
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:164
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:171
 msgid "Category title color."
 msgstr ""
 
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:176
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:183
 msgid "Margin bottom"
 msgstr ""
 
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:178
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:185
 msgid "Margin bellow the each category."
 msgstr ""
 
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:183
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:190
 msgid "Categories height"
 msgstr ""
 
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:198
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:205
 msgid "Tablet categories height"
 msgstr ""
 
-#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:217
+#: includes/widgets/mm_sow-wc-cats-widget/mm_sow-wc-cats-widget.php:224
 msgid "Mobile categories height"
 msgstr ""
 
@@ -2422,10 +2517,17 @@ msgstr ""
 msgid "The product is already in the wishlist! Browse Wishlist"
 msgstr ""
 
-#: micemade-so-widgets.php:140 micemade-so-widgets.php:149
+#: micemade-so-widgets.php:99
+msgid ""
+"\"Micemade SO Widgets\" is not effective without \"SiteOrigin Widgets "
+"Bundle\" plugin installed and activated. Either install and activate "
+"\"SiteOrigin Widgets Bundle\" or deactivate \"Micemade SO Widgets\" plugin. "
+msgstr ""
+
+#: micemade-so-widgets.php:208 micemade-so-widgets.php:217
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: micemade-so-widgets.php:327
+#: micemade-so-widgets.php:358
 msgid "Loading quick view"
 msgstr ""

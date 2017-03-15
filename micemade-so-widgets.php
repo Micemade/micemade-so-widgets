@@ -49,27 +49,57 @@ if ( !class_exists('Micemade_SO_widgets') ) :
          * time. Also prevents needing to define globals all over the place.
          */
         public static function instance() {
-            if (!isset(self::$instance) && !(self::$instance instanceof Micemade_SO_widgets)) {
-                
-				self::$instance = new Micemade_SO_widgets;
-                self::$instance->setup_constants();
-
-                add_action('plugins_loaded', array(self::$instance, 'load_plugin_textdomain'));
+            
+			if (!isset(self::$instance) && !(self::$instance instanceof Micemade_SO_widgets)) {
+               
+			   self::$instance = new Micemade_SO_widgets;
 				
-                add_action('plugins_loaded', array(self::$instance, 'mm_sow_inline_css'));	
+				if( self::$instance->SOWB_plugin_activation_check() ) {
+					
+					self::$instance->setup_constants();
 
-                self::$instance->includes();
+					add_action('plugins_loaded', array(self::$instance, 'load_plugin_textdomain'));
+					
+					add_action('plugins_loaded', array(self::$instance, 'mm_sow_inline_css'));	
 
-                self::$instance->hooks();
-				
-				self::$instance->updater();
-				
-				// Ajax script URL (wp admin ajax), for frontend
-				add_action('wp_head', array( self::$instance, 'ajax_url_var') );
+					self::$instance->includes();
+
+					self::$instance->hooks();
+					
+					self::$instance->updater();
+					
+					// Ajax script URL (wp admin ajax), for frontend
+					add_action('wp_head', array( self::$instance, 'ajax_url_var') );
+					
+				}else{
+					add_action( 'admin_notices', array( self::$instance ,'mm_sow_dependency_notice') ); 
+				}
 
             }
+			
             return self::$instance;
         }
+		
+		private function SOWB_plugin_activation_check() {
+		
+			$sowb_is_active = false;
+			
+			if ( in_array( 'so-widgets-bundle/so-widgets-bundle.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) )  {
+				
+				$sowb_is_active = true; 
+						
+			}
+			
+			return $sowb_is_active;
+			
+		}
+		public function mm_sow_dependency_notice() {
+		
+			$class = "error updated settings-error notice is-dismissible";
+			$message = __("\"Micemade SO Widgets\" is not effective without \"SiteOrigin Widgets Bundle\" plugin installed and activated. Either install and activate \"SiteOrigin Widgets Bundle\" or deactivate \"Micemade SO Widgets\" plugin. ","mm_sow");
+			echo"<div class=\"$class\"> <p>$message</p></div>"; 
+			
+		}
 		
 		/**
          * Setup plugin constants
