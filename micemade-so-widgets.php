@@ -7,7 +7,7 @@
  * Author URI: http://micemade.com/
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 0.9.3
+ * Version: 0.9.4
  * Text Domain: mm_sow
  * Domain Path: languages
  *
@@ -52,9 +52,10 @@ if ( !class_exists('Micemade_SO_widgets') ) :
             
 			if (!isset(self::$instance) && !(self::$instance instanceof Micemade_SO_widgets)) {
                
-			   self::$instance = new Micemade_SO_widgets;
+				self::$instance = new Micemade_SO_widgets;
 				
-				if( self::$instance->SOWB_plugin_activation_check() ) {
+				// check dependency:
+				if( self::$instance->SOWB_plugin_activation_check() ) { 
 					
 					self::$instance->setup_constants();
 
@@ -71,7 +72,8 @@ if ( !class_exists('Micemade_SO_widgets') ) :
 					// Ajax script URL (wp admin ajax), for frontend
 					add_action('wp_head', array( self::$instance, 'ajax_url_var') );
 					
-				}else{
+				}else{ // if dependency check fails:
+					
 					add_action( 'admin_notices', array( self::$instance ,'mm_sow_dependency_notice') ); 
 				}
 
@@ -188,7 +190,10 @@ if ( !class_exists('Micemade_SO_widgets') ) :
 				if( $mm_sow_uploads_dir_exists  ) {
 					// create files in wp-content/uploads dir
 					$wp_filesystem->put_contents( $mm_sow_uploads_dir . '/inline-styles-'.esc_attr( $inline_css_id ).'.css', $inline_css, 0644 );
-					
+				}
+				
+				if( is_ssl() ) {
+					$mm_sow_uploads_url = preg_replace("/^http:/i", "https:", $mm_sow_uploads_url );
 				}
 				
 				echo '<link rel="stylesheet" id="mm_sow_inline_css-'.esc_attr($inline_css_id).'" href="'.esc_url( $mm_sow_uploads_url . '/inline-styles-'.esc_attr( $inline_css_id ).'.css' ).'" type="text/css" media="all">';

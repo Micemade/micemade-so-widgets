@@ -38,30 +38,63 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                         'style2' => __('Style 2 - Image right', 'mm_sow'),
                         'style3' => __('Style 3 - Image left', 'mm_sow'),
                         'style4' => __('Style 4 - Simple list', 'mm_sow'),
+                        'style5' => __('Style 5 - List of all available categories', 'mm_sow'),
                     )
                 ),
-                'thumb_size' => array(
-                    'type' => 'measurement',
+                
+				'image_type' => array(
+					'type' => 'select',
+					'label' => __('Choose Category Image Type', 'mm_sow'),
+					'default' => 'image',
+					'description' => __('WC product category images are set in Products > Categories.', 'mm_sow'),
+					'state_emitter' => array(
+						'callback' => 'select',
+						'args' => array('image_type')
+					),
+					'options' => array(
+						'image' => __('Image', 'mm_sow'),
+						'icon' => __('Icon', 'mm_sow'),
+						'none' => __('None', 'mm_sow'),
+					),
+					'state_handler' => array(
+						'style[style1]' => array('show'),
+						'style[style2]' => array('show'),
+						'style[style3]' => array('show'),
+						'style[style4]' => array('hide'),
+						'style[style5]' => array('hide'),
+					),
+				), // image_type field
+				
+				'thumb_size' => array(
+                    'type' => 'number',
                     'label' => __('Thumb size', 'mm_sow'),
-                    'default' => '50px',
+                    'default' => '40',
                     'state_handler' => array(
                         'style[style1]' => array('hide'),
                         'style[style2]' => array('hide'),
                         'style[style3]' => array('hide'),
                         'style[style4]' => array('show'),
+                        'style[style5]' => array('hide'),
                     ),
                 ),
 
                 'wc_cats' => array(
 
                     'type' => 'repeater',
-                    'label' => __('WooCommerce Categories', 'mm_sow'),
+                    'label' => __('Categories selection', 'mm_sow'),
                     'item_name' => __('WC Category', 'mm_sow'),
                     'item_label' => array(
                         'selector' => "[id*='wc_cats-term'] :selected",
                         'update_event' => 'change',
                         'value_method' => 'text'
                     ),
+					'state_handler' => array(
+						'style[style1]' => array('show'),
+						'style[style2]' => array('show'),
+						'style[style3]' => array('show'),
+						'style[style4]' => array('show'),
+						'style[style5]' => array('hide'),
+					),
 
                     'fields' => array(
 
@@ -72,7 +105,8 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
 		                        'description' => __('pick single woocommerce products category', 'mm_sow'),
                             'options' => mm_sow_get_terms( 'product_cat' )
                         ),
-
+						
+						/* 
 						'image_type' => array(
                             'type' => 'select',
                             'label' => __('Choose Category Image Type', 'mm_sow'),
@@ -89,14 +123,28 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                             )
                         ), // image_type field
 
-                        'custom_image' => array(
+                        
+						// IF IN REPEATER FIELD (to toggle):
+						'state_emitter' => array(
+							'callback' => 'select',
+							'args' => array('image_type_{$repeater}')
+						),
+						// in field which will be toggled
+						'state_handler' => array(
+							'image_type_{$repeater}[image]' => array('show'),
+							'image_type_{$repeater}[icon]' => array('hide'),
+							'image_type_{$repeater}[none]' => array('hide'),
+						),
+						*/
+						
+						'custom_image' => array(
                             'type' => 'media',
                             'label' => __('Custom Image.', 'mm_sow'),
                             'description' => __('(*optional) override WC product category image (if set) with custom image .', 'mm_sow'),
                             'state_handler' => array(
-                                'image_type_{$repeater}[image]' => array('show'),
-                                'image_type_{$repeater}[icon]' => array('hide'),
-                                'image_type_{$repeater}[none]' => array('hide'),
+                                'image_type[image]' => array('show'),
+                                'image_type[icon]' => array('hide'),
+                                'image_type[none]' => array('hide'),
                             ),
                         ),
 
@@ -104,12 +152,13 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                             'type' => 'icon',
                             'label' => __('Custom Icon.', 'mm_sow'),
                             'state_handler' => array(
-                                'image_type_{$repeater}[icon]' => array('show'),
-                                'image_type_{$repeater}[image]' => array('hide'),
-                                'image_type_{$repeater}[none]' => array('hide'),
+                                'image_type[icon]' => array('show'),
+                                'image_type[image]' => array('hide'),
+                                'image_type[none]' => array('hide'),
                             ),
                         ), // icon field
 
+						
                         'excerpt' => array(
                             'type' => 'textarea',
                             'label' => __('Short description', 'mm_sow'),
@@ -119,6 +168,7 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                                 'style[style2]' => array('show'),
                                 'style[style3]' => array('show'),
                                 'style[style4]' => array('hide'),
+                                'style[style5]' => array('hide'),
                             ),
                         ), // excerpt field
 
@@ -148,6 +198,7 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                         'style[style2]' => array('show'),
                         'style[style3]' => array('show'),
                         'style[style4]' => array('hide'),
+                        'style[style5]' => array('hide'),
                     ),
                     'fields' => array(
 
@@ -160,15 +211,34 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                             'default' => 3
                         ),
 
-						            'overlay_color' => array(
+						'overlay_color' => array(
                             'type' => 'color',
                             'label' => __('Overlay color.', 'mm_sow'),
 
+                        ),
+						
+						 'overlay_opacity' => array(
+                            'type' => 'slider',
+                            'label' => __('Overlay opacity', 'mm_sow'),
+                            'min' => 1,
+                            'max' => 100,
+                            'integer' => true,
+                            'default' => 40
                         ),
 
 						'title_color' => array(
                             'type' => 'color',
                             'label' => __('Category title color.', 'mm_sow'),
+                        ),
+
+						'icon_color' => array(
+                            'type' => 'color',
+                            'label' => __('Icon color.', 'mm_sow'),
+							'state_handler' => array(
+                                'image_type[icon]' => array('show'),
+                                'image_type[image]' => array('hide'),
+                                'image_type[none]' => array('hide'),
+                            ),
                         ),
 
 						'gutter' => array(
@@ -258,6 +328,7 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
     function get_template_variables($instance, $args) {
         return array(
             'style'         	=> $instance['style'],
+			'image_type'		=> $instance['image_type'],
             'wc_cats'       	=> !empty($instance['wc_cats']) ? $instance['wc_cats'] : array(),
             'settings'      	=> $instance['settings'],
         );
@@ -269,19 +340,23 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
 
         if( isset($instance['settings'] ) ) {
 
-            $less_vars['overlay_color'] = $instance['settings']['overlay_color'] ;
-            $less_vars['title_color']   = $instance['settings']['title_color'] ;
-            $less_vars['gutter']        = intval($instance['settings']['gutter']) . 'px' ;
-            $less_vars['margin_bottom'] = intval($instance['settings']['margin_bottom']) . 'px' ;
-            $less_vars['height']        = intval($instance['settings']['height']) . 'px' ;
-            $less_vars['tablet_width']  = intval($instance['settings']['responsive']['tablet']['width']) . 'px' ;
-            $less_vars['mobile_width']  = intval($instance['settings']['responsive']['mobile']['width']) . 'px' ;
-            $less_vars['tablet_height'] = intval($instance['settings']['responsive']['tablet']['height']) . 'px' ;
-            $less_vars['mobile_height'] = intval($instance['settings']['responsive']['mobile']['height']) . 'px' ;
+            $settings = $instance['settings'];
+			
+			$less_vars['overlay_color']		= $settings['overlay_color'] ;
+            $less_vars['overlay_opacity']	= isset( $settings['overlay_opacity']) ? (intval($settings['overlay_opacity']) / 100) : 0.4 ;
+            $less_vars['title_color']		= $settings['title_color'] ;
+            $less_vars['icon_color']		= isset($settings['icon_color']) ? $settings['icon_color']  : '';
+            $less_vars['gutter']        	= intval($settings['gutter']) . 'px' ;
+            $less_vars['margin_bottom'] 	= intval($settings['margin_bottom']) . 'px' ;
+            $less_vars['height']        	= intval($settings['height']) . 'px' ;
+            $less_vars['tablet_width']  	= intval($settings['responsive']['tablet']['width']) . 'px' ;
+            $less_vars['mobile_width']  	= intval($settings['responsive']['mobile']['width']) . 'px' ;
+            $less_vars['tablet_height'] 	= intval($settings['responsive']['tablet']['height']) . 'px' ;
+            $less_vars['mobile_height']		= intval($settings['responsive']['mobile']['height']) . 'px' ;
 
         }
 
-        $less_vars['thumb_size'] = isset( $instance['thumb_size']) ? $instance['thumb_size'] : '50px';
+        $less_vars['thumb_size'] = isset( $instance['thumb_size']) ? intval($instance['thumb_size']) . 'px' : 40;
 
         return $less_vars;
 

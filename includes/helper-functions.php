@@ -1,17 +1,24 @@
 <?php
 
 // Exit if accessed directly
-if (!defined('ABSPATH'))
-    exit;
+if ( !defined('ABSPATH') ) {
+    exit;	
+}
 
-function mm_sow_get_terms($taxonomy) {
+function mm_sow_get_terms( $taxonomy ) {
 
     global $wpdb;
 
     $term_coll = array();
 
-    if (taxonomy_exists($taxonomy)) {
-        $terms = get_terms($taxonomy); // Get all terms of a taxonomy
+    $args = array(
+		'hierarchical'	=> 1,
+		'taxonomy'		=> $taxonomy,
+		'hide_empty'	=> false,
+	);
+	
+	if ( taxonomy_exists( $taxonomy ) ) {
+        $terms = get_terms( $args ); // Get all terms of a taxonomy
 
         if ($terms && !is_wp_error($terms)) {
             foreach ($terms as $term) {
@@ -25,7 +32,7 @@ function mm_sow_get_terms($taxonomy) {
 
         $terms = $wpdb->get_results($qt, ARRAY_A);
 
-        if ($terms && !is_wp_error($terms)) {
+        if ( $terms && !is_wp_error($terms) ) {
             foreach ($terms as $term) {
                 $term_coll[$term['slug']] = $term['name'];
             }

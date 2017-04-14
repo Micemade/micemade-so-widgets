@@ -1,15 +1,40 @@
-  @import "../../../../../so-widgets-bundle/base/less/mixins";
+@import "../../../../../so-widgets-bundle/base/less/mixins";
 
+@margin: 0;
 @icons_color: initial;
+@title_color: initial;
+@desc_color: initial;
+@title_resize: 100%;
 
 .mm_sow-services {
 
 	.mm_sow-service {
 		
+		
+		
+		.service_margin (@m) when ( @m > 0) {
+			margin: @margin 0;
+		}
+		.service_margin( @margin );
+		
 		.mm_sow-icon-wrapper span {
 			
 			color: @icons_color !important;
 			
+		}
+		
+		.mm_sow-title {
+			color: @title_color;
+			
+			span {
+				font-size: @title_resize;
+				
+			}
+				 
+		}
+		
+		.mm_sow-service-details {
+			color: @desc_color;
 		}
 		
 	}

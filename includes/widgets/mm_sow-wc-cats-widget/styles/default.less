@@ -1,11 +1,14 @@
   @import "../../../../../so-widgets-bundle/base/less/mixins";
 
 @overlay_color: "";
+@overlay_opacity: 0.4;
 @title_color: "";
+@icon_color: "";
 @thumb_size: 50px;
 
 @gutter: 20px;
 @margin_bottom: 20px;
+
 @height: 300px;
 
 @tablet_height: 200px;
@@ -35,32 +38,28 @@
 
 	.mm_sow-wc-cat {
 
-		margin: 0 (@gutter)/2 @gutter;
+		height: @height;
+		margin: 0 (@gutter)/2 ;
 
+		.mm_sow-wc-cat-text, .mm_sow-icon-wrapper,.mm_sow-image-wrapper {
+
+			height: @height;
+
+		} // .mm_sow-image-wrapper
+		
+		// Overlay color conditional and option
 		.overlayColor(@overlay_color) when not ( @overlay_color="" ) {
 
-			.mm_sow-image-overlay{
+			.mm_sow-image-overlay {
 				background-color: @overlay_color !important;
 			}
 
 		}
-
 		.overlayColor(@overlay_color);
-
-
-		.mm_sow-icon-wrapper,.mm_sow-image-wrapper {
-
-			height: @height;
-
-			@media screen and ( max-width: @tablet_width ) {
-				height: @tablet_height;
-			}
-
-			@media screen and (max-width: @mobile_width) {
-				height: @mobile_height;
-			}
-
-		} // .mm_sow-image-wrapper
+		
+		.mm_sow-image-overlay {
+			opacity: @overlay_opacity;
+		}
 
         .mm_sow-title a {
             strong {
@@ -68,35 +67,67 @@
             }
         }
 
-        .titleColor(@title_color) when not ( @title_color="" ) {
+		
+        // Title color conditional and option
+		.titleColor(@title_color) when not ( @title_color="" ) {
 			.mm_sow-wc-cat-text {
 
 				.mm_sow-title a {
 					color: @title_color !important;
 				}
-			}
 
+			}
+			
 		}
 		.titleColor(@title_color);
+		
+        // Icon color conditional and option
+		.iconColor(@icon_color) when not ( @icon_color="" ) {
 
+
+			.mm_sow-icon-wrapper span {
+				color: @icon_color !important;
+			}
+			
+		}
+		.iconColor(@icon_color);
+		
+		
+		
+		// Media queries - categories height
+		@media screen and ( max-width: @tablet_width ) {
+			height: @tablet_height;
+			.mm_sow-wc-cat-text, .mm_sow-icon-wrapper,.mm_sow-image-wrapper {
+				height: @tablet_height;
+			}
+			
+		}
+		@media screen and (max-width: @mobile_width) {
+			height: @mobile_height;
+			.mm_sow-wc-cat-text, .mm_sow-icon-wrapper,.mm_sow-image-wrapper {
+				height: @mobile_height;
+			}
+		}
 
 	}
 
 }
 // Style 4
-.mm_sow-style4 {
+.mm_sow-wc-cats.mm_sow-style4 {
+
+	margin-left: 0;
+	margin-right: 0;
 
 	.product_cat-list {
-    li {
-      a {
-        img {
-          width:@thumb_size;
+		li {
+			a {
+				img {
+					width:@thumb_size;
+				}
 
-        }
-
-      }
-    }
-  }
+			}
+		}
+	}
 
 }
 .mm_sow-wc-cat-details {

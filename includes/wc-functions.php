@@ -200,7 +200,7 @@ function mm_sow_wc_product_count( $term_id ) {
 	
 	$term_link		= get_term_link( intval($term_id), 'product_cat' );
 		
-	if ( is_wp_error( $term_link ) ) return;
+	if ( is_wp_error( $term_link ) || !$no_of_prods ) return;
 	
 	$prod_count = '<span class="mm_sow-product-count posted_in">';
 	

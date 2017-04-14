@@ -112,7 +112,6 @@ $mobile_size: 479;
 
 @mixin mm_sow-heading-style() {
 
-	color: #333;
 	clear: none;
 	margin-top: 0;
 	margin-bottom: 10px;
@@ -175,9 +174,9 @@ $mobile_size: 479;
 @mixin term-meta-style() {
 	
 	display: block;
-	color: #f9f9f9;
+	
 	a {
-		color: #ddd;
+
 		position: relative;
 		display: inline-block;
 		zoom: 1;
@@ -185,10 +184,11 @@ $mobile_size: 479;
 		line-height: 1.4;
 		font-style: italic;
 		padding: 0.2em 0.6em;
-		@include mm_sow-transition(color, 0.3s);
+		opacity: 0.8;
+		@include mm_sow-transition(opacity, 0.3s);
 		
 		&:hover {
-			color: #fff;
+			opacity: 0.5;
 		}
 	} // a
 	
@@ -203,8 +203,8 @@ $mobile_size: 479;
 }
 
 @mixin special-hover-effect() {
-	transform: scale(1.05, 1.05);
-	filter: blur(2px) grayscale(100%);
+	transform: scale(1.5, 1.5);
+	filter: blur(10px);
 }
 
 @mixin aspect-ratio($width, $height) {

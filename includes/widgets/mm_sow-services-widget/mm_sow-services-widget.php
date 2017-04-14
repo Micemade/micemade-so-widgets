@@ -37,6 +37,7 @@ class MM_SOW_Services_Widget extends SiteOrigin_Widget {
                         'style1' => __('Style 1', 'mm_sow'),
                         'style2' => __('Style 2', 'mm_sow'),
                         'style3' => __('Style 3', 'mm_sow'),
+                        'style4' => __('Style 4 (style 2 reversed)', 'mm_sow'),
                     )
                 ),
 
@@ -94,6 +95,12 @@ class MM_SOW_Services_Widget extends SiteOrigin_Widget {
                             'label' => __('Short description', 'mm_sow'),
                             'description' => __('Provide a short description for the service', 'mm_sow'),
                         ),
+						
+						'url' => array(
+							'type' => 'link',
+							'label' => __('URL for service (optional)', 'mm_sow'),
+							'sanitize' => 'url',
+						),
 
                     )
                 ),
@@ -112,6 +119,35 @@ class MM_SOW_Services_Widget extends SiteOrigin_Widget {
                             'default' => 3
                         ),
 						
+						'margin' => array(
+                            'type' => 'number',
+                            'label' => __('Top and bottom margin', 'mm_sow'),
+                            'default' => 0,
+							'description' => __('Enter only the number, unit is hardcoded in pixels.', 'mm_sow'),
+                        ),
+						
+						'title_tag' => array(
+                            'type' => 'select',
+                            'label' => __('Title tag.', 'mm_sow'),
+							'default' => 'h3',
+							'options' => array(
+								'h2' => __('H2', 'mm_sow'),
+								'h3' => __('H3', 'mm_sow'),
+								'h4' => __('H4', 'mm_sow'),
+								'h5' => __('H5', 'mm_sow'),
+								'p' => __('Paragraph (bold)', 'mm_sow'),
+							)
+                        ),
+						
+						'title_resize' => array(
+                            'type' => 'slider',
+                            'label' => __('Resize title', 'mm_sow'),
+                            'min' => 0,
+                            'max' => 200,
+                            'integer' => true,
+                            'default' => 100
+                        ),
+						
 						'icons_color' => array(
                             'type' => 'color',
                             'label' => __('Icons color.', 'mm_sow'),
@@ -119,6 +155,16 @@ class MM_SOW_Services_Widget extends SiteOrigin_Widget {
                                 'icon_type[icon]' => array('show'),
                                 'icon_type[icon_image]' => array('hide'),
                             ),
+                        ),
+						
+						'title_color' => array(
+                            'type' => 'color',
+                            'label' => __('Title color.', 'mm_sow'),
+                        ),
+						
+						'desc_color' => array(
+                            'type' => 'color',
+                            'label' => __('Short description color.', 'mm_sow'),
                         ),
                     )
                 ), // settings
@@ -146,7 +192,11 @@ class MM_SOW_Services_Widget extends SiteOrigin_Widget {
 	function get_less_variables($instance) {
 		
 		return array(
-            'icons_color'		=> $instance['settings']['icons_color'] ,
+			'margin'		=> isset( $instance['settings']['margin'] )			? $instance['settings']['margin'].'px' : 0 ,
+			'icons_color'	=> isset( $instance['settings']['icons_color'] )	? $instance['settings']['icons_color'] : '',
+			'title_color'	=> isset( $instance['settings']['title_color'] )	? $instance['settings']['title_color'] : '',
+			'desc_color'	=> isset( $instance['settings']['desc_color'] )		? $instance['settings']['desc_color'] : '',
+			'title_resize'	=> isset( $instance['settings']['title_resize'] )	? $instance['settings']['title_resize'] .'%' : 100 .'%',
         );
     }
 
