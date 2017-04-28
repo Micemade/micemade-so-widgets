@@ -26,11 +26,9 @@ if (!class_exists('MM_SOW_Setup')):
             add_filter('siteorigin_panels_widget_style_attributes', array($this, 'widget_style_attributes'), 10, 2);
 
             // Main filter to add any custom CSS.
-            add_filter('siteorigin_panels_css_object', array($this, 'filter_css_object'), 10, 3);
+            add_filter('siteorigin_panels_css_object', array($this, 'filter_css_object'), 10, 4);
 
             add_filter('siteorigin_widgets_default_active', array($this, 'activate_plugin_widgets'));
-
-			
 			
         }
 
@@ -273,122 +271,88 @@ if (!class_exists('MM_SOW_Setup')):
 			return $attributes;
 		}
 		
-        function filter_css_object($css, $panels_data, $post_id) {
+        function filter_css_object($css, $panels_data, $post_id, $layout) {
 
+			// Get option from MM SOW plugin - maximum width
+			$max_width = mm_sow_get_option('mm_sow_max_widget_width', "initial" ); // from MM SOW plugin settings
+			
 			// Custom attributes for row on different screens
-			foreach ($panels_data['grids'] as $gi => $grid) {
+			foreach ($layout as $ri => $row) {
+				
+				if( empty( $row[ 'style' ] ) ) $row[ 'style' ] = array();
 
-                $grid_id = !empty($grid['style']['id']) ? (string)sanitize_html_class($grid['style']['id']) : intval($gi);
-
-                // Custom row padding on different screens
-				$padd_tablet = isset( $grid['style']['padding_tablet'] ) ? $grid['style']['padding_tablet'] : null;
-				$padd_mobile = isset( $grid['style']['padding_mobile'] ) ? $grid['style']['padding_mobile'] : null;
-
+                // Custom row padding and margins on different screens
+				$padd_tablet	= isset( $row['style']['padding_tablet'] )	? $row['style']['padding_tablet'] : null;
+				$padd_mobile	= isset( $row['style']['padding_mobile'] )	? $row['style']['padding_mobile'] : null;
+				$margin			= isset( $row['style']['margin'] ) 			? $row['style']['margin'] : null;
+				$margin_tablet	= isset( $row['style']['margin_tablet'] )	? $row['style']['margin_tablet'] : null;
+				$margin_mobile	= isset( $row['style']['margin_mobile'] )	? $row['style']['margin_mobile'] : null;
+				
 				if( $padd_tablet ) {
-					$css->add_row_css( $post_id, $grid_id, '.panel-row-style', array('padding' => $padd_tablet .'!important' ), 960);
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('padding' => $padd_tablet .'!important' ), 960);
 				}
 				if( $padd_mobile ) {
-					$css->add_row_css( $post_id, $grid_id, '.panel-row-style', array('padding' => $padd_mobile .'!important' ), 478);
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('padding' => $padd_mobile .'!important' ), 478);
 				}
-				
-				// Custom row margin
-				$margin = isset( $grid['style']['margin'] ) ? $grid['style']['margin'] : null;
-				
 				if( $margin ) {
-					$css->add_row_css( $post_id, $grid_id, '.panel-row-style', array('margin' => $margin  ) );
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('margin' => $margin  ) );
 				}
-				
-				// Custom row margin on different screens
-				$margin_tablet = isset( $grid['style']['margin_tablet'] ) ? $grid['style']['margin_tablet'] : null;
-				$margin_mobile = isset( $grid['style']['margin_mobile'] ) ? $grid['style']['margin_mobile'] : null;
-
 				if( $margin_tablet ) {
-					$css->add_row_css( $post_id, $grid_id, '.panel-row-style', array('margin' => $margin_tablet .'!important' ), 960);
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('margin' => $margin_tablet .'!important' ), 960);
 				}
 				if( $margin_mobile ) {
-					$css->add_row_css( $post_id, $grid_id, '.panel-row-style', array('margin' => $margin_mobile .'!important' ), 478);
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('margin' => $margin_mobile .'!important' ), 478);
 				}
 				
-				/* 
-				$top_padding = (isset($grid['style']['top_padding']) ? $grid['style']['top_padding'] : null);
-                $bottom_padding = (isset($grid['style']['bottom_padding']) ? $grid['style']['bottom_padding'] : null);;
-
-                // Filter the bottom margin for this row with the arguments
-                if ($top_padding)
-                    $css->add_row_css($post_id, $grid_id, '.mm_sow-row', array('padding-top' => $top_padding), 1920);
-                if ($bottom_padding)
-                    $css->add_row_css($post_id, $grid_id, '.mm_sow-row', array('padding-bottom' => $bottom_padding), 1920);
-
-                $top_padding = (isset($grid['style']['tablet_top_padding']) ? $grid['style']['tablet_top_padding'] : null);
-                $bottom_padding = (isset($grid['style']['tablet_bottom_padding']) ? $grid['style']['tablet_bottom_padding'] : null);;
-
-                // Filter the bottom margin for this row with the arguments
-                if ($top_padding)
-                    $css->add_row_css($post_id, $grid_id, '.mm_sow-row', array('padding-top' => $top_padding), 960);
-                if ($bottom_padding)
-                    $css->add_row_css($post_id, $grid_id, '.mm_sow-row', array('padding-bottom' => $bottom_padding), 960);
-
-
-                $top_padding = (isset($grid['style']['mobile_top_padding']) ? $grid['style']['mobile_top_padding'] : null);
-                $bottom_padding = (isset($grid['style']['mobile_bottom_padding']) ? $grid['style']['mobile_bottom_padding'] : null);;
-
-                // Filter the bottom margin for this row with the arguments
-                if ($top_padding)
-                    $css->add_row_css($post_id, $grid_id, '.mm_sow-row', array('padding-top' => $top_padding), 478);
-                if ($bottom_padding)
-                    $css->add_row_css($post_id, $grid_id, '.mm_sow-row', array('padding-bottom' => $bottom_padding), 478);
-				 */
-
-            }
-
-			/**
-			 *  Custom attributes for particular widgets
-			 *   - paddings on different screens
-			 *   - maximum width for widgets
-			 *   - remove default widget bottom-margin
-			 */
-
-			$widgets = $panels_data['widgets'];
-
-			foreach( $widgets as $wi => $widget ){
 				
-				$panels_info	= $widget['panels_info'];
-				$grid_id		= $panels_info['grid'];
-				$cell_id		= $panels_info['cell'];
-				$panel			= $panels_info['cell_index'];
-				$panel_id		= $post_id.'-'.$grid_id .'-'.$cell_id.'-'.$panel;
+				// Process the cells if there are any
+				if( empty( $row[ 'cells' ] ) ) continue;
 				
-				// Custom attributes for widget on different screens
-				$padd_tablet = isset( $panels_info['style']['padding_tablet'] ) ? $panels_info['style']['padding_tablet'] : null;
-				$padd_mobile = isset( $panels_info['style']['padding_mobile'] ) ? $panels_info['style']['padding_mobile'] : null;
+				foreach( $row[ 'cells' ] as $ci => $cell ) {						
+					
+					if( empty( $cell[ 'widgets' ] ) ) continue;
+					
+					// Process the widgets if there are any
+					foreach( $cell['widgets'] as $wi => $widget ) {
 
-				if( $padd_tablet ) {
-					$css->add_cell_css( $post_id, $grid_id, $cell_id, '#panel-'. $panel_id .' .mm_sow-widget-custom-sizes', array('padding' => $padd_tablet .'!important' ), 960);
-				}
-				if( $padd_mobile ) {
-					$css->add_cell_css( $post_id, $grid_id, $cell_id, '#panel-'. $panel_id .' .mm_sow-widget-custom-sizes', array('padding' => $padd_mobile .'!important' ), 478);
-				}
-				
-				// Custom attributes for widget - maximum width
-				$max_width = mm_sow_get_option('mm_sow_max_widget_width', "initial" ); // plugin settings
-			
-				if(  isset( $panels_info['style']['max_width'] ) ) {
-					if( $panels_info['style']['max_width'] ) {
+
+						 //  Custom attributes for particular widgets
+						 //   - paddings on different screens
+						 //   - maximum width for widgets
+						 //   - remove default widget bottom-margin
 						
-						$css->add_cell_css( $post_id, $grid_id, $cell_id, '#panel-'. $panel_id .' .mm_sow-widget-custom-sizes', array('max-width' => $max_width .'; margin: 0 auto;' ) );
-					}
-				}
-				// Remove default widget bottom-margin
-				if(  isset( $panels_info['style']['no_bottom_margin'] ) ) {
-					if( $panels_info['style']['no_bottom_margin'] ) {
+						$widget_style = !empty( $widget['panels_info']['style'] ) ? $widget['panels_info']['style'] : array();
+
+						// Custom css attributes for widget
+						$padd_tablet		= isset( $widget_style['padding_tablet'] )	 ? $widget_style['padding_tablet'] : 0;
+						$padd_mobile		= isset( $widget_style['padding_mobile'] )	 ? $widget_style['padding_mobile'] : 0;
+						$max_width_true		= isset( $widget_style['max_width'] ) 		 ? $widget_style['max_width'] : 0;
+						$no_bottom_margin	= isset( $widget_style['no_bottom_margin'] ) ? $widget_style['no_bottom_margin']: 0;
 						
-						$css->add_cell_css( $post_id, $grid_id, $cell_id, '#panel-'. $panel_id .'', array('margin-bottom'=>'0;' ) );
-					}
-				}
-				 
-			}
+						if( $padd_tablet ) {
+							$css->add_widget_css( $post_id, $ri, $ci, $wi, '> .panel-widget-style', array( 'padding' => $padd_tablet ), 960);
+						}
+						
+						if( $padd_mobile ) {
+							$css->add_widget_css( $post_id, $ri, $ci, $wi, '> .panel-widget-style', array( 'padding' => $padd_mobile ) , 478);
+						}
+						
+						if( $max_width_true ) {							
+							$css->add_widget_css( $post_id, $ri, $ci, $wi, '> .panel-widget-style', array( 'max-width' =>  $max_width, 'margin' => '0 auto' ) );
+						}
+						if( $no_bottom_margin ) {							
+							$css->add_widget_css( $post_id, $ri, $ci, $wi, '', array( 'margin-bottom' => '0 !important' ) );
+						}
+									
+						
+					} // end foreach widget
+					
+				} // end foreach cell
+		   
+		   } // end foreach row
 			
-            return $css;
+           return $css;
+		   
         }
 
         function add_widgets_collection($folders) {

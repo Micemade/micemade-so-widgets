@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/index\n"
-"POT-Creation-Date: 2017-04-14 13:18:35+00:00\n"
+"POT-Creation-Date: 2017-04-28 10:00:50+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -81,7 +81,7 @@ msgid "Documentation"
 msgstr ""
 
 #: admin/views/admin-banner1.php:13 admin/views/admin-banner2.php:13
-#: includes/class-mm_sow-setup.php:403
+#: includes/class-mm_sow-setup.php:367
 msgid "Micemade SO Widgets"
 msgstr ""
 
@@ -259,150 +259,150 @@ msgstr ""
 msgid "Animation"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:40
+#: includes/class-mm_sow-setup.php:38
 msgid "Row unique identifier"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:43
+#: includes/class-mm_sow-setup.php:41
 msgid ""
 "Enter unique identifier, which will be used for anchor links (e.g. in "
 "\"Micemade Hero\")"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:48 includes/class-mm_sow-setup.php:188
+#: includes/class-mm_sow-setup.php:46 includes/class-mm_sow-setup.php:186
 msgid "Limit to maximum width"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:52
+#: includes/class-mm_sow-setup.php:50
 msgid "Enable max. width limit "
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:53
+#: includes/class-mm_sow-setup.php:51
 msgid ""
 "Applies only to standard row layout. Row maximum width is set in plugin "
 "settings"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:58 includes/class-mm_sow-setup.php:205
+#: includes/class-mm_sow-setup.php:56 includes/class-mm_sow-setup.php:203
 msgid "Padding for tablet"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:61 includes/class-mm_sow-setup.php:69
+#: includes/class-mm_sow-setup.php:59 includes/class-mm_sow-setup.php:67
 msgid "Padding around the entire row."
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:66 includes/class-mm_sow-setup.php:213
+#: includes/class-mm_sow-setup.php:64 includes/class-mm_sow-setup.php:211
 msgid "Padding for mobiles"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:76
+#: includes/class-mm_sow-setup.php:74
 msgid "Margin for mobiles"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:79
+#: includes/class-mm_sow-setup.php:77
 msgid "Margin around the entire row on mobile devices"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:84
+#: includes/class-mm_sow-setup.php:82
 msgid "Margin for tablet"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:87
+#: includes/class-mm_sow-setup.php:85
 msgid "Margin around the entire row on tablet devices"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:92
+#: includes/class-mm_sow-setup.php:90
 msgid "Row margin"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:95
+#: includes/class-mm_sow-setup.php:93
 msgid "Margin around the entire row."
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:104
+#: includes/class-mm_sow-setup.php:102
 msgid "Dark Background?"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:107
+#: includes/class-mm_sow-setup.php:105
 msgid ""
 "Indicate if this row has a dark background color. Dark color scheme will be "
 "applied for all widgets in this row."
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:113 includes/class-mm_sow-setup.php:222
+#: includes/class-mm_sow-setup.php:111 includes/class-mm_sow-setup.php:220
 msgid "Background image position"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:119 includes/class-mm_sow-setup.php:228
+#: includes/class-mm_sow-setup.php:117 includes/class-mm_sow-setup.php:226
 msgid "Left top"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:120 includes/class-mm_sow-setup.php:229
+#: includes/class-mm_sow-setup.php:118 includes/class-mm_sow-setup.php:227
 msgid "Left middle"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:121 includes/class-mm_sow-setup.php:230
+#: includes/class-mm_sow-setup.php:119 includes/class-mm_sow-setup.php:228
 msgid "Left bottom"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:122 includes/class-mm_sow-setup.php:231
+#: includes/class-mm_sow-setup.php:120 includes/class-mm_sow-setup.php:229
 msgid "Right top"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:123 includes/class-mm_sow-setup.php:232
+#: includes/class-mm_sow-setup.php:121 includes/class-mm_sow-setup.php:230
 msgid "Right Middle"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:124 includes/class-mm_sow-setup.php:233
+#: includes/class-mm_sow-setup.php:122 includes/class-mm_sow-setup.php:231
 msgid "Right Bottom"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:125 includes/class-mm_sow-setup.php:234
+#: includes/class-mm_sow-setup.php:123 includes/class-mm_sow-setup.php:232
 msgid "Center top"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:126 includes/class-mm_sow-setup.php:235
+#: includes/class-mm_sow-setup.php:124 includes/class-mm_sow-setup.php:233
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:164
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:64
 #: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:134
 msgid "Center"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:127 includes/class-mm_sow-setup.php:236
+#: includes/class-mm_sow-setup.php:125 includes/class-mm_sow-setup.php:234
 msgid "Center Bottom"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:129
+#: includes/class-mm_sow-setup.php:127
 msgid ""
 "This setting will only apply if \"Background Image Display\" is set to "
 "\"Fixed\" or \"Cover\"."
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:180
+#: includes/class-mm_sow-setup.php:178
 msgid "Background color opacity"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:183
+#: includes/class-mm_sow-setup.php:181
 msgid "Set opacity value, between 0 - 100 (only number, no units)"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:192
+#: includes/class-mm_sow-setup.php:190
 msgid "Enable max. width limit"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:193
+#: includes/class-mm_sow-setup.php:191
 msgid "Widget maximum width is set in plugin settings"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:197
+#: includes/class-mm_sow-setup.php:195
 msgid "No bottom margin"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:201
+#: includes/class-mm_sow-setup.php:199
 msgid "Set default bottom margin to zero"
 msgstr ""
 
-#: includes/class-mm_sow-setup.php:208 includes/class-mm_sow-setup.php:216
+#: includes/class-mm_sow-setup.php:206 includes/class-mm_sow-setup.php:214
 msgid "Padding around the entire widget."
 msgstr ""
 

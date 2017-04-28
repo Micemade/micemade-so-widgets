@@ -1,5 +1,11 @@
 == Changelog ==
-
+* 0.9.5 
+	- SiteOrigin Page Builder 2.5+ compatiblity update
+---------------------------------------------------	
+* 0.9.4
+	- MicemadeWC categories - lots of changes - added two additional styles for display WooCommerce product categories widget - simple list, and all available product categories
+	- tweaked and fixed Micemade Services widget styles
+---------------------------------------------------	
 * 0.9.3
 	- "Micemade WooCommerce Categories" widget - added 4th style (simple cats. list) & additional query args field
 	- "Micemade Heading" widget - tweaked CSS mobile views titles
