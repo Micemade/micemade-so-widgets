@@ -111,7 +111,7 @@ if ( !class_exists('Micemade_SO_widgets') ) :
 
             // Plugin version
             if (!defined('MM_SOW_VERSION')) {
-                define('MM_SOW_VERSION', '0.9.3');
+                define('MM_SOW_VERSION', '0.9.7');
             }
 
             // Plugin Folder Path
