@@ -118,6 +118,15 @@ class MM_SOW_Icon_List_Widget extends SiteOrigin_Widget {
                             ),
                         ),
                         
+						'title_size' => array(
+                            'type' => 'slider',
+                            'label' => __('Title size in pixels', 'mm_sow'),
+                            'min' => 1,
+                            'max' => 128,
+                            'integer' => true,
+                            'default' => 28
+                        ),
+						
                         "target" => array(
                             "type" => "checkbox",
                             "label" => __("Open the links in new window", 'mm_sow'),
@@ -132,6 +141,15 @@ class MM_SOW_Icon_List_Widget extends SiteOrigin_Widget {
                                 'left' => __('Left', 'mm_sow'),
                                 'right' => __('Right', 'mm_sow'),
                                 'center' => __('Center', 'mm_sow'),
+                            )
+                        ),
+						'orientation' => array(
+                            'type' => 'select',
+                            'label' => __('List orientation', 'mm_sow'),
+                            'default' => 'vertical',
+                            'options' => array(
+                                'vertical'		=> __('Vertical list', 'mm_sow'),
+								'horizontal'	=> __('Horizontal list', 'mm_sow'),
                             )
                         ),
                     )
@@ -172,9 +190,10 @@ class MM_SOW_Icon_List_Widget extends SiteOrigin_Widget {
 
     function get_less_variables($instance) {
         return array(
-            'icon_size' => intval($instance['settings']['icon_size']) . 'px',
-            'icon_color' => $instance['settings']['icon_color'],
-            'hover_color' => $instance['settings']['hover_color']
+            'icon_size'		=> intval($instance['settings']['icon_size']) . 'px',
+            'icon_color'	=> $instance['settings']['icon_color'],
+            'hover_color'	=> $instance['settings']['hover_color'],
+			'title_size'	=> intval($instance['settings']['title_size']) . 'px',
         );
     }
 

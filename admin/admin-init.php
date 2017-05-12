@@ -18,9 +18,10 @@ class MM_SOW_Admin {
     }
 
     public function includes() {
-
-        // load class admin ajax function
-        require_once(MM_SOW_PLUGIN_DIR . '/admin/admin-ajax.php');
+		// load wp_filesystem wrapper class
+		require_once MM_SOW_PLUGIN_DIR . 'includes/wp-filesystem.php';
+		// load class admin ajax function
+        require_once MM_SOW_PLUGIN_DIR . 'admin/admin-ajax.php';
 
     }
 
@@ -30,9 +31,11 @@ class MM_SOW_Admin {
         add_action('admin_menu', array($this, 'add_plugin_admin_menu'));
 
         // Load admin style sheet and JavaScript.
-        add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
+        add_action('admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts') );
 
-        add_action('current_screen', array($this, 'remove_admin_notices'));
+        add_action('current_screen', array( $this, 'remove_admin_notices') );
+		
+		add_action('admin_init', array( $this, 'remove_deprecated_templates') );
 
     }
 
@@ -159,9 +162,33 @@ class MM_SOW_Admin {
             wp_enqueue_style('mm_sow-admin-builder-styles');
 		}
 		
-   
-
     }
+	
+	/**
+	 *  REMOVE DEPRECATED FILES
+	 *   
+	 *  @details delete files (mostly WC templates) not needed anymore (reducing WC templates)
+	 *  for easier WC / theme compatiblity and maintenance
+	 */
+	function remove_deprecated_templates() {
+		
+		$files_to_remove = array( 
+			'includes/woocommerce-templates/content-widget-product.php',	// since MM SOW 0.9.6
+		);
+		
+		if( empty( $files_to_remove ) ) return;
+		
+		$wpfilesys = new DBI_Filesystem();
+		
+		foreach( $files_to_remove as $file_to_remove ) {
+			
+			$file =  MM_SOW_PLUGIN_DIR . $file_to_remove;
+			if( $wpfilesys->file_exists( $file ) ) {
+				$wpfilesys->unlink( $file );
+			}
+		}
+		
+	}
 
 }
 

@@ -3,20 +3,27 @@
 @icon_size: 32px;
 @icon_color: #666666;
 @hover_color: #444444;
+@title_size: 28px;
 
 .mm_sow-icon-list {
 
-  .mm_sow-icon-list-item {
+	.mm_sow-icon-list-item {
 
-    .mm_sow-image-wrapper img {
-      width: @icon_size;
-      }
-    .mm_sow-icon-wrapper span {
-      font-size: @icon_size;
-      color: @icon_color;
-      &:hover {
-        color: @hover_color;
-        }
-      }
-    }
-  }
+		.mm_sow-image-wrapper img {
+			width: @icon_size;
+		}
+		.mm_sow-icon-wrapper span {
+			font-size: @icon_size;
+			
+			color: @icon_color;
+			&:hover {
+				color: @hover_color;
+			}
+		}
+		.icon-title {
+			font-size: @title_size;
+		}
+		
+	}
+	
+}

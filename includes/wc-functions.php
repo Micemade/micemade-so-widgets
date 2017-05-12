@@ -216,6 +216,14 @@ function mm_sow_wc_product_count( $term_id ) {
  */
 if( MM_SOW_WISHLIST_ACTIVE ) {
 	
+	/**
+	 * 	FUNCTIONS TO CREATE "ADD TO WISHLIST" BUTTON:
+	 *	mm_sow_wishlist_locate_template()
+	 *	mm_sow_wishlist_get_template() / dependency - mm_sow_wishlist_locate_template
+	 *	mm_sow_wishlist_button_func() / dependency - mm_sow_wishlist_get_template and mm_sow_wishlist_locate_template
+	 * 
+	 */
+	
 	if( !function_exists( 'mm_sow_wishlist_locate_template' ) ) {
 		/**
 		 * Locate the templates and return the path of the file found
@@ -293,7 +301,8 @@ if( MM_SOW_WISHLIST_ACTIVE ) {
 	/**
 	 *	YITH WC Wishlist template - a template for add to Wishlist
 	 *  
-	 *  @return void
+	 *  @return mm_sow_wishlist_get_template()
+	 *  mm_sow_wishlist_get_template() is dependent on mm_sow_wishlist_locate_template()
 	 */
 
 	add_action('mm_sow_wishlist_button','mm_sow_wishlist_button_func', 10);

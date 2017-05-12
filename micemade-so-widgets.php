@@ -7,7 +7,7 @@
  * Author URI: http://micemade.com/
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 0.9.5
+ * Version: 0.9.7
  * Text Domain: mm_sow
  * Domain Path: languages
  *
@@ -266,7 +266,7 @@ if ( !class_exists('Micemade_SO_widgets') ) :
             require_once MM_SOW_PLUGIN_DIR . 'includes/ajax-functions.php';
             require_once MM_SOW_PLUGIN_DIR . 'includes/animations.php';
 
-            if (is_admin()) {
+            if ( is_admin() ) {
                 require_once MM_SOW_PLUGIN_DIR . 'admin/admin-init.php';
             }
 

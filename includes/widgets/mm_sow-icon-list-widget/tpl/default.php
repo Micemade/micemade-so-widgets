@@ -6,15 +6,15 @@
  */
 
 if (!empty($settings['target']))
-    $target = 'target="_blank"';
+    $target = '_blank';
 else
-    $target = '';
+    $target = '_self';
 
 ?>
 
 <?php if( !empty( $instance['title'] ) ) echo $args['before_title'] . esc_html($instance['title']) . $args['after_title'] ?>
 
-<div class="mm_sow-icon-list mm_sow-align<?php echo $settings['align']; ?>">
+<div class="mm_sow-icon-list mm_sow-align<?php echo esc_attr( $settings['align'] .' '. $settings['orientation'] ); ?>">
 
     <?php foreach ($icon_list as $icon_item): ?>
 
@@ -24,50 +24,43 @@ else
 
         <?php $icon_url = sow_esc_url($icon_item['href']); ?>
 
-        <div class="mm_sow-icon-list-item" title="<?php echo $icon_title; ?>">
+        <div class="mm_sow-icon-list-item" title="<?php echo esc_attr( $icon_title ); ?>">
 
-            <?php if ($icon_type == 'icon_image') : ?>
+            
+			<?php echo ( $icon_url ? ( '<a href="'. esc_url( $icon_url ) .'" target="'. esc_attr( $target ) .'">' ) : '') ; ?>
+			
+			
+				<?php if ($icon_type == 'icon_image') { ?>
 
-                <?php if (empty($icon_url)) : ?>
+						<div class="mm_sow-image-wrapper">
 
-                    <div class="mm_sow-image-wrapper">
+							<?php echo wp_get_attachment_image( $icon_item['icon_image'], 'full', false, array('class' => 'mm_sow-image full', 'alt' => $icon_title)); ?>
 
-                        <?php echo wp_get_attachment_image($icon_item['icon_image'], 'full', false, array('class' => 'mm_sow-image full', 'alt' => $icon_title)); ?>
+						</div>
 
-                    </div>
 
-                <?php else : ?>
+				<?php }else{ ?>
 
-                    <a class="mm_sow-image-wrapper" href="<?php echo $icon_url; ?>" <?php echo $target; ?>>
 
-                        <?php echo wp_get_attachment_image($icon_item['icon_image'], 'full', false, array('class' => 'mm_sow-image full', 'alt' => $icon_title)); ?>
+						<div class="mm_sow-icon-wrapper">
 
-                    </a>
+							<?php echo siteorigin_widget_get_icon( $icon_item['icon'] ); ?>
 
-                <?php endif; ?>
+						</div>
 
-            <?php else : ?>
 
-                <?php if (empty($icon_url)) : ?>
+				<?php } // end if else $icon_type == 'icon_image' ?>
+				
+				
+				<?php if( $icon_title ) { ?>
+				
+				<span class="icon-title"><?php echo esc_html( $icon_title ); ?></span>
+				
+				<?php } ?>
+				
 
-                    <div class="mm_sow-icon-wrapper">
-
-                        <?php echo siteorigin_widget_get_icon($icon_item['icon']); ?>
-
-                    </div>
-
-                <?php else : ?>
-
-                    <a class="mm_sow-icon-wrapper" href="<?php echo $icon_url; ?>" <?php echo $target; ?>>
-
-                        <?php echo siteorigin_widget_get_icon($icon_item['icon']); ?>
-
-                    </a>
-
-                <?php endif; ?>
-
-            <?php endif; ?>
-
+			<?php echo ( $icon_url ? '</a>' : '');  ?>
+			
         </div>
 
         <?php

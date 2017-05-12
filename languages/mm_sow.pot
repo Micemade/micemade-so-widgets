@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/index\n"
-"POT-Creation-Date: 2017-04-28 10:00:50+00:00\n"
+"POT-Creation-Date: 2017-05-12 16:33:16+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,11 +55,11 @@ msgstr ""
 msgid "Sorry, an error occurred while resetting settings"
 msgstr ""
 
-#: admin/admin-init.php:67
+#: admin/admin-init.php:70
 msgid "MM SO Widgets"
 msgstr ""
 
-#: admin/admin-init.php:79
+#: admin/admin-init.php:82
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:84
 #: includes/widgets/mm_sow-clients-widget/mm_sow-clients-widget.php:59
 #: includes/widgets/mm_sow-hero-image-widget/mm_sow-hero-image-widget.php:273
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: admin/admin-init.php:89
+#: admin/admin-init.php:92
 msgid "Documentation"
 msgstr ""
 
@@ -364,7 +364,7 @@ msgstr ""
 #: includes/class-mm_sow-setup.php:124 includes/class-mm_sow-setup.php:233
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:164
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:64
-#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:134
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:143
 msgid "Center"
 msgstr ""
 
@@ -427,7 +427,6 @@ msgid "Select widget area"
 msgstr ""
 
 #: includes/helper-functions.php:685
-#: includes/woocommerce-templates/content-widget-product.php:36
 msgid "No image"
 msgstr ""
 
@@ -749,13 +748,13 @@ msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:165
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:65
-#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:132
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:141
 msgid "Left"
 msgstr ""
 
 #: includes/widgets/mm_sow-button-widget/mm_sow-button-widget.php:166
 #: includes/widgets/mm_sow-heading-widget/mm_sow-heading-widget.php:66
-#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:133
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:142
 msgid "Right"
 msgstr ""
 
@@ -1501,11 +1500,27 @@ msgid "Icon hover color"
 msgstr ""
 
 #: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:123
+msgid "Title size in pixels"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:132
 msgid "Open the links in new window"
 msgstr ""
 
-#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:129
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:138
 msgid "Alignment"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:148
+msgid "List orientation"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:151
+msgid "Vertical list"
+msgstr ""
+
+#: includes/widgets/mm_sow-icon-list-widget/mm_sow-icon-list-widget.php:152
+msgid "Horizontal list"
 msgstr ""
 
 #: includes/widgets/mm_sow-odometers-widget/mm_sow-odometers-widget.php:15
