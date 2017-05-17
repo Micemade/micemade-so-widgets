@@ -7,7 +7,7 @@
  * Author URI: http://micemade.com/
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 0.9.7
+ * Version: 0.9.8
  * Text Domain: mm_sow
  * Domain Path: languages
  *
@@ -111,7 +111,7 @@ if ( !class_exists('Micemade_SO_widgets') ) :
 
             // Plugin version
             if (!defined('MM_SOW_VERSION')) {
-                define('MM_SOW_VERSION', '0.9.7');
+                define('MM_SOW_VERSION', '0.9.8');
             }
 
             // Plugin Folder Path

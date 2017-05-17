@@ -389,7 +389,7 @@ class MM_SOW_Hero_Image_Widget extends SiteOrigin_Widget {
 
         if (array_key_exists($this->number, $instances)) {
             $instance = $instances[$this->number];
-            if (!empty($instance)) {
+            if (!empty($instance) && isset( $instance['header_type'] )) {
                 $header_type = $instance['header_type'];
                 if ($header_type == 'custom')
                     $custom_css = $instance['custom_header']['custom_css'];
@@ -405,7 +405,10 @@ class MM_SOW_Hero_Image_Widget extends SiteOrigin_Widget {
 
 
     function get_less_variables($instance) {
-        return array(
+        
+		if( ! isset( $instance['settings'] ) ) return;
+		
+		return array(
             'top_padding' => intval($instance['settings']['top_padding']) . 'px',
             'bottom_padding' => intval($instance['settings']['bottom_padding']) . 'px',
 

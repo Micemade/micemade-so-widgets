@@ -1,5 +1,8 @@
 == Changelog ==
 
+* 0.9.8
+	- Php errors fixes in multiple files
+---------------------------------------------------
 * 0.9.7
 	- "Micemade Icons list" widget refactored
 ---------------------------------------------------
