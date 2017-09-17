@@ -18,10 +18,11 @@ if (!class_exists('MM_SOW_Setup')):
 
             add_filter('siteorigin_panels_widgets', array($this, 'add_bundle_groups'), 11);
 
-
+			// Add backend field for row styles / add frontend atributes for rows
 			add_filter('siteorigin_panels_row_style_fields', array($this, 'row_style_fields'));
 			add_filter('siteorigin_panels_row_style_attributes', array($this, 'row_style_attributes'), 10, 2);
 			
+			// Add backend field for widget styles / add frontend atributes for widgets
 			add_filter('siteorigin_panels_widget_style_fields', array($this, 'widget_style_fields'));
             add_filter('siteorigin_panels_widget_style_attributes', array($this, 'widget_style_attributes'), 10, 2);
 
@@ -52,40 +53,25 @@ if (!class_exists('MM_SOW_Setup')):
                 'priority' => 1,
             );
 			
+			// Additional mobile sizes
 			$fields['padding_tablet'] = array(
-				'name'		=> __('Padding for tablet', 'mm_sow'),
+				'name'		=> __('Mobile padding (tablet landscape)', 'mm_sow'),
 				'type'		=> 'measurement',
 				'group'		=> 'layout',
-				'description' => __('Padding around the entire row.', 'mm_sow'),
+				'description' => __('Additional mobile size for tablets landscape orientation', 'mm_sow'),
 				'priority'	=> 8,
 				'multiple'	=> true
 			);
 			$fields['padding_mobile'] = array(
-				'name'		=> __('Padding for mobiles', 'mm_sow'),
+				'name'		=> __('Mobile padding (phone portrait)', 'mm_sow'),
 				'type'		=> 'measurement',
 				'group'		=> 'layout',
-				'description' => __('Padding around the entire row.', 'mm_sow'),
-				'priority'	=> 8,
+				'description' => __('Additional mobile size for phone portrait orientation', 'mm_sow'),
+				'priority'	=> 9,
 				'multiple'	=> true
 			);
 			
 			
-			$fields['margin_mobile'] = array(
-				'name'		=> __('Margin for mobiles', 'mm_sow'),
-				'type'		=> 'measurement',
-				'group'		=> 'layout',
-				'description' => __('Margin around the entire row on mobile devices', 'mm_sow'),
-				'priority'	=> 9,
-				'multiple'	=> true
-			);
-			$fields['margin_tablet'] = array(
-				'name'		=> __('Margin for tablet', 'mm_sow'),
-				'type'		=> 'measurement',
-				'group'		=> 'layout',
-				'description' => __('Margin around the entire row on tablet devices', 'mm_sow'),
-				'priority'	=> 9,
-				'multiple'	=> true
-			);
 			$fields['margin'] = array(
 				'name'		=> __('Row margin', 'mm_sow'),
 				'type'		=> 'measurement',
@@ -95,7 +81,25 @@ if (!class_exists('MM_SOW_Setup')):
 				'multiple'	=> true
 			);
 			
-          
+			$fields['margin_tablet'] = array(
+				'name'		=> __('Row margin for tablet', 'mm_sow'),
+				'type'		=> 'measurement',
+				'group'		=> 'layout',
+				'description' => __('Margin around the entire row on tablet devices', 'mm_sow'),
+				'priority'	=> 10,
+				'multiple'	=> true
+			);
+			
+			$fields['margin_mobile'] = array(
+				'name'		=> __('Row margin for mobiles', 'mm_sow'),
+				'type'		=> 'measurement',
+				'group'		=> 'layout',
+				'description' => __('Margin around the entire row on mobile devices', 'mm_sow'),
+				'priority'	=> 10,
+				'multiple'	=> true
+			);
+			
+			
 		  // Add design fields
 		  
             $fields['mm_sow_dark_bg'] = array(
@@ -200,18 +204,18 @@ if (!class_exists('MM_SOW_Setup')):
                 'priority' => 2,
             );
 			$fields['padding_tablet'] = array(
-				'name'		=> __('Padding for tablet', 'mm_sow'),
+				'name'		=> __('Mobile padding (tablet landscape)', 'mm_sow'),
 				'type'		=> 'measurement',
 				'group'		=> 'layout',
-				'description' => __('Padding around the entire widget.', 'mm_sow'),
+				'description' => __('Additional mobile size for tablet landscape orientation', 'mm_sow'),
 				'priority'	=> 8,
 				'multiple'	=> true
 			);
 			$fields['padding_mobile'] = array(
-				'name'		=> __('Padding for mobiles', 'mm_sow'),
+				'name'		=> __('Mobile padding (phone portrait)', 'mm_sow'),
 				'type'		=> 'measurement',
 				'group'		=> 'layout',
-				'description' => __('Padding around the entire widget.', 'mm_sow'),
+				'description' => __('Additional mobile size for phone portrait orientation', 'mm_sow'),
 				'priority'	=> 9,
 				'multiple'	=> true
 			);
@@ -289,16 +293,16 @@ if (!class_exists('MM_SOW_Setup')):
 				$margin_mobile	= isset( $row['style']['margin_mobile'] )	? $row['style']['margin_mobile'] : null;
 				
 				if( $padd_tablet ) {
-					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('padding' => $padd_tablet .'!important' ), 960);
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('padding' => $padd_tablet  ), 1024);
 				}
 				if( $padd_mobile ) {
-					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('padding' => $padd_mobile .'!important' ), 478);
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('padding' => $padd_mobile  ), 478);
 				}
 				if( $margin ) {
 					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('margin' => $margin  ) );
 				}
 				if( $margin_tablet ) {
-					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('margin' => $margin_tablet .'!important' ), 960);
+					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('margin' => $margin_tablet .'!important' ), 1024);
 				}
 				if( $margin_mobile ) {
 					$css->add_row_css( $post_id, $ri, '> .panel-row-style', array('margin' => $margin_mobile .'!important' ), 478);
@@ -330,7 +334,7 @@ if (!class_exists('MM_SOW_Setup')):
 						$no_bottom_margin	= isset( $widget_style['no_bottom_margin'] ) ? $widget_style['no_bottom_margin']: 0;
 						
 						if( $padd_tablet ) {
-							$css->add_widget_css( $post_id, $ri, $ci, $wi, '> .panel-widget-style', array( 'padding' => $padd_tablet ), 960);
+							$css->add_widget_css( $post_id, $ri, $ci, $wi, '> .panel-widget-style', array( 'padding' => $padd_tablet ), 1024 );
 						}
 						
 						if( $padd_mobile ) {

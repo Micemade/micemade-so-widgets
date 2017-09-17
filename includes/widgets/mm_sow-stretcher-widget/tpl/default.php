@@ -9,6 +9,53 @@ if( !empty( $instance['title'] ) && !$instance['hide_title'] ) echo $args['befor
 
 $query_args = siteorigin_widget_post_selector_process_query($posts);
 
+/**
+ *  FOR WC PRODUCTS ("product" post type)
+ *  before applying $query_args to WP_Query, filter the arguments
+ */
+parse_str( $instance['stretcher_posts'], $post_settings );
+// USE STICKY POSTS FOR WC FEATURED PRODUCTS
+if( $post_settings['post_type'] == 'product' && $post_settings['sticky'] == 'only' ) {
+	
+	unset( $query_args['post__in'] );
+	unset( $query_args['post__not_in'] );
+	
+	$query_args ['tax_query'][] = array(
+			'taxonomy' => 'product_visibility',
+			'field'    => 'name',
+			'terms'    => 'featured',
+		);
+	
+}
+// Show only AVAILABLE (in stock) products 
+if( $post_settings['post_type'] == 'product' ) {
+	$query_args['meta_query'] = array( 
+		"relation" => "AND",
+		array( 
+			"key" => "_stock_status", 
+			"value"=> "instock", 
+		), 
+	);
+	// EXCLUDE products on sale in "Additional" field
+	if( isset( $post_settings['additional'] ) && $post_settings['additional'] == 'exclude_products_on_sale' ) {
+		$query_args['meta_query'][]  = array( 
+			"key" => "_sale_price", 
+			"value" => 0, 
+			"compare" => ">=", 
+		);
+	}
+	// ONLY sale proucts - if "on_sale" is set in "Additional" field
+	if( isset( $post_settings['additional'] ) &&  $post_settings['additional'] == 'products_on_sale' ) {
+		$product_ids_on_sale    = wc_get_product_ids_on_sale();
+		if( ! empty( $product_ids_on_sale ) ) {
+			$query_args['post__in'] = $product_ids_on_sale;
+		}
+	}
+} 
+/**
+ *  END WC PRODUCTS
+ */
+
 // Use the processed post selector query to find posts.
 $loop = new WP_Query($query_args);
 

@@ -77,6 +77,18 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
                         'style[style5]' => array('hide'),
                     ),
                 ),
+				'img_format' => array(
+					'type' => 'select',
+					'label' => __('Choose image format', 'mm_sow'),
+					'default' => 'thumbnail',
+					'options' => apply_filters("mm_sow_image_sizes",""),
+					'state_handler' => array(
+                        'style[style1]' => array('show'),
+                        'style[style2]' => array('show'),
+                        'style[style3]' => array('show'),
+                        'style[style4]' => array('hide'),
+                    ),
+				),
 
                 'wc_cats' => array(
 
@@ -331,6 +343,7 @@ class MM_SOW_WC_Cats_Widget extends SiteOrigin_Widget {
 			'image_type'		=> $instance['image_type'],
             'wc_cats'       	=> !empty($instance['wc_cats']) ? $instance['wc_cats'] : array(),
             'settings'      	=> $instance['settings'],
+			'img_format'      	=> $instance['img_format'],
         );
     }
 

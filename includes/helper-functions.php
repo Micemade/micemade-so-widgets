@@ -41,7 +41,31 @@ function mm_sow_get_terms( $taxonomy ) {
 
     return $term_coll;
 }
-
+/**
+ *  Check if taxonomy is assigned to the right post type
+ *  
+ *  @param [in] $post_type
+ *  @param [in] $taxonomy 
+ *  @return boolean
+ *  
+ */
+function mm_sow_is_taxonomy_assigned_to_post_type( $post_type, $taxonomy = null ) {	
+	if ( is_object( $post_type ) )
+		$post_type = $post_type->post_type;
+	if ( empty( $post_type ) )
+		return false;
+	$taxonomies = get_object_taxonomies( $post_type );
+	if ( empty( $taxonomy ) )
+		$taxonomy = get_query_var( 'taxonomy' );
+	return in_array( $taxonomy, $taxonomies );
+}
+/**
+ *  GET CHOSEN TERMS FOR THE TAXONOMY / POST TYPE
+ *  
+ *  @param [in] $query_args
+ *  @return array or terms
+ *  
+ */
 function mm_sow_get_chosen_terms($query_args) {
 
     $chosen_terms = array();

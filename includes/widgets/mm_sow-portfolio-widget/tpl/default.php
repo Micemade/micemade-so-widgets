@@ -22,6 +22,54 @@ $current_page = get_queried_object_id();
 
 $query_args = siteorigin_widget_post_selector_process_query($posts);
 
+/**
+ *  FOR WC PRODUCTS ("product" post type)
+ *  before applying $query_args to WP_Query, filter the arguments
+ */
+parse_str( $instance['posts'], $post_settings );
+// USE STICKY POSTS FOR WC FEATURED PRODUCTS
+if( $post_settings['post_type'] == 'product' && $post_settings['sticky'] == 'only' ) {
+	
+	unset( $query_args['post__in'] );
+	unset( $query_args['post__not_in'] );
+	
+	$query_args ['tax_query'][] = array(
+			'taxonomy' => 'product_visibility',
+			'field'    => 'name',
+			'terms'    => 'featured',
+		);
+	
+}
+// Show only AVAILABLE (in stock) products 
+if( $post_settings['post_type'] == 'product' ) {
+	$query_args['meta_query'] = array( 
+		"relation" => "AND",
+		array( 
+			"key" => "_stock_status", 
+			"value"=> "instock", 
+		), 
+	);
+	// EXCLUDE products on sale in "Additional" field
+	if( isset( $post_settings['additional'] ) && $post_settings['additional'] == 'exclude_products_on_sale' ) {
+		$query_args['meta_query'][]  = array( 
+			"key" => "_sale_price", 
+			"value" => 0, 
+			"compare" => ">=", 
+		);
+	}
+	// ONLY sale proucts - if "on_sale" is set in "Additional" field
+	if( isset( $post_settings['additional'] ) &&  $post_settings['additional'] == 'products_on_sale' ) {
+		$product_ids_on_sale    = wc_get_product_ids_on_sale();
+		if( ! empty( $product_ids_on_sale ) ) {
+			$query_args['post__in'] = $product_ids_on_sale;
+		}
+	}
+} 
+/**
+ *  END WC PRODUCTS
+ */
+
+
 // Use the processed post selector query to find posts.
 $loop = new WP_Query( $query_args );
 
@@ -33,29 +81,32 @@ if ($loop->have_posts()) : ?>
         <?php $column_style = mm_sow_get_column_class(intval($settings['per_line'])); ?>
 
         <?php
-        // Check if any taxonomy filter has been applied
-        list( $chosen_terms, $taxonomy ) = mm_sow_get_chosen_terms( $posts );
-        if ( empty($chosen_terms) ) {
-			 $taxonomy = $taxonomy_filter;
+        // Check if taxonomy filter is assigned to the right post type
+		$tax_assigned_to_post_type = false;
+        if( mm_sow_is_taxonomy_assigned_to_post_type( $post_settings['post_type'], $taxonomy_filter ) ) {
+			// Check if any taxonomy filter has been applied
+			list( $chosen_terms, $taxonomy ) = mm_sow_get_chosen_terms( $posts );
+			if ( empty($chosen_terms) ) {
+				 $taxonomy = $taxonomy_filter;
+			}
+			$tax_assigned_to_post_type = true;
 		}
         ?>
 
         <div class="mm_sow-portfolio-header <?php echo esc_attr( $tax_heading_align ); ?>">
 
             <?php
-            if ( $settings['filterable'] && $tax_heading_align == "align_right" ) {
+            if ( $settings['filterable'] && $tax_heading_align == "align_right" && $tax_assigned_to_post_type ) {
                 echo mm_sow_get_taxonomy_terms_filter( $taxonomy, $chosen_terms );
 			}
             ?>
 			
 			<?php if ( !empty( $heading ) ) { ?>
-
             <h3 class="mm_sow-heading"><?php echo wp_kses_post($heading); ?></h3>
-
             <?php } ?>
 			
 			<?php
-            if ( $settings['filterable'] && $tax_heading_align != "align_right") {
+            if ( $settings['filterable'] && $tax_heading_align != "align_right" && $tax_assigned_to_post_type ) {
                 echo mm_sow_get_taxonomy_terms_filter( $taxonomy, $chosen_terms );
 			}
 			

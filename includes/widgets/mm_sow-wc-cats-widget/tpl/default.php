@@ -41,7 +41,7 @@
                 $thumbnail_id = $wc_cat['custom_image'];
             }
 
-            $img_format = ( $style == "style4" ) ? "shop_thumbnail" : "full";
+            $img_format = ( $style == "style4" ) ? "shop_thumbnail" : $img_format;
             $image_atts = wp_get_attachment_image_src( $thumbnail_id, $img_format );
             $image_url	= $image_atts[0];
 			

@@ -1,5 +1,10 @@
 == Changelog ==
 
+* 0.9.9
+	- checked for SiteOrigin Page Builder v.2.5.12 / SiteOrigin Widgets Bundle v.1.9.10
+	- Refactored row/widgets padding/maring for mobiles
+	- "Micemade Posts Carousel" / "Micemade stretcher" / "Micemade grid" widgets adapted for better WC products display
+---------------------------------------------------
 * 0.9.8
 	- Php errors fixes in multiple files
 ---------------------------------------------------
