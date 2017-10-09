@@ -190,10 +190,10 @@ class MM_SOW_Icon_List_Widget extends SiteOrigin_Widget {
 
     function get_less_variables($instance) {
         return array(
-            'icon_size'		=> intval($instance['settings']['icon_size']) . 'px',
+            'icon_size'		=> intval($instance['settings']['icon_size'] ) . 'px',
             'icon_color'	=> $instance['settings']['icon_color'],
             'hover_color'	=> $instance['settings']['hover_color'],
-			'title_size'	=> intval($instance['settings']['title_size']) . 'px',
+			'title_size'	=> isset( $instance['settings']['title_size'] ) ? intval($instance['settings']['title_size'] ) . 'px' : '',
         );
     }
 
