@@ -1,3 +1,5 @@
+## Discontinued plugin
+
 === Micemade SO widgets Widgets ===
 
 Author URI: http://micemade.com
